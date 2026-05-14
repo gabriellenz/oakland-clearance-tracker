@@ -279,7 +279,15 @@ tr:last-child td {
   font-size: 0.9rem;
 }
 
-.subtext a {
+.microtext {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.22;
+}
+
+.subtext a,
+.microtext a {
   color: var(--blue);
   font-weight: 700;
 }

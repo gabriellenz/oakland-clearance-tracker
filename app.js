@@ -71,7 +71,7 @@ function arrestDetail(victim) {
     : sourceLabel
       ? escapeHtml(sourceLabel)
       : "";
-  return [escapeHtml(dateLine), sourceLine].filter(Boolean).join("<br />");
+  return [escapeHtml(dateLine), sourceLine].filter(Boolean).join(" · ");
 }
 
 function setText(id, value) {
@@ -244,7 +244,7 @@ function renderVictims(data, filter = "") {
         <td><div class="name">${escapeHtml(victim.name)}</div><div class="subtext">${escapeHtml([victim.age, victim.gender].filter(Boolean).join(", "))}</div>${race}</td>
         <td>${escapeHtml(victim.location)}<div class="subtext">${escapeHtml(victim.neighborhood || victim.method || "")}</div></td>
         <td>${escapeHtml(victim.caseNumber || "unknown")}</td>
-        <td><span class="pill ${statusClass(victim.arrestMade)}">${statusLabel(victim.arrestMade)}</span><div class="subtext">${arrestDetail(victim)}</div><div class="subtext">${escapeHtml(victim.confidence)} confidence</div></td>
+        <td><span class="pill ${statusClass(victim.arrestMade)}">${statusLabel(victim.arrestMade)}</span><div class="microtext">${arrestDetail(victim)}</div><div class="microtext">${escapeHtml(victim.confidence)} confidence</div></td>
         <td>${escapeHtml(suspect)}<div class="subtext">${escapeHtml([victim.chargesFiled, charge].filter(Boolean).join(""))}</div></td>
         <td>${escapeHtml(victim.circumstancesSummary || "Summary pending.")}</td>
       </tr>`;
