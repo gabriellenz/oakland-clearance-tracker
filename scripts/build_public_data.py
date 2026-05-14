@@ -42,10 +42,12 @@ def public_value(value: str) -> str:
 def main() -> None:
     victims = read_csv("victims_2026.csv")
     incidents = read_csv("incidents_2026.csv")
+    sources = read_csv("sources_2026.csv")
     count_reports = read_csv("count_reports_2026.csv")
 
     victims = sorted(victims, key=lambda r: (r["incident_date"], r["incident_time"], r["victim_id"]))
     incidents_by_id = {r["incident_id"]: r for r in incidents}
+    sources_by_id = {r["source_id"]: r for r in sources}
 
     status_counts = Counter(r["arrest_made"] or "unknown" for r in victims)
     month_counts: dict[str, Counter[str]] = defaultdict(Counter)
@@ -68,6 +70,7 @@ def main() -> None:
     public_victims = []
     for row in victims:
         incident = incidents_by_id.get(row["incident_id"], {})
+        arrest_source = sources_by_id.get(row["arrest_source_id"], {})
         public_victims.append(
             {
                 "victimId": row["victim_id"],
@@ -85,6 +88,11 @@ def main() -> None:
                 "caseNumber": row["opd_case_number"] or incident.get("official_case_number", ""),
                 "arrestMade": row["arrest_made"] or "unknown",
                 "arrestDate": row["arrest_date"],
+                "arrestSourceId": row["arrest_source_id"],
+                "arrestSourceUrl": arrest_source.get("url", ""),
+                "arrestSourceTitle": arrest_source.get("title", ""),
+                "arrestSourcePublisher": arrest_source.get("publisher", ""),
+                "arrestSourceDate": arrest_source.get("source_date", ""),
                 "suspectsPublic": row["suspect_names_public"],
                 "chargesFiled": row["charges_filed"],
                 "leadCharge": row["lead_charge_public"],

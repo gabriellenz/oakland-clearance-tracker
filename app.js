@@ -52,6 +52,28 @@ function statusLabel(status) {
   return STATUS_LABELS[status] || STATUS_LABELS.unknown;
 }
 
+function arrestDetail(victim) {
+  const dateLine =
+    victim.arrestMade === "yes"
+      ? victim.arrestDate
+        ? `Arrest date: ${fmtDate(victim.arrestDate)}`
+        : "Arrest date not yet pinned down"
+      : victim.arrestMade === "no"
+        ? "No public arrest found"
+        : "Public arrest status unknown";
+  const sourceLabel = victim.arrestSourcePublisher
+    ? `Source: ${victim.arrestSourcePublisher}`
+    : victim.arrestSourceTitle
+      ? "Source"
+      : "";
+  const sourceLine = victim.arrestSourceUrl
+    ? `<a href="${escapeHtml(victim.arrestSourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(sourceLabel || "Source")}</a>`
+    : sourceLabel
+      ? escapeHtml(sourceLabel)
+      : "";
+  return [escapeHtml(dateLine), sourceLine].filter(Boolean).join("<br />");
+}
+
 function setText(id, value) {
   document.getElementById(id).textContent = value;
 }
@@ -222,7 +244,7 @@ function renderVictims(data, filter = "") {
         <td><div class="name">${escapeHtml(victim.name)}</div><div class="subtext">${escapeHtml([victim.age, victim.gender].filter(Boolean).join(", "))}</div>${race}</td>
         <td>${escapeHtml(victim.location)}<div class="subtext">${escapeHtml(victim.neighborhood || victim.method || "")}</div></td>
         <td>${escapeHtml(victim.caseNumber || "unknown")}</td>
-        <td><span class="pill ${statusClass(victim.arrestMade)}">${statusLabel(victim.arrestMade)}</span><div class="subtext">${escapeHtml(victim.confidence)} confidence</div></td>
+        <td><span class="pill ${statusClass(victim.arrestMade)}">${statusLabel(victim.arrestMade)}</span><div class="subtext">${arrestDetail(victim)}</div><div class="subtext">${escapeHtml(victim.confidence)} confidence</div></td>
         <td>${escapeHtml(suspect)}<div class="subtext">${escapeHtml([victim.chargesFiled, charge].filter(Boolean).join(""))}</div></td>
         <td>${escapeHtml(victim.circumstancesSummary || "Summary pending.")}</td>
       </tr>`;

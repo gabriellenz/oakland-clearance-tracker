@@ -279,6 +279,11 @@ tr:last-child td {
   font-size: 0.9rem;
 }
 
+.subtext a {
+  color: var(--blue);
+  font-weight: 700;
+}
+
 .pill {
   display: inline-flex;
   align-items: center;
