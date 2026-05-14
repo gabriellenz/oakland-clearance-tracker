@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Public dashboard tracking Oakland homicide victims and arrest-reported clearance indicators in 2026."
+    />
+    <title>Oakland Homicide Clearance Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div>
+          <p class="eyebrow">Oakland, California · 2026</p>
+          <h1>Holding Oakland accountable for homicide clearance</h1>
+          <p class="lede">
+            A public tracker of homicide victims, reported arrests, and unresolved cases. Built from public
+            reporting, OPD data, court-adjacent records, and count reconciliation.
+          </p>
+        </div>
+        <div class="status-box" aria-label="Current public arrest rate">
+          <span class="status-label">Public arrest rate</span>
+          <strong id="heroRate">--</strong>
+          <span id="heroBasis">Victim-level proxy</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="metrics" aria-label="Summary metrics">
+        <div class="metric">
+          <span>Total victims tracked</span>
+          <strong id="metricVictims">--</strong>
+        </div>
+        <div class="metric">
+          <span>Incidents tracked</span>
+          <strong id="metricIncidents">--</strong>
+        </div>
+        <div class="metric">
+          <span>Arrest reported</span>
+          <strong id="metricArrests">--</strong>
+        </div>
+        <div class="metric">
+          <span>No public arrest / unknown</span>
+          <strong id="metricUnresolved">--</strong>
+        </div>
+      </section>
+
+      <section class="notice" aria-label="Methodology note">
+        <div>
+          <h2>What this rate means</h2>
+          <p id="scopeNote"></p>
+        </div>
+        <div>
+          <h2>Known reconciliation gap</h2>
+          <p id="reconciliationNote"></p>
+        </div>
+      </section>
+
+      <section class="dashboard-grid" aria-label="Data visuals">
+        <article class="panel wide">
+          <div class="panel-heading">
+            <div>
+              <h2>Cumulative homicides and reported arrests</h2>
+              <p>Victim-level count over time. Arrests are shown when public sources report an arrest tied to the case.</p>
+            </div>
+          </div>
+          <div id="cumulativeChart" class="chart"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <h2>Current arrest status</h2>
+              <p>Victim rows by public arrest status.</p>
+            </div>
+          </div>
+          <div id="statusChart" class="chart compact"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <h2>Monthly pattern</h2>
+              <p>Victims by month and arrest status.</p>
+            </div>
+          </div>
+          <div id="monthlyChart" class="chart compact"></div>
+        </article>
+      </section>
+
+      <section class="cases-section">
+        <div class="section-heading">
+          <div>
+            <h2>Victim-level tracker</h2>
+            <p>One row per victim. Multi-victim incidents share an incident ID and OPD case number.</p>
+          </div>
+          <label class="filter">
+            <span>Filter</span>
+            <input id="caseFilter" type="search" placeholder="Name, location, case number, status" />
+          </label>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Victim</th>
+                <th>Location</th>
+                <th>OPD case</th>
+                <th>Arrest status</th>
+                <th>Public suspect / charge</th>
+              </tr>
+            </thead>
+            <tbody id="victimRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="dashboard-grid bottom" aria-label="Reconciliation and methods">
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <h2>Published count checks</h2>
+              <p>Count claims are tracked separately so missing cases stay visible.</p>
+            </div>
+          </div>
+          <div id="countReports" class="count-list"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <h2>Data rules</h2>
+              <p>Designed to avoid inflating the public rate or duplicating incidents.</p>
+            </div>
+          </div>
+          <ul class="rules">
+            <li>Officer-involved fatal shootings are excluded from the main tracker.</li>
+            <li>Race and ethnicity are coded only when a credible source explicitly reports them.</li>
+            <li>Open Data rows are used for case reconciliation, not as a clean victim list.</li>
+            <li>Unknown arrest status is not counted as cleared.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Last tracker check: <span id="lastChecked">--</span>. Generated from public-facing data:
+        <a href="data/oakland-2026.json">oakland-2026.json</a>.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
