@@ -80,8 +80,8 @@ function linePath(points) {
 function renderCumulativeChart(data) {
   const rows = data.cumulative;
   const width = 780;
-  const height = 360;
-  const pad = { top: 20, right: 28, bottom: 48, left: 44 };
+  const height = 385;
+  const pad = { top: 54, right: 28, bottom: 48, left: 44 };
   const dates = rows.map((r) => new Date(`${r.date}T00:00:00`));
   const minDate = dates[0];
   const maxDate = dates[dates.length - 1];
@@ -122,13 +122,17 @@ function renderCumulativeChart(data) {
   document.getElementById("cumulativeChart").innerHTML = svg(
     width,
     height,
-    `${grid}
+    `<g aria-label="Legend">
+       <line x1="${pad.left}" x2="${pad.left + 34}" y1="20" y2="20" stroke="${COLORS.victims}" stroke-width="4" />
+       <text x="${pad.left + 44}" y="24" class="chart-label">Total homicide victims tracked</text>
+       <line x1="${pad.left + 260}" x2="${pad.left + 294}" y1="20" y2="20" stroke="${COLORS.yes}" stroke-width="4" />
+       <text x="${pad.left + 304}" y="24" class="chart-label">Victims with public arrest reported</text>
+     </g>
+     ${grid}
      <path d="${linePath(victimPoints)}" fill="none" stroke="${COLORS.victims}" stroke-width="4" />
      <path d="${linePath(arrestPoints)}" fill="none" stroke="${COLORS.yes}" stroke-width="4" />
      ${points}
-     ${labels}
-     <text x="${pad.left}" y="18" class="chart-label">Victims tracked</text>
-     <text x="${width - pad.right}" y="18" text-anchor="end" fill="${COLORS.yes}" class="chart-label">Arrest reported</text>`,
+     ${labels}`,
   );
 }
 

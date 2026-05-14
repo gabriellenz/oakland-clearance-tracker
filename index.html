@@ -18,7 +18,7 @@
           <h1>Holding Oakland accountable for homicide clearance</h1>
           <p class="lede">
             A public tracker of homicide victims, reported arrests, and unresolved cases. Built from public
-            reporting, OPD data, court-adjacent records, and count reconciliation.
+            reporting, OPD data, and court-adjacent records.
           </p>
         </div>
         <div class="status-box" aria-label="Current public arrest rate">
@@ -46,17 +46,6 @@
         <div class="metric">
           <span>No public arrest / unknown</span>
           <strong id="metricUnresolved">--</strong>
-        </div>
-      </section>
-
-      <section class="notice" aria-label="Methodology note">
-        <div>
-          <h2>What this rate means</h2>
-          <p id="scopeNote"></p>
-        </div>
-        <div>
-          <h2>Known reconciliation gap</h2>
-          <p id="reconciliationNote"></p>
         </div>
       </section>
 
@@ -134,9 +123,17 @@
         <article class="panel">
           <div class="panel-heading">
             <div>
-              <h2>Data rules</h2>
-              <p>Designed to avoid inflating the public rate or duplicating incidents.</p>
+              <h2>Technical details</h2>
+              <p>Definitions and exclusions used for the public rate.</p>
             </div>
+          </div>
+          <div class="technical-note">
+            <h3>Known reconciliation gap</h3>
+            <p id="reconciliationNote"></p>
+          </div>
+          <div class="technical-note">
+            <h3>Scope</h3>
+            <p id="scopeNote"></p>
           </div>
           <ul class="rules">
             <li>Officer-involved fatal shootings are excluded from the main tracker.</li>
