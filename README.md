@@ -32,4 +32,10 @@ The intended daily workflow is:
 3. Review the local site.
 4. Commit and push changed public files.
 
+For data-only updates after the private tracker is already current:
+
+```bash
+bash scripts/publish_update.sh
+```
+
 The public page loads only `data/oakland-2026.json`; it does not fetch private tracker files.
