@@ -373,6 +373,15 @@ footer {
   padding: 0 22px 42px;
 }
 
+.feedback {
+  margin-top: 10px;
+  font-size: 0.92rem;
+}
+
+.feedback a {
+  font-weight: 750;
+}
+
 @media (max-width: 900px) {
   .header-inner,
   .dashboard-grid,
