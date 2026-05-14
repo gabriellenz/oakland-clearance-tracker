@@ -39,3 +39,18 @@ bash scripts/publish_update.sh
 ```
 
 The public page loads only `data/oakland-2026.json`; it does not fetch private tracker files.
+
+## Publication Safety Checklist
+
+Before pushing:
+
+- Confirm `data/oakland-2026.json` contains only public-facing fields.
+- Do not copy `_cache/`, draft request text, private notes, or the full working CSVs into this repo unless intentionally public.
+- Run `node --check app.js`.
+- Serve locally with `python3 -m http.server 4173` and verify the page renders.
+- After push, confirm the GitHub Pages workflow succeeded.
+
+## Related Repos
+
+- Public website repo: `gabriellenz/oakland-clearance-tracker`
+- Private backup repo for the broader working folder: `gabriellenz/clearance-private`
