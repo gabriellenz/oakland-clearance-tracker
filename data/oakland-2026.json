@@ -3,7 +3,7 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-05-13T21:35:21-07:00",
+    "generatedAt": "2026-05-13T22:25:01-07:00",
     "lastChecked": "2026-05-14",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31, while the current coded tracker has 13 victims through that date. One pre-February-22 case or classification mismatch remains unresolved."
@@ -15,7 +15,7 @@
     "noPublicArrestVictims": 4,
     "unknownArrestStatusVictims": 5,
     "publicArrestRateVictimLevel": 43.8,
-    "namedVictims": 10,
+    "namedVictims": 11,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
@@ -180,11 +180,11 @@
       "caseNumber": "26-000070",
       "arrestMade": "yes",
       "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0018",
-      "arrestSourceUrl": "https://bearingarms.com/camedwards/2026/01/23/oaklands-first-homicide-of-the-year-appears-to-be-self-defense-n1231324",
-      "arrestSourceTitle": "Oakland's First Homicide of the Year Appears to be Self-Defense",
-      "arrestSourcePublisher": "Bearing Arms",
-      "arrestSourceDate": "2026-01-23",
+      "arrestSourceId": "OAK-2026-S0011",
+      "arrestSourceUrl": "https://www.ktvu.com/news/5-killed-oakland-start-new-year-2026",
+      "arrestSourceTitle": "Inauspicious start to 2026: 5 killed in Oakland as new year rolls in",
+      "arrestSourcePublisher": "KTVU FOX 2",
+      "arrestSourceDate": "2026-01-05",
       "suspectsPublic": "Wesley Broach",
       "chargesFiled": "unknown",
       "leadCharge": "",
@@ -391,28 +391,28 @@
     {
       "victimId": "OAK-2026-0008-V01",
       "incidentId": "OAK-2026-0008",
-      "name": "unknown",
-      "age": "",
-      "gender": "unknown",
+      "name": "Leslie Marshall",
+      "age": "49",
+      "gender": "female",
       "raceEthnicity": "",
       "incidentDate": "2026-02-02",
       "incidentTime": "11:00",
       "location": "2300 block of San Pablo Avenue",
       "neighborhood": "Downtown/West Oakland",
-      "method": "shooting/head trauma",
-      "circumstancesSummary": "A person was found dead with severe head trauma in the 2300 block of San Pablo Avenue on February 2. Bay City News reported that a suspect was located and detained nearby, but the victim and suspect names were not released in the initial public reports.",
+      "method": "assault/head trauma",
+      "circumstancesSummary": "Leslie Marshall was found dead with major head trauma outside/behind the Twin Peaks residential hotel in the 2300 block of San Pablo Avenue. Later reporting identified Jeffrey McMaster Jr. as the suspect, said he was taken into custody the same day, and said he was charged with murder after allegedly beating Marshall with his hands and feet.",
       "caseNumber": "26-005153",
       "arrestMade": "yes",
-      "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0022",
-      "arrestSourceUrl": "https://www.sfgate.com/news/bayarea/article/oakland-1-dead-in-monday-shooting-suspect-21330899.php",
-      "arrestSourceTitle": "Oakland: 1 Dead In Monday Shooting Suspect Detained",
-      "arrestSourcePublisher": "Bay City News via SFGATE",
-      "arrestSourceDate": "2026-02-02",
-      "suspectsPublic": "unknown",
-      "chargesFiled": "unknown",
-      "leadCharge": "",
-      "caseStatus": "",
+      "arrestDate": "2026-02-02",
+      "arrestSourceId": "OAK-2026-S0036",
+      "arrestSourceUrl": "https://lawandcrime.com/crime/i-keep-doing-s-like-this-man-used-hands-feet-to-beat-female-neighbor-to-death-at-residential-hotel-years-after-trying-to-crush-womans-throat-cops-say/",
+      "arrestSourceTitle": "Man used hands, feet to beat female neighbor to death at residential hotel, cops say",
+      "arrestSourcePublisher": "Law & Crime",
+      "arrestSourceDate": "2026-02-17",
+      "suspectsPublic": "Jeffrey McMaster Jr.",
+      "chargesFiled": "yes",
+      "leadCharge": "murder",
+      "caseStatus": "charged",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
     },
@@ -676,8 +676,8 @@
       "time": "11:00",
       "location": "2300 block of San Pablo Avenue",
       "neighborhood": "Downtown/West Oakland",
-      "method": "shooting/head trauma",
-      "circumstancesSummary": "A person was found dead with severe head trauma in the 2300 block of San Pablo Avenue on February 2. Bay City News reported that a suspect was located and detained nearby, but the victim and suspect names were not released in the initial public reports.",
+      "method": "assault/head trauma",
+      "circumstancesSummary": "Leslie Marshall was found dead with major head trauma outside/behind the Twin Peaks residential hotel in the 2300 block of San Pablo Avenue. Later reporting identified Jeffrey McMaster Jr. as the suspect, said he was taken into custody the same day, and said he was charged with murder after allegedly beating Marshall with his hands and feet.",
       "victimCount": "1",
       "caseNumber": "26-005153",
       "confidence": "medium"
@@ -740,8 +740,8 @@
       "periodEnd": "2026-01-03",
       "reportedTotal": 5,
       "unit": "victims",
-      "trackerVictimCount": 8,
-      "discrepancy": "Tracker has 8 January victims after coding later January reports; no discrepancy for Jan. 1-3 subset."
+      "trackerVictimCount": 5,
+      "discrepancy": "Comparable tracker count through Jan. 3 matches the reported five victims; later January cases are excluded from this checkpoint."
     },
     {
       "sourceDate": "2026-01-05",
@@ -751,8 +751,8 @@
       "periodEnd": "2026-01-05",
       "reportedTotal": 5,
       "unit": "victims",
-      "trackerVictimCount": 8,
-      "discrepancy": "Tracker has 8 January victims after coding later January reports; no discrepancy for Jan. 1-5 subset."
+      "trackerVictimCount": 5,
+      "discrepancy": "Comparable tracker count through Jan. 5 matches the reported five victims; later January cases are excluded from this checkpoint."
     },
     {
       "sourceDate": "2026-01-09",
@@ -762,8 +762,8 @@
       "periodEnd": "2026-01-09",
       "reportedTotal": 5,
       "unit": "victims",
-      "trackerVictimCount": 8,
-      "discrepancy": "Later same-day reports add a sixth homicide on Jan. 9."
+      "trackerVictimCount": 5,
+      "discrepancy": "Comparable tracker count at the Jan. 9 publication checkpoint matches the reported five victims before the later same-day Coliseum Way homicide report."
     },
     {
       "sourceDate": "2026-01-09",
@@ -773,8 +773,8 @@
       "periodEnd": "2026-01-09",
       "reportedTotal": 6,
       "unit": "victims",
-      "trackerVictimCount": 8,
-      "discrepancy": "Tracker has 8 January victims after coding later January reports; no discrepancy through Jan. 9."
+      "trackerVictimCount": 6,
+      "discrepancy": "Comparable tracker count through the Jan. 9 Coliseum Way report matches the reported sixth homicide; later January cases are excluded from this checkpoint."
     },
     {
       "sourceDate": "2026-01-18",

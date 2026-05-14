@@ -259,7 +259,7 @@ function renderCountReports(data) {
       (report) =>
         `<div class="count-item">
           <strong>${report.reportedTotal} reported through ${fmtDate(report.periodEnd)}</strong>
-          <span>${escapeHtml(report.publisher)} · tracker count entered: ${report.trackerVictimCount}</span>
+          <span>${escapeHtml(report.publisher)} · comparable tracker count: ${report.trackerVictimCount}</span>
           <div class="subtext">${escapeHtml(report.discrepancy)}</div>
         </div>`,
     )
