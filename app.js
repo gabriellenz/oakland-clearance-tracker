@@ -244,7 +244,7 @@ function renderVictims(data, filter = "") {
         <td><div class="name">${escapeHtml(victim.name)}</div><div class="subtext">${escapeHtml([victim.age, victim.gender].filter(Boolean).join(", "))}</div>${race}</td>
         <td>${escapeHtml(victim.location)}<div class="subtext">${escapeHtml(victim.neighborhood || victim.method || "")}</div></td>
         <td>${escapeHtml(victim.caseNumber || "unknown")}</td>
-        <td><span class="pill ${statusClass(victim.arrestMade)}">${statusLabel(victim.arrestMade)}</span><div class="microtext">${arrestDetail(victim)}</div><div class="microtext">${escapeHtml(victim.confidence)} confidence</div></td>
+        <td><span class="pill ${statusClass(victim.arrestMade)}">${statusLabel(victim.arrestMade)}</span><div class="microtext">${arrestDetail(victim)} · ${escapeHtml(victim.confidence)} confidence</div></td>
         <td>${escapeHtml(suspect)}<div class="subtext">${escapeHtml([victim.chargesFiled, charge].filter(Boolean).join(""))}</div></td>
         <td>${escapeHtml(victim.circumstancesSummary || "Summary pending.")}</td>
       </tr>`;

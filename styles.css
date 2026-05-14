@@ -280,16 +280,16 @@ tr:last-child td {
 }
 
 .microtext {
-  margin-top: 3px;
+  margin-top: 2px;
   color: var(--muted);
-  font-size: 0.72rem;
-  line-height: 1.22;
+  font-size: 0.6rem;
+  line-height: 1.1;
 }
 
 .subtext a,
 .microtext a {
   color: var(--blue);
-  font-weight: 700;
+  font-weight: 650;
 }
 
 .pill {
