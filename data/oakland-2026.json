@@ -3,24 +3,24 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-05-14T02:35:19-07:00",
-    "lastChecked": "2026-05-14",
+    "generatedAt": "2026-05-15T02:35:00-07:00",
+    "lastChecked": "2026-05-15",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31, while the current coded tracker has 13 victims through that date. One pre-February-22 case or classification mismatch remains unresolved."
   },
   "summary": {
     "victims": 16,
     "incidents": 12,
-    "arrestReportedVictims": 7,
+    "arrestReportedVictims": 9,
     "noPublicArrestVictims": 4,
-    "unknownArrestStatusVictims": 5,
-    "publicArrestRateVictimLevel": 43.8,
+    "unknownArrestStatusVictims": 3,
+    "publicArrestRateVictimLevel": 56.2,
     "namedVictims": 11,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
-    "yes": 7,
-    "unknown": 5,
+    "yes": 9,
+    "unknown": 3,
     "no": 4
   },
   "byMonth": [
@@ -47,9 +47,9 @@
     },
     {
       "month": "2026-04",
-      "yes": 1,
+      "yes": 3,
       "no": 0,
-      "unknown": 2,
+      "unknown": 0,
       "total": 3
     }
   ],
@@ -122,17 +122,17 @@
     {
       "date": "2026-04-18",
       "victims": 14,
-      "arrestReportedVictims": 6
+      "arrestReportedVictims": 7
     },
     {
       "date": "2026-04-18",
       "victims": 15,
-      "arrestReportedVictims": 6
+      "arrestReportedVictims": 8
     },
     {
       "date": "2026-04-23",
       "victims": 16,
-      "arrestReportedVictims": 7
+      "arrestReportedVictims": 9
     }
   ],
   "victims": [
@@ -512,20 +512,20 @@
       "location": "6400 block of Foothill Boulevard / 2800 block of 64th Avenue",
       "neighborhood": "East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "Derrick Hubbard and Isaanae Morton were killed in an East Oakland triple shooting near Foothill Boulevard and 64th Avenue; a third person survived in critical condition. Initial public reports did not identify an arrest.",
+      "circumstancesSummary": "Derrick Hubbard and Isaanae Morton were killed in related shootings near Foothill Boulevard and 64th Avenue. KTVU reported prosecutors charged Davione Sharp and Reginald Jackson with murder, and Michael Baxter as an accessory after the fact.",
       "caseNumber": "26-016885",
-      "arrestMade": "unknown",
+      "arrestMade": "yes",
       "arrestDate": "",
-      "arrestSourceId": "",
-      "arrestSourceUrl": "",
-      "arrestSourceTitle": "",
-      "arrestSourcePublisher": "",
-      "arrestSourceDate": "",
-      "suspectsPublic": "",
-      "chargesFiled": "",
-      "leadCharge": "",
-      "caseStatus": "",
-      "clearanceStatus": "unknown",
+      "arrestSourceId": "OAK-2026-S0039",
+      "arrestSourceUrl": "https://www.ktvu.com/news/first-fridays-dispute-sparks-deadly-shooting-revenge-killing-east-oakland.amp",
+      "arrestSourceTitle": "First Fridays dispute sparks deadly shooting, revenge killing in East Oakland",
+      "arrestSourcePublisher": "KTVU FOX 2",
+      "arrestSourceDate": "2026-04-28",
+      "suspectsPublic": "Davione Sharp; Reginald Jackson; Michael Baxter",
+      "chargesFiled": "yes",
+      "leadCharge": "murder; accessory after the fact",
+      "caseStatus": "charged",
+      "clearanceStatus": "arrest_reported",
       "confidence": "medium"
     },
     {
@@ -540,20 +540,20 @@
       "location": "6400 block of Foothill Boulevard / 2800 block of 64th Avenue",
       "neighborhood": "East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "Derrick Hubbard and Isaanae Morton were killed in an East Oakland triple shooting near Foothill Boulevard and 64th Avenue; a third person survived in critical condition. Initial public reports did not identify an arrest.",
+      "circumstancesSummary": "Derrick Hubbard and Isaanae Morton were killed in related shootings near Foothill Boulevard and 64th Avenue. KTVU reported prosecutors charged Davione Sharp and Reginald Jackson with murder, and Michael Baxter as an accessory after the fact.",
       "caseNumber": "26-016885",
-      "arrestMade": "unknown",
+      "arrestMade": "yes",
       "arrestDate": "",
-      "arrestSourceId": "",
-      "arrestSourceUrl": "",
-      "arrestSourceTitle": "",
-      "arrestSourcePublisher": "",
-      "arrestSourceDate": "",
-      "suspectsPublic": "",
-      "chargesFiled": "",
-      "leadCharge": "",
-      "caseStatus": "",
-      "clearanceStatus": "unknown",
+      "arrestSourceId": "OAK-2026-S0039",
+      "arrestSourceUrl": "https://www.ktvu.com/news/first-fridays-dispute-sparks-deadly-shooting-revenge-killing-east-oakland.amp",
+      "arrestSourceTitle": "First Fridays dispute sparks deadly shooting, revenge killing in East Oakland",
+      "arrestSourcePublisher": "KTVU FOX 2",
+      "arrestSourceDate": "2026-04-28",
+      "suspectsPublic": "Davione Sharp; Reginald Jackson; Michael Baxter",
+      "chargesFiled": "yes",
+      "leadCharge": "murder; accessory after the fact",
+      "caseStatus": "charged",
+      "clearanceStatus": "arrest_reported",
       "confidence": "medium"
     },
     {
@@ -713,7 +713,7 @@
       "location": "6400 block of Foothill Boulevard / 2800 block of 64th Avenue",
       "neighborhood": "East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "Derrick Hubbard and Isaanae Morton were killed in an East Oakland triple shooting near Foothill Boulevard and 64th Avenue; a third person survived in critical condition. Initial public reports did not identify an arrest.",
+      "circumstancesSummary": "Derrick Hubbard and Isaanae Morton were killed in related shootings near Foothill Boulevard and 64th Avenue. KTVU reported prosecutors charged Davione Sharp and Reginald Jackson with murder, and Michael Baxter as an accessory after the fact.",
       "victimCount": "2",
       "caseNumber": "26-016885",
       "confidence": "medium"
