@@ -86,8 +86,14 @@ function renderSummary(data) {
   setText("metricIncidents", s.incidents);
   setText("metricArrests", s.arrestReportedVictims);
   setText("metricUnresolved", s.noPublicArrestVictims + s.unknownArrestStatusVictims);
-  setText("scopeNote", data.metadata.scopeNote);
-  setText("reconciliationNote", data.metadata.q1ReconciliationNote);
+  setText(
+    "scopeNote",
+    "This tracker focuses on homicides where the ordinary public question is whether police made an arrest. Fatal police shootings are handled through a different public accountability process, so they are left out of this arrest-rate count.",
+  );
+  setText(
+    "reconciliationNote",
+    "Some public reports say Oakland had 14 homicides through March 31. This tracker currently has 13 victims through that date, so one early-year case may still be missing or may have been counted differently by another source.",
+  );
   setText("lastChecked", data.metadata.lastChecked || "unknown");
 }
 
@@ -256,12 +262,17 @@ function renderCountReports(data) {
   const reports = data.countReports.slice(-4).reverse();
   document.getElementById("countReports").innerHTML = reports
     .map(
-      (report) =>
-        `<div class="count-item">
+      (report) => {
+        const publisher = escapeHtml(report.publisher);
+        const publisherLink = report.url
+          ? `<a href="${escapeHtml(report.url)}" target="_blank" rel="noopener noreferrer">${publisher}</a>`
+          : publisher;
+        return `<div class="count-item">
           <strong>${report.reportedTotal} reported through ${fmtDate(report.periodEnd)}</strong>
-          <span>${escapeHtml(report.publisher)} · comparable tracker count: ${report.trackerVictimCount}</span>
+          <span>${publisherLink} · comparable tracker count: ${report.trackerVictimCount}</span>
           <div class="subtext">${escapeHtml(report.discrepancy)}</div>
-        </div>`,
+        </div>`;
+      },
     )
     .join("");
 }

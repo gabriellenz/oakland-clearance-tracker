@@ -114,8 +114,7 @@
         <article class="panel">
           <div class="panel-heading">
             <div>
-              <h2>Published count checks</h2>
-              <p>Count claims are tracked separately so missing cases stay visible.</p>
+              <h2>Published Oakland homicide count articles</h2>
             </div>
           </div>
           <div id="countReports" class="count-list"></div>
@@ -123,23 +122,23 @@
         <article class="panel">
           <div class="panel-heading">
             <div>
-              <h2>Technical details</h2>
-              <p>Definitions and exclusions used for the public rate.</p>
+              <h2>How to read this tracker</h2>
+              <p>A few notes on what is included and how the arrest rate is counted.</p>
             </div>
           </div>
           <div class="technical-note">
-            <h3>Known reconciliation gap</h3>
+            <h3>One count still needs checking</h3>
             <p id="reconciliationNote"></p>
           </div>
           <div class="technical-note">
-            <h3>Scope</h3>
+            <h3>What is included</h3>
             <p id="scopeNote"></p>
           </div>
           <ul class="rules">
-            <li>Officer-involved fatal shootings are excluded from the main tracker.</li>
-            <li>Race and ethnicity are coded only when a credible source explicitly reports them.</li>
-            <li>Open Data rows are used for case reconciliation, not as a clean victim list.</li>
-            <li>Unknown arrest status is not counted as cleared.</li>
+            <li>Fatal police shootings are not included in the arrest-rate calculation.</li>
+            <li>Race and ethnicity are shown only when a credible source reports them directly.</li>
+            <li>Police data helps check case numbers and dates, but it is not treated as a complete victim list.</li>
+            <li>Cases with no clear public arrest report are not counted as cleared.</li>
           </ul>
         </article>
       </section>
@@ -147,8 +146,7 @@
 
     <footer>
       <p>
-        Last tracker check: <span id="lastChecked">--</span>. Generated from public-facing data:
-        <a href="data/oakland-2026.json">oakland-2026.json</a>.
+        Last tracker check: <span id="lastChecked">--</span>.
       </p>
       <p class="feedback">
         <a href="https://github.com/gabriellenz/oakland-clearance-tracker/issues/new">
