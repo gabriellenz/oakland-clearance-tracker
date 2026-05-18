@@ -52,13 +52,13 @@ def charge_summary(row: dict[str, str]) -> str:
     lead = row["lead_charge_public"].strip()
     if row["arrest_made"] == "yes":
         if charges == "yes" and lead:
-            return f"Charges reported: {lead}"
+            return f"Charge: {lead}"
         if charges == "yes":
-            return "Charges reported"
+            return "Charges"
         return "Public arrest reported"
     if row["arrest_made"] == "no":
-        return "No public arrest reported"
-    return "Public arrest status unknown"
+        return "None reported"
+    return "Unknown"
 
 
 def public_summary(summary: str, suspect_names: set[str], incident_victims: list[dict[str, str]]) -> str:

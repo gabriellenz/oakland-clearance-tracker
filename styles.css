@@ -298,8 +298,37 @@ svg {
 
 table {
   width: 100%;
-  min-width: 1120px;
+  min-width: 1280px;
   border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.col-date {
+  width: 9%;
+}
+
+.col-victim {
+  width: 13%;
+}
+
+.col-location {
+  width: 17%;
+}
+
+.col-case {
+  width: 8%;
+}
+
+.col-status {
+  width: 15%;
+}
+
+.col-charge {
+  width: 8%;
+}
+
+.col-summary {
+  width: 30%;
 }
 
 th,
@@ -308,6 +337,7 @@ td {
   border-bottom: 1px solid var(--line);
   text-align: left;
   vertical-align: top;
+  overflow-wrap: anywhere;
 }
 
 th {

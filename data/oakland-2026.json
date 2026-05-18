@@ -3,7 +3,7 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-05-18T11:12:24-07:00",
+    "generatedAt": "2026-05-18T11:25:51-07:00",
     "lastChecked": "2026-05-18",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31, while the current coded tracker has 13 victims through that date. One pre-February-22 case or classification mismatch remains unresolved.",
@@ -175,7 +175,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
       "leadCharge": "murder",
-      "publicChargeSummary": "Charges reported: murder",
+      "publicChargeSummary": "Charge: murder",
       "caseStatus": "charged",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
@@ -235,7 +235,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
       "leadCharge": "murder",
-      "publicChargeSummary": "Charges reported: murder",
+      "publicChargeSummary": "Charge: murder",
       "caseStatus": "charged",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
@@ -265,7 +265,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
       "leadCharge": "murder",
-      "publicChargeSummary": "Charges reported: murder",
+      "publicChargeSummary": "Charge: murder",
       "caseStatus": "charged",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
@@ -295,7 +295,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
       "leadCharge": "murder",
-      "publicChargeSummary": "Charges reported: murder",
+      "publicChargeSummary": "Charge: murder",
       "caseStatus": "charged",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
@@ -325,7 +325,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "",
       "leadCharge": "",
-      "publicChargeSummary": "Public arrest status unknown",
+      "publicChargeSummary": "Unknown",
       "caseStatus": "",
       "clearanceStatus": "unknown",
       "confidence": "medium"
@@ -355,7 +355,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "unknown",
       "leadCharge": "",
-      "publicChargeSummary": "No public arrest reported",
+      "publicChargeSummary": "None reported",
       "caseStatus": "",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "medium"
@@ -385,7 +385,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "",
       "leadCharge": "",
-      "publicChargeSummary": "Public arrest status unknown",
+      "publicChargeSummary": "Unknown",
       "caseStatus": "",
       "clearanceStatus": "unknown",
       "confidence": "medium"
@@ -415,7 +415,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "",
       "leadCharge": "",
-      "publicChargeSummary": "Public arrest status unknown",
+      "publicChargeSummary": "Unknown",
       "caseStatus": "",
       "clearanceStatus": "unknown",
       "confidence": "medium"
@@ -445,7 +445,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
       "leadCharge": "murder",
-      "publicChargeSummary": "Charges reported: murder",
+      "publicChargeSummary": "Charge: murder",
       "caseStatus": "charged",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
@@ -475,7 +475,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "unknown",
       "leadCharge": "",
-      "publicChargeSummary": "No public arrest reported",
+      "publicChargeSummary": "None reported",
       "caseStatus": "",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "medium"
@@ -505,7 +505,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "no",
       "leadCharge": "",
-      "publicChargeSummary": "No public arrest reported",
+      "publicChargeSummary": "None reported",
       "caseStatus": "federal_ammunition_charge_not_homicide_clearance",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "medium"
@@ -535,7 +535,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "no",
       "leadCharge": "",
-      "publicChargeSummary": "No public arrest reported",
+      "publicChargeSummary": "None reported",
       "caseStatus": "federal_ammunition_charge_not_homicide_clearance",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "medium"
@@ -565,7 +565,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
       "leadCharge": "murder; accessory after the fact",
-      "publicChargeSummary": "Charges reported: murder; accessory after the fact",
+      "publicChargeSummary": "Charge: murder; accessory after the fact",
       "caseStatus": "charged",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
@@ -595,7 +595,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
       "leadCharge": "murder; accessory after the fact",
-      "publicChargeSummary": "Charges reported: murder; accessory after the fact",
+      "publicChargeSummary": "Charge: murder; accessory after the fact",
       "caseStatus": "charged",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
@@ -625,7 +625,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
       "leadCharge": "murder",
-      "publicChargeSummary": "Charges reported: murder",
+      "publicChargeSummary": "Charge: murder",
       "caseStatus": "charged",
       "clearanceStatus": "arrest_reported",
       "confidence": "high"
@@ -655,7 +655,7 @@
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "unknown",
       "leadCharge": "",
-      "publicChargeSummary": "No public arrest reported",
+      "publicChargeSummary": "None reported",
       "caseStatus": "",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "medium"
