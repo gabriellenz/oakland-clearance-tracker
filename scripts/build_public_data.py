@@ -286,7 +286,7 @@ def main() -> None:
             "generatedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
             "lastChecked": last_checked,
             "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
-            "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31, while the current coded tracker has 13 victims through that date. One pre-February-22 case or classification mismatch remains unresolved.",
+            "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
             "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
             "updateLogStartDate": UPDATE_LOG_START,
         },
