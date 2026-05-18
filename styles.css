@@ -348,13 +348,13 @@ svg {
 
 table {
   width: 100%;
-  min-width: 1280px;
+  min-width: 1120px;
   border-collapse: collapse;
   table-layout: fixed;
 }
 
 .col-date {
-  width: 9%;
+  width: 7%;
 }
 
 .col-victim {
@@ -362,7 +362,7 @@ table {
 }
 
 .col-location {
-  width: 17%;
+  width: 13%;
 }
 
 .col-case {
@@ -378,7 +378,7 @@ table {
 }
 
 .col-summary {
-  width: 30%;
+  width: 36%;
 }
 
 th,
@@ -388,6 +388,11 @@ td {
   text-align: left;
   vertical-align: top;
   overflow-wrap: anywhere;
+}
+
+.location-cell {
+  font-size: 0.9rem;
+  line-height: 1.35;
 }
 
 th {

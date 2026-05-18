@@ -28,6 +28,15 @@ function fmtDate(value) {
   });
 }
 
+function fmtTableDate(value) {
+  if (!value) return "Unknown";
+  const [year, month, day] = value.split("-").map(Number);
+  return new Date(year, month - 1, day).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+  });
+}
+
 function fmtMonth(value) {
   const [year, month] = value.split("-").map(Number);
   return new Date(year, month - 1, 1).toLocaleDateString("en-US", {
@@ -259,9 +268,9 @@ function renderVictims(data, filter = "") {
     .map((victim) => {
       const race = victim.raceEthnicity ? `<div class="subtext">${escapeHtml(victim.raceEthnicity)}</div>` : "";
       return `<tr>
-        <td>${fmtDate(victim.incidentDate)}<div class="subtext">${escapeHtml(victim.incidentTime || "")}</div></td>
+        <td>${fmtTableDate(victim.incidentDate)}<div class="subtext">${escapeHtml(victim.incidentTime || "")}</div></td>
         <td><div class="name">${escapeHtml(victim.name)}</div><div class="subtext">${escapeHtml([victim.age, victim.gender].filter(Boolean).join(", "))}</div>${race}</td>
-        <td>${escapeHtml(victim.location)}<div class="subtext">${escapeHtml(victim.neighborhood || victim.method || "")}</div></td>
+        <td class="location-cell">${escapeHtml(victim.location)}<div class="subtext">${escapeHtml(victim.neighborhood || victim.method || "")}</div></td>
         <td>${escapeHtml(victim.caseNumber || "unknown")}</td>
         <td><span class="pill ${statusClass(victim.arrestMade)}">${statusLabel(victim.arrestMade)}</span><div class="microtext">${arrestDetail(victim)} · ${escapeHtml(victim.confidence)} confidence</div></td>
         <td>${escapeHtml(victim.publicChargeSummary || "Status pending")}<div class="subtext">${escapeHtml(victim.caseStatus || "")}</div></td>
