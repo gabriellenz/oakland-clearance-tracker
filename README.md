@@ -4,6 +4,12 @@ Static public website for tracking publicly reported Oakland homicide clearance 
 
 This public repo contains only the website and the cleaned public JSON data needed to render it. The private working tracker, source cache, and research notes live outside this repo.
 
+## Start One For Your City
+
+You can use this repo as a template for a homicide clearance tracker in another city. Open this repo in Codex, Claude Code, or another agentic coding system and ask it to read [`START_A_CITY_TRACKER.md`](START_A_CITY_TRACKER.md), inspect the Oakland structure, and scaffold a private tracker plus public site for your city.
+
+When your city is running, email Gabriel Lenz at [gabe.lenz@gmail.com](mailto:gabe.lenz@gmail.com?subject=I%20started%20a%20homicide%20clearance%20tracker) with your public GitHub repo and live URL. It can be added to the Clear the Murders network at `yourcity.clearthemurders.org`.
+
 ## Files
 
 - `index.html` - static page
@@ -13,6 +19,7 @@ This public repo contains only the website and the cleaned public JSON data need
 - `updates.js` - update-log rendering
 - `data/oakland-2026.json` - public derived dataset
 - `scripts/build_public_data.py` - regenerates the public JSON from the local working tracker
+- `START_A_CITY_TRACKER.md` - guide and starter prompt for adapting this workflow to another city
 
 ## Local Development
 

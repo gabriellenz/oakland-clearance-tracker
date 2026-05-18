@@ -202,6 +202,56 @@ main {
   margin-bottom: 0;
 }
 
+.action-panel {
+  margin: 18px 0;
+  padding: 18px 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  border: 1px solid var(--line);
+  background: #f0ebe1;
+  box-shadow: var(--shadow);
+}
+
+.action-panel h2,
+.footer-cta h2 {
+  margin-bottom: 5px;
+  font-size: 1.05rem;
+}
+
+.action-panel p,
+.footer-cta p {
+  margin-bottom: 0;
+  color: #38342f;
+}
+
+.action-links,
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.action-links a,
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 7px 11px;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.action-links a:first-child,
+.footer-links a:first-child {
+  background: var(--blue);
+  color: var(--paper);
+}
+
 .panel p,
 .section-heading p,
 footer p {
@@ -502,6 +552,23 @@ footer {
   padding: 0 22px 42px;
 }
 
+.footer-cta {
+  margin-bottom: 18px;
+  padding: 18px 20px;
+  border-top: 5px solid var(--teal);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.footer-cta code {
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+.footer-links {
+  margin-top: 12px;
+}
+
 .feedback {
   margin-top: 10px;
   font-size: 0.92rem;
@@ -515,6 +582,7 @@ footer {
   .header-inner,
   .dashboard-grid,
   .dashboard-grid.bottom,
+  .action-panel,
   .log-item {
     grid-template-columns: 1fr;
   }
