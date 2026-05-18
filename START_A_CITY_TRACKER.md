@@ -31,6 +31,7 @@ Publish only a cleaned JSON export. Do not publish raw cache files, draft record
 - How to handle vehicular homicides, delayed deaths, self-defense claims, and remains cases.
 - How to code race/ethnicity. The Oakland rule is source-only: leave it blank unless a credible source explicitly reports it.
 - How to display alleged perpetrator names. The Oakland public site does not render alleged names in summaries or front-page tables.
+- How to handle non-homicide charges tied to a homicide scene. Keep them as case-status notes unless the source directly ties the arrest or charge to the homicide death.
 
 ## Suggested Agent Prompt
 
@@ -47,6 +48,7 @@ Rules:
 - Separate public arrest reported, charges filed, official clearance, and court outcome.
 - Do not infer race or ethnicity from names, photos, or context.
 - Do not render alleged perpetrator names in public summaries or front-page tables.
+- Do not treat weapons, ammunition, accessory, or unrelated custody updates as homicide arrests unless a source directly ties the arrest or charge to the homicide death.
 - Save source links and discovery dates so a public update log can show when new homicides and arrest updates were found.
 - Draft public-records emails for review; do not send automatically.
 
@@ -57,12 +59,14 @@ First read the Oakland repo structure and README. Then propose the local file st
 
 1. Read the local instructions, tracker docs, and previous automation memory.
 2. Check official police releases, open data, weekly or monthly crime reports, prosecutor releases, court portals, and local news.
-3. Search for new homicide incidents, victim identifications, arrest updates, charging updates, and published count reports.
-4. Add source rows first, then update victims, incidents, suspects, count reports, and check logs.
-5. Keep count discrepancies visible. Do not add placeholder victims just to match a published total.
-6. Rebuild public JSON and verify it contains no private paths, raw notes, or draft request text.
-7. Verify public summaries and homepage tables do not display alleged perpetrator names.
-8. Run the site locally, inspect it in a browser, commit, push, and confirm the Pages deploy.
+3. Search published count reports and ordinal phrases such as "12th homicide" before broad month searches; these are often the fastest way to find missing cases.
+4. Search for new homicide incidents, victim identifications, arrest updates, charging updates, and published count reports.
+5. Add source rows first, then update victims, incidents, suspects, count reports, and check logs.
+6. Keep count discrepancies visible. Do not add placeholder victims just to match a published total; add a row only when date, location, and source evidence identify the incident.
+7. Use stable IDs. If you discover an earlier homicide late, give it the next available ID and sort public displays by date instead of renumbering existing rows.
+8. Rebuild public JSON and verify it contains no private paths, raw notes, or draft request text.
+9. Verify public summaries and homepage tables do not display alleged perpetrator names.
+10. Run the site locally, inspect it in a browser, commit, push, and confirm the Pages deploy.
 
 ## Tell Us About Your Tracker
 

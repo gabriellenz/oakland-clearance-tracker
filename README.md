@@ -6,7 +6,7 @@ This public repo contains only the website and the cleaned public JSON data need
 
 ## Start One For Your City
 
-You can use this repo as a template for a homicide clearance tracker in another city. Open this repo in Codex, Claude Code, or another agentic coding system and ask it to read [`START_A_CITY_TRACKER.md`](START_A_CITY_TRACKER.md), inspect the Oakland structure, and scaffold a private tracker plus public site for your city.
+You can use this repo as a template for a homicide clearance tracker in another city. Point Codex, Claude Code, or another agentic coding system to this repo and ask it to read [`START_A_CITY_TRACKER.md`](START_A_CITY_TRACKER.md), inspect the Oakland structure, and scaffold a private tracker plus public site for your city.
 
 When your city is running, email Gabriel Lenz at [gabe.lenz@gmail.com](mailto:gabe.lenz@gmail.com?subject=I%20started%20a%20homicide%20clearance%20tracker) with your public GitHub repo and live URL. It can be added to the Clear the Murders network at `yourcity.clearthemurders.org`.
 
@@ -56,6 +56,7 @@ Before pushing:
 - Confirm `data/oakland-2026.json` contains only public-facing fields.
 - Confirm the homepage and public narrative summaries do not display alleged perpetrator names.
 - If alleged perpetrator names are present in structured JSON fields, confirm they are labeled as allegations and not findings of guilt.
+- Confirm non-homicide updates, such as weapons or ammunition charges, are not presented as alleged homicide-perpetrator fields.
 - Do not copy `_cache/`, draft request text, private notes, or the full working CSVs into this repo unless intentionally public.
 - Run `node --check app.js` and `node --check updates.js`.
 - Serve locally with `python3 -m http.server 4173` and verify the page renders.
