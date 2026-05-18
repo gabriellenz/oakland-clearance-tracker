@@ -13,11 +13,13 @@ import json
 from collections import Counter, defaultdict
 from datetime import date, datetime
 from pathlib import Path
+import re
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
 TRACKER_DIR = REPO_DIR.parents[1] / "Oakland"
 OUT_PATH = REPO_DIR / "data" / "oakland-2026.json"
+UPDATE_LOG_START = "2026-05-18"
 
 
 def read_csv(name: str) -> list[dict[str, str]]:
@@ -39,6 +41,67 @@ def public_value(value: str) -> str:
     return value if value else "unknown"
 
 
+def split_names(value: str) -> list[str]:
+    if not value or value == "unknown":
+        return []
+    return [name.strip() for name in re.split(r";|,", value) if name.strip() and name.strip() != "unknown"]
+
+
+def charge_summary(row: dict[str, str]) -> str:
+    charges = row["charges_filed"] or "unknown"
+    lead = row["lead_charge_public"].strip()
+    if row["arrest_made"] == "yes":
+        if charges == "yes" and lead:
+            return f"Charges reported: {lead}"
+        if charges == "yes":
+            return "Charges reported"
+        return "Public arrest reported"
+    if row["arrest_made"] == "no":
+        return "No public arrest reported"
+    return "Public arrest status unknown"
+
+
+def public_summary(summary: str, suspect_names: set[str], incident_victims: list[dict[str, str]]) -> str:
+    if not summary:
+        return ""
+
+    protected = summary.strip().replace("Jr.", "Jr<DOT>").replace("Sr.", "Sr<DOT>")
+    sentences = [sentence.replace("Jr<DOT>", "Jr.").replace("Sr<DOT>", "Sr.") for sentence in re.split(r"(?<=[.!?])\s+", protected)]
+    kept = [
+        sentence
+        for sentence in sentences
+        if not any(name and name in sentence for name in suspect_names)
+    ]
+
+    if len(kept) == len(sentences):
+        return summary
+
+    arrest_values = {row["arrest_made"] for row in incident_victims}
+    charges = "; ".join(row["lead_charge_public"] for row in incident_victims if row["lead_charge_public"])
+    extra = ""
+    if "yes" in arrest_values:
+        if "accessory" in charges and "murder" in charges:
+            extra = "Later reporting said prosecutors filed murder charges and an accessory-after-the-fact charge."
+        elif "murder" in charges:
+            extra = "Later reporting said prosecutors filed murder charges in the case."
+        elif any(row["charges_filed"] == "yes" for row in incident_victims):
+            extra = "Later reporting said prosecutors filed charges in the case."
+        else:
+            extra = "Public sources later reported an arrest in the case."
+
+    return " ".join([*kept, extra]).strip()
+
+
+def source_link(source: dict[str, str]) -> dict[str, str]:
+    return {
+        "sourceId": source.get("source_id", ""),
+        "title": source.get("title", ""),
+        "publisher": source.get("publisher", ""),
+        "url": source.get("url", ""),
+        "sourceDate": source.get("source_date", ""),
+    }
+
+
 def main() -> None:
     victims = read_csv("victims_2026.csv")
     incidents = read_csv("incidents_2026.csv")
@@ -48,6 +111,11 @@ def main() -> None:
     victims = sorted(victims, key=lambda r: (r["incident_date"], r["incident_time"], r["victim_id"]))
     incidents_by_id = {r["incident_id"]: r for r in incidents}
     sources_by_id = {r["source_id"]: r for r in sources}
+    victims_by_incident: dict[str, list[dict[str, str]]] = defaultdict(list)
+    suspect_names_by_incident: dict[str, set[str]] = defaultdict(set)
+    for row in victims:
+        victims_by_incident[row["incident_id"]].append(row)
+        suspect_names_by_incident[row["incident_id"]].update(split_names(row["suspect_names_public"]))
 
     status_counts = Counter(r["arrest_made"] or "unknown" for r in victims)
     month_counts: dict[str, Counter[str]] = defaultdict(Counter)
@@ -71,6 +139,11 @@ def main() -> None:
     for row in victims:
         incident = incidents_by_id.get(row["incident_id"], {})
         arrest_source = sources_by_id.get(row["arrest_source_id"], {})
+        summary = public_summary(
+            incident.get("circumstances_summary", ""),
+            suspect_names_by_incident[row["incident_id"]],
+            victims_by_incident[row["incident_id"]],
+        )
         public_victims.append(
             {
                 "victimId": row["victim_id"],
@@ -84,7 +157,7 @@ def main() -> None:
                 "location": row["location_block"],
                 "neighborhood": row["neighborhood"],
                 "method": row["manner_or_method"],
-                "circumstancesSummary": incident.get("circumstances_summary", ""),
+                "circumstancesSummary": summary,
                 "caseNumber": row["opd_case_number"] or incident.get("official_case_number", ""),
                 "arrestMade": row["arrest_made"] or "unknown",
                 "arrestDate": row["arrest_date"],
@@ -93,9 +166,11 @@ def main() -> None:
                 "arrestSourceTitle": arrest_source.get("title", ""),
                 "arrestSourcePublisher": arrest_source.get("publisher", ""),
                 "arrestSourceDate": arrest_source.get("source_date", ""),
-                "suspectsPublic": row["suspect_names_public"],
+                "allegedPerpetratorsPublic": row["suspect_names_public"],
+                "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
                 "chargesFiled": row["charges_filed"],
                 "leadCharge": row["lead_charge_public"],
+                "publicChargeSummary": charge_summary(row),
                 "caseStatus": row["case_status_public"],
                 "clearanceStatus": row["clearance_status_public"],
                 "confidence": row["confidence"],
@@ -110,13 +185,61 @@ def main() -> None:
             "location": row["location_block"],
             "neighborhood": row["neighborhood"],
             "method": row["manner_or_method"],
-            "circumstancesSummary": row.get("circumstances_summary", ""),
+            "circumstancesSummary": public_summary(
+                row.get("circumstances_summary", ""),
+                suspect_names_by_incident[row["incident_id"]],
+                victims_by_incident[row["incident_id"]],
+            ),
             "victimCount": row["victim_count_public"],
             "caseNumber": row["official_case_number"],
             "confidence": row["confidence"],
         }
         for row in sorted(incidents, key=lambda r: (r["incident_date"], r["incident_time"], r["incident_id"]))
     ]
+
+    update_log = []
+    seen_log_keys = set()
+    for row in victims:
+        primary = sources_by_id.get(row["primary_source_id"], {})
+        primary_found = primary.get("date_found", "")
+        if primary_found >= UPDATE_LOG_START:
+            key = ("homicide_found", row["victim_id"], primary_found)
+            if key not in seen_log_keys:
+                update_log.append(
+                    {
+                        "dateFound": primary_found,
+                        "type": "homicide_found",
+                        "label": "Homicide added to tracker",
+                        "victimId": row["victim_id"],
+                        "incidentId": row["incident_id"],
+                        "incidentDate": row["incident_date"],
+                        "victimName": public_value(row["victim_name"]),
+                        "location": row["location_block"],
+                        "source": source_link(primary),
+                    }
+                )
+                seen_log_keys.add(key)
+
+        arrest = sources_by_id.get(row["arrest_source_id"], {})
+        arrest_found = arrest.get("date_found", "")
+        if row["arrest_made"] == "yes" and arrest_found >= UPDATE_LOG_START:
+            key = ("arrest_found", row["victim_id"], arrest_found)
+            if key not in seen_log_keys:
+                update_log.append(
+                    {
+                        "dateFound": arrest_found,
+                        "type": "arrest_found",
+                        "label": "Arrest or charges found",
+                        "victimId": row["victim_id"],
+                        "incidentId": row["incident_id"],
+                        "incidentDate": row["incident_date"],
+                        "victimName": public_value(row["victim_name"]),
+                        "location": row["location_block"],
+                        "source": source_link(arrest),
+                    }
+                )
+                seen_log_keys.add(key)
+    update_log = sorted(update_log, key=lambda r: (r["dateFound"], r["incidentDate"], r["victimId"], r["type"]), reverse=True)
 
     public_counts = []
     for row in count_reports:
@@ -164,6 +287,8 @@ def main() -> None:
             "lastChecked": last_checked,
             "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
             "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31, while the current coded tracker has 13 victims through that date. One pre-February-22 case or classification mismatch remains unresolved.",
+            "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
+            "updateLogStartDate": UPDATE_LOG_START,
         },
         "summary": {
             "victims": total_victims,
@@ -181,6 +306,7 @@ def main() -> None:
         "victims": public_victims,
         "incidents": public_incidents,
         "countReports": public_counts,
+        "updateLog": update_log,
     }
 
     OUT_PATH.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")

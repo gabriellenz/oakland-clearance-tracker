@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Forward-looking update log for the Oakland homicide clearance tracker."
+    />
+    <title>Oakland Homicide Clearance Tracker · Update Log</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header compact-header">
+      <div class="header-inner">
+        <div>
+          <p class="eyebrow">Oakland, California · 2026</p>
+          <h1>Tracker update log</h1>
+          <p class="lede">
+            A forward-looking record of when new homicide rows and arrest or charging updates are found.
+          </p>
+          <nav class="site-nav" aria-label="Site navigation">
+            <a href="index.html">Dashboard</a>
+            <a href="updates.html" aria-current="page">Update log</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="cases-section">
+        <div class="section-heading">
+          <div>
+            <h2>Public update log</h2>
+            <p id="logIntro">Loading update log.</p>
+          </div>
+        </div>
+        <div id="updateLog" class="log-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Last tracker check: <span id="lastChecked">--</span>.
+      </p>
+      <p>
+        Contact: <a href="mailto:gabe.lenz@gmail.com">Gabriel Lenz</a>.
+      </p>
+    </footer>
+
+    <script src="updates.js"></script>
+  </body>
+</html>

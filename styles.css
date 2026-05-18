@@ -37,6 +37,11 @@ a {
   border-bottom: 6px solid var(--red);
 }
 
+.compact-header .header-inner {
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 260px;
+}
+
 .header-inner {
   max-width: 1180px;
   margin: 0 auto;
@@ -82,6 +87,30 @@ h2 {
   margin-bottom: 0;
   color: #ebe3d4;
   font-size: 1.08rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 6px 11px;
+  border: 1px solid rgba(255, 253, 250, 0.34);
+  color: #fffdfa;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.site-nav a[aria-current="page"] {
+  background: #fffdfa;
+  color: #171716;
 }
 
 .status-box {
@@ -148,6 +177,29 @@ main {
 .metric strong {
   font-size: 2.15rem;
   line-height: 1;
+}
+
+.mission {
+  margin: 18px 0;
+  padding: 18px 20px;
+  border-left: 6px solid var(--teal);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.mission h2 {
+  font-size: 1.05rem;
+}
+
+.mission p {
+  max-width: 980px;
+  margin-bottom: 9px;
+  color: #2f2c28;
+  font-size: 1.02rem;
+}
+
+.mission p:last-child {
+  margin-bottom: 0;
 }
 
 .panel p,
@@ -341,6 +393,53 @@ tr:last-child td {
   font-size: 0.9rem;
 }
 
+.log-list {
+  display: grid;
+  gap: 12px;
+}
+
+.log-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 0.35fr);
+  gap: 18px;
+  align-items: start;
+  padding: 16px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.log-item h2 {
+  margin: 3px 0 4px;
+  font-size: 1rem;
+}
+
+.log-item p,
+.log-meta span {
+  margin: 0;
+  color: var(--muted);
+}
+
+.log-type {
+  color: var(--teal);
+  font-size: 0.75rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.log-meta {
+  display: grid;
+  gap: 4px;
+}
+
+.empty-state {
+  padding: 18px;
+  border: 1px dashed var(--line);
+  background: var(--paper);
+  color: var(--muted);
+}
+
 .rules {
   margin: 0;
   padding-left: 20px;
@@ -385,7 +484,8 @@ footer {
 @media (max-width: 900px) {
   .header-inner,
   .dashboard-grid,
-  .dashboard-grid.bottom {
+  .dashboard-grid.bottom,
+  .log-item {
     grid-template-columns: 1fr;
   }
 

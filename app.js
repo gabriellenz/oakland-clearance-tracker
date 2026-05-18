@@ -239,11 +239,24 @@ function renderMonthlyChart(data) {
 
 function renderVictims(data, filter = "") {
   const needle = filter.trim().toLowerCase();
-  const rows = data.victims.filter((victim) => JSON.stringify(victim).toLowerCase().includes(needle));
+  const searchableFields = (victim) =>
+    [
+      victim.name,
+      victim.location,
+      victim.neighborhood,
+      victim.method,
+      victim.caseNumber,
+      victim.arrestMade,
+      victim.clearanceStatus,
+      victim.publicChargeSummary,
+      victim.circumstancesSummary,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+  const rows = data.victims.filter((victim) => searchableFields(victim).includes(needle));
   document.getElementById("victimRows").innerHTML = rows
     .map((victim) => {
-      const suspect = victim.suspectsPublic || "No public suspect listed";
-      const charge = victim.leadCharge ? ` · ${victim.leadCharge}` : "";
       const race = victim.raceEthnicity ? `<div class="subtext">${escapeHtml(victim.raceEthnicity)}</div>` : "";
       return `<tr>
         <td>${fmtDate(victim.incidentDate)}<div class="subtext">${escapeHtml(victim.incidentTime || "")}</div></td>
@@ -251,7 +264,7 @@ function renderVictims(data, filter = "") {
         <td>${escapeHtml(victim.location)}<div class="subtext">${escapeHtml(victim.neighborhood || victim.method || "")}</div></td>
         <td>${escapeHtml(victim.caseNumber || "unknown")}</td>
         <td><span class="pill ${statusClass(victim.arrestMade)}">${statusLabel(victim.arrestMade)}</span><div class="microtext">${arrestDetail(victim)} · ${escapeHtml(victim.confidence)} confidence</div></td>
-        <td>${escapeHtml(suspect)}<div class="subtext">${escapeHtml([victim.chargesFiled, charge].filter(Boolean).join(""))}</div></td>
+        <td>${escapeHtml(victim.publicChargeSummary || "Status pending")}<div class="subtext">${escapeHtml(victim.caseStatus || "")}</div></td>
         <td>${escapeHtml(victim.circumstancesSummary || "Summary pending.")}</td>
       </tr>`;
     })

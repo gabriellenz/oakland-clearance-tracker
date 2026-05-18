@@ -7,8 +7,10 @@ This public repo contains only the website and the cleaned public JSON data need
 ## Files
 
 - `index.html` - static page
+- `updates.html` - forward-looking log of homicide and arrest/charging discoveries
 - `styles.css` - responsive visual design
 - `app.js` - dashboard rendering and filters
+- `updates.js` - update-log rendering
 - `data/oakland-2026.json` - public derived dataset
 - `scripts/build_public_data.py` - regenerates the public JSON from the local working tracker
 
@@ -45,8 +47,10 @@ The public page loads only `data/oakland-2026.json`; it does not fetch private t
 Before pushing:
 
 - Confirm `data/oakland-2026.json` contains only public-facing fields.
+- Confirm the homepage and public narrative summaries do not display alleged perpetrator names.
+- If alleged perpetrator names are present in structured JSON fields, confirm they are labeled as allegations and not findings of guilt.
 - Do not copy `_cache/`, draft request text, private notes, or the full working CSVs into this repo unless intentionally public.
-- Run `node --check app.js`.
+- Run `node --check app.js` and `node --check updates.js`.
 - Serve locally with `python3 -m http.server 4173` and verify the page renders.
 - After push, confirm the GitHub Pages workflow succeeded.
 

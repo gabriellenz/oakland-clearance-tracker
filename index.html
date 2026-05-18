@@ -20,6 +20,10 @@
             A public tracker of homicide victims, reported arrests, and unresolved cases. Built from public
             reporting, OPD data, and court-adjacent records.
           </p>
+          <nav class="site-nav" aria-label="Site navigation">
+            <a href="index.html" aria-current="page">Dashboard</a>
+            <a href="updates.html">Update log</a>
+          </nav>
         </div>
         <div class="status-box" aria-label="Current public arrest rate">
           <span class="status-label">Public arrest rate</span>
@@ -47,6 +51,20 @@
           <span>No public arrest / unknown</span>
           <strong id="metricUnresolved">--</strong>
         </div>
+      </section>
+
+      <section class="mission" aria-label="Why this tracker exists">
+        <h2>Why track clearance?</h2>
+        <p>
+          Homicide clearance is a test of whether police can earn trust where it matters most. Solving killings
+          requires witnesses, families, and neighbors to believe the state will deliver justice without turning
+          them into enemies.
+        </p>
+        <p>
+          It also saves lives. When murders go unanswered, communities do not simply absorb the loss; people try
+          to protect their own, and retaliation can harden into cycles of violence. A justice system that solves
+          homicides fairly can interrupt those cycles and make Oakland safer.
+        </p>
       </section>
 
       <section class="dashboard-grid" aria-label="Data visuals">
@@ -101,7 +119,7 @@
                 <th>Location</th>
                 <th>OPD case</th>
                 <th>Arrest status</th>
-                <th>Public suspect / charge</th>
+                <th>Public charge</th>
                 <th>Summary</th>
               </tr>
             </thead>
@@ -147,6 +165,9 @@
     <footer>
       <p>
         Last tracker check: <span id="lastChecked">--</span>.
+      </p>
+      <p>
+        Contact: <a href="mailto:gabe.lenz@gmail.com">Gabriel Lenz</a>.
       </p>
       <p class="feedback">
         <a href="https://github.com/gabriellenz/oakland-clearance-tracker/issues/new">
