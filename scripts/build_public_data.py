@@ -107,6 +107,7 @@ def main() -> None:
     incidents = read_csv("incidents_2026.csv")
     sources = read_csv("sources_2026.csv")
     count_reports = read_csv("count_reports_2026.csv")
+    checks = read_csv("checks_2026.csv")
 
     victims = sorted(victims, key=lambda r: (r["incident_date"], r["incident_time"], r["victim_id"]))
     incidents_by_id = {r["incident_id"]: r for r in incidents}
@@ -276,7 +277,14 @@ def main() -> None:
     arrest_unknown = status_counts.get("unknown", 0)
     incident_count = len({r["incident_id"] for r in victims})
     named_victims = sum(1 for r in victims if r["victim_name"] and r["victim_name"] != "unknown")
-    last_checked = max((r["last_checked"] for r in victims if r["last_checked"]), default="")
+    last_checked = max(
+        (
+            r["checked_at"][:10]
+            for r in checks
+            if r.get("checked_at") and r.get("scope", "").startswith("daily automation")
+        ),
+        default=max((r["last_checked"] for r in victims if r["last_checked"]), default=""),
+    )
 
     data = {
         "metadata": {
