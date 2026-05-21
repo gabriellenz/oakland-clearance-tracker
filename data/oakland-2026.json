@@ -3,25 +3,25 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-05-20T02:37:51-07:00",
-    "lastChecked": "2026-05-20",
+    "generatedAt": "2026-05-21T02:37:35-07:00",
+    "lastChecked": "2026-05-21",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 18,
-    "incidents": 14,
-    "arrestReportedVictims": 9,
+    "victims": 21,
+    "incidents": 15,
+    "arrestReportedVictims": 12,
     "noPublicArrestVictims": 6,
     "unknownArrestStatusVictims": 3,
-    "publicArrestRateVictimLevel": 50.0,
-    "namedVictims": 11,
+    "publicArrestRateVictimLevel": 57.1,
+    "namedVictims": 14,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
-    "yes": 9,
+    "yes": 12,
     "unknown": 3,
     "no": 6
   },
@@ -56,10 +56,10 @@
     },
     {
       "month": "2026-05",
-      "yes": 0,
+      "yes": 3,
       "no": 1,
       "unknown": 0,
-      "total": 1
+      "total": 4
     }
   ],
   "cumulative": [
@@ -152,6 +152,21 @@
       "date": "2026-05-06",
       "victims": 18,
       "arrestReportedVictims": 9
+    },
+    {
+      "date": "2026-05-16",
+      "victims": 19,
+      "arrestReportedVictims": 10
+    },
+    {
+      "date": "2026-05-16",
+      "victims": 20,
+      "arrestReportedVictims": 11
+    },
+    {
+      "date": "2026-05-16",
+      "victims": 21,
+      "arrestReportedVictims": 12
     }
   ],
   "victims": [
@@ -694,6 +709,96 @@
       "caseStatus": "",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "medium"
+    },
+    {
+      "victimId": "OAK-2026-0015-V01",
+      "incidentId": "OAK-2026-0015",
+      "name": "Robert Joe Dixon",
+      "age": "64",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-05-16",
+      "incidentTime": "23:15",
+      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
+      "neighborhood": "East Oakland",
+      "method": "vehicular manslaughter / hit-and-run",
+      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash.",
+      "caseNumber": "",
+      "arrestMade": "yes",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0051",
+      "arrestSourceUrl": "https://www.sfgate.com/news/bayarea/article/oakland-17-year-old-charged-in-crash-that-killed-22265512.php",
+      "arrestSourceTitle": "Oakland: 17-Year-Old Charged In Crash That Killed 3 Saturday Night",
+      "arrestSourcePublisher": "Bay City News via SFGATE",
+      "arrestSourceDate": "2026-05-18",
+      "allegedPerpetratorsPublic": "unnamed juvenile driver",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "yes",
+      "leadCharge": "vehicular manslaughter; felony hit-and-run",
+      "publicChargeSummary": "Charge: vehicular manslaughter; felony hit-and-run",
+      "caseStatus": "juvenile_charges_brought",
+      "clearanceStatus": "arrest_reported",
+      "confidence": "medium"
+    },
+    {
+      "victimId": "OAK-2026-0015-V02",
+      "incidentId": "OAK-2026-0015",
+      "name": "Charles Blackmon",
+      "age": "65",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-05-16",
+      "incidentTime": "23:15",
+      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
+      "neighborhood": "East Oakland",
+      "method": "vehicular manslaughter / hit-and-run",
+      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash.",
+      "caseNumber": "",
+      "arrestMade": "yes",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0051",
+      "arrestSourceUrl": "https://www.sfgate.com/news/bayarea/article/oakland-17-year-old-charged-in-crash-that-killed-22265512.php",
+      "arrestSourceTitle": "Oakland: 17-Year-Old Charged In Crash That Killed 3 Saturday Night",
+      "arrestSourcePublisher": "Bay City News via SFGATE",
+      "arrestSourceDate": "2026-05-18",
+      "allegedPerpetratorsPublic": "unnamed juvenile driver",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "yes",
+      "leadCharge": "vehicular manslaughter; felony hit-and-run",
+      "publicChargeSummary": "Charge: vehicular manslaughter; felony hit-and-run",
+      "caseStatus": "juvenile_charges_brought",
+      "clearanceStatus": "arrest_reported",
+      "confidence": "medium"
+    },
+    {
+      "victimId": "OAK-2026-0015-V03",
+      "incidentId": "OAK-2026-0015",
+      "name": "Miguel Sanchez Ramirez",
+      "age": "44",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-05-16",
+      "incidentTime": "23:15",
+      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
+      "neighborhood": "East Oakland",
+      "method": "vehicular manslaughter / hit-and-run",
+      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash.",
+      "caseNumber": "",
+      "arrestMade": "yes",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0051",
+      "arrestSourceUrl": "https://www.sfgate.com/news/bayarea/article/oakland-17-year-old-charged-in-crash-that-killed-22265512.php",
+      "arrestSourceTitle": "Oakland: 17-Year-Old Charged In Crash That Killed 3 Saturday Night",
+      "arrestSourcePublisher": "Bay City News via SFGATE",
+      "arrestSourceDate": "2026-05-18",
+      "allegedPerpetratorsPublic": "unnamed juvenile driver",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "yes",
+      "leadCharge": "vehicular manslaughter; felony hit-and-run",
+      "publicChargeSummary": "Charge: vehicular manslaughter; felony hit-and-run",
+      "caseStatus": "juvenile_charges_brought",
+      "clearanceStatus": "arrest_reported",
+      "confidence": "medium"
     }
   ],
   "incidents": [
@@ -864,6 +969,18 @@
       "victimCount": "1",
       "caseNumber": "26-019654",
       "confidence": "medium"
+    },
+    {
+      "incidentId": "OAK-2026-0015",
+      "date": "2026-05-16",
+      "time": "23:15",
+      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
+      "neighborhood": "East Oakland",
+      "method": "vehicular manslaughter / hit-and-run",
+      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash.",
+      "victimCount": "3",
+      "caseNumber": "",
+      "confidence": "medium"
     }
   ],
   "countReports": [
@@ -968,6 +1085,108 @@
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-05-21",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0015-V03",
+      "incidentId": "OAK-2026-0015",
+      "incidentDate": "2026-05-16",
+      "victimName": "Miguel Sanchez Ramirez",
+      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
+      "source": {
+        "sourceId": "OAK-2026-S0052",
+        "title": "Alameda County DA charges teen accused in fatal Oakland crash",
+        "publisher": "KTVU FOX 2",
+        "url": "https://www.ktvu.com/news/alameda-county-da-announce-charges-against-teen-accused-fatal-oakland-crash",
+        "sourceDate": "2026-05-20"
+      }
+    },
+    {
+      "dateFound": "2026-05-21",
+      "type": "arrest_found",
+      "label": "Arrest or charges found",
+      "victimId": "OAK-2026-0015-V03",
+      "incidentId": "OAK-2026-0015",
+      "incidentDate": "2026-05-16",
+      "victimName": "Miguel Sanchez Ramirez",
+      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
+      "source": {
+        "sourceId": "OAK-2026-S0051",
+        "title": "Oakland: 17-Year-Old Charged In Crash That Killed 3 Saturday Night",
+        "publisher": "Bay City News via SFGATE",
+        "url": "https://www.sfgate.com/news/bayarea/article/oakland-17-year-old-charged-in-crash-that-killed-22265512.php",
+        "sourceDate": "2026-05-18"
+      }
+    },
+    {
+      "dateFound": "2026-05-21",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0015-V02",
+      "incidentId": "OAK-2026-0015",
+      "incidentDate": "2026-05-16",
+      "victimName": "Charles Blackmon",
+      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
+      "source": {
+        "sourceId": "OAK-2026-S0052",
+        "title": "Alameda County DA charges teen accused in fatal Oakland crash",
+        "publisher": "KTVU FOX 2",
+        "url": "https://www.ktvu.com/news/alameda-county-da-announce-charges-against-teen-accused-fatal-oakland-crash",
+        "sourceDate": "2026-05-20"
+      }
+    },
+    {
+      "dateFound": "2026-05-21",
+      "type": "arrest_found",
+      "label": "Arrest or charges found",
+      "victimId": "OAK-2026-0015-V02",
+      "incidentId": "OAK-2026-0015",
+      "incidentDate": "2026-05-16",
+      "victimName": "Charles Blackmon",
+      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
+      "source": {
+        "sourceId": "OAK-2026-S0051",
+        "title": "Oakland: 17-Year-Old Charged In Crash That Killed 3 Saturday Night",
+        "publisher": "Bay City News via SFGATE",
+        "url": "https://www.sfgate.com/news/bayarea/article/oakland-17-year-old-charged-in-crash-that-killed-22265512.php",
+        "sourceDate": "2026-05-18"
+      }
+    },
+    {
+      "dateFound": "2026-05-21",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0015-V01",
+      "incidentId": "OAK-2026-0015",
+      "incidentDate": "2026-05-16",
+      "victimName": "Robert Joe Dixon",
+      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
+      "source": {
+        "sourceId": "OAK-2026-S0052",
+        "title": "Alameda County DA charges teen accused in fatal Oakland crash",
+        "publisher": "KTVU FOX 2",
+        "url": "https://www.ktvu.com/news/alameda-county-da-announce-charges-against-teen-accused-fatal-oakland-crash",
+        "sourceDate": "2026-05-20"
+      }
+    },
+    {
+      "dateFound": "2026-05-21",
+      "type": "arrest_found",
+      "label": "Arrest or charges found",
+      "victimId": "OAK-2026-0015-V01",
+      "incidentId": "OAK-2026-0015",
+      "incidentDate": "2026-05-16",
+      "victimName": "Robert Joe Dixon",
+      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
+      "source": {
+        "sourceId": "OAK-2026-S0051",
+        "title": "Oakland: 17-Year-Old Charged In Crash That Killed 3 Saturday Night",
+        "publisher": "Bay City News via SFGATE",
+        "url": "https://www.sfgate.com/news/bayarea/article/oakland-17-year-old-charged-in-crash-that-killed-22265512.php",
+        "sourceDate": "2026-05-18"
+      }
+    },
     {
       "dateFound": "2026-05-18",
       "type": "homicide_found",
