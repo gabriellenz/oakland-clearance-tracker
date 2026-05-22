@@ -3,8 +3,8 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-05-21T02:37:35-07:00",
-    "lastChecked": "2026-05-21",
+    "generatedAt": "2026-05-22T02:35:37-07:00",
+    "lastChecked": "2026-05-22",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
@@ -743,7 +743,7 @@
     {
       "victimId": "OAK-2026-0015-V02",
       "incidentId": "OAK-2026-0015",
-      "name": "Charles Blackmon",
+      "name": "Charles Ray Blackmon",
       "age": "65",
       "gender": "male",
       "raceEthnicity": "",
@@ -773,7 +773,7 @@
     {
       "victimId": "OAK-2026-0015-V03",
       "incidentId": "OAK-2026-0015",
-      "name": "Miguel Sanchez Ramirez",
+      "name": "Miguel Angel Sanchez Ramirez",
       "age": "44",
       "gender": "male",
       "raceEthnicity": "",
@@ -1092,7 +1092,7 @@
       "victimId": "OAK-2026-0015-V03",
       "incidentId": "OAK-2026-0015",
       "incidentDate": "2026-05-16",
-      "victimName": "Miguel Sanchez Ramirez",
+      "victimName": "Miguel Angel Sanchez Ramirez",
       "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
       "source": {
         "sourceId": "OAK-2026-S0052",
@@ -1109,7 +1109,7 @@
       "victimId": "OAK-2026-0015-V03",
       "incidentId": "OAK-2026-0015",
       "incidentDate": "2026-05-16",
-      "victimName": "Miguel Sanchez Ramirez",
+      "victimName": "Miguel Angel Sanchez Ramirez",
       "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
       "source": {
         "sourceId": "OAK-2026-S0051",
@@ -1126,7 +1126,7 @@
       "victimId": "OAK-2026-0015-V02",
       "incidentId": "OAK-2026-0015",
       "incidentDate": "2026-05-16",
-      "victimName": "Charles Blackmon",
+      "victimName": "Charles Ray Blackmon",
       "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
       "source": {
         "sourceId": "OAK-2026-S0052",
@@ -1143,7 +1143,7 @@
       "victimId": "OAK-2026-0015-V02",
       "incidentId": "OAK-2026-0015",
       "incidentDate": "2026-05-16",
-      "victimName": "Charles Blackmon",
+      "victimName": "Charles Ray Blackmon",
       "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
       "source": {
         "sourceId": "OAK-2026-S0051",
