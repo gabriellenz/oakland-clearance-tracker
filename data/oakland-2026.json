@@ -3,27 +3,27 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-05-25T02:34:54-07:00",
-    "lastChecked": "2026-05-25",
+    "generatedAt": "2026-05-26T02:35:00-07:00",
+    "lastChecked": "2026-05-26",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 21,
-    "incidents": 15,
+    "victims": 22,
+    "incidents": 16,
     "arrestReportedVictims": 12,
-    "noPublicArrestVictims": 6,
+    "noPublicArrestVictims": 7,
     "unknownArrestStatusVictims": 3,
-    "publicArrestRateVictimLevel": 57.1,
+    "publicArrestRateVictimLevel": 54.5,
     "namedVictims": 14,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
     "yes": 12,
     "unknown": 3,
-    "no": 6
+    "no": 7
   },
   "byMonth": [
     {
@@ -57,9 +57,9 @@
     {
       "month": "2026-05",
       "yes": 3,
-      "no": 1,
+      "no": 2,
       "unknown": 0,
-      "total": 4
+      "total": 5
     }
   ],
   "cumulative": [
@@ -166,6 +166,11 @@
     {
       "date": "2026-05-16",
       "victims": 21,
+      "arrestReportedVictims": 12
+    },
+    {
+      "date": "2026-05-24",
+      "victims": 22,
       "arrestReportedVictims": 12
     }
   ],
@@ -799,6 +804,36 @@
       "caseStatus": "juvenile_charges_brought",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
+    },
+    {
+      "victimId": "OAK-2026-0016-V01",
+      "incidentId": "OAK-2026-0016",
+      "name": "unknown",
+      "age": "",
+      "gender": "unknown",
+      "raceEthnicity": "",
+      "incidentDate": "2026-05-24",
+      "incidentTime": "18:45",
+      "location": "1700 block of East 19th Street / San Antonio Park",
+      "neighborhood": "San Antonio",
+      "method": "stabbing",
+      "circumstancesSummary": "A person was fatally stabbed near San Antonio Park/East 19th Street and died after being taken to a hospital. Public reports say OPD homicide investigators are investigating and the victim identity has not been released.",
+      "caseNumber": "26-022187",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0060",
+      "arrestSourceUrl": "https://hoodline.com/2026/05/deadly-park-stabbing-shocks-san-antonio-neighborhood-in-east-oakland/",
+      "arrestSourceTitle": "Deadly Park Stabbing Shocks San Antonio Neighborhood In East Oakland",
+      "arrestSourcePublisher": "Hoodline",
+      "arrestSourceDate": "2026-05-24",
+      "allegedPerpetratorsPublic": "unknown",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "unknown",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "medium"
     }
   ],
   "incidents": [
@@ -981,6 +1016,18 @@
       "victimCount": "3",
       "caseNumber": "",
       "confidence": "medium"
+    },
+    {
+      "incidentId": "OAK-2026-0016",
+      "date": "2026-05-24",
+      "time": "18:45",
+      "location": "1700 block of East 19th Street / San Antonio Park",
+      "neighborhood": "San Antonio",
+      "method": "stabbing",
+      "circumstancesSummary": "A person was fatally stabbed near San Antonio Park/East 19th Street and died after being taken to a hospital. Public reports say OPD homicide investigators are investigating and the victim identity has not been released.",
+      "victimCount": "1",
+      "caseNumber": "26-022187",
+      "confidence": "medium"
     }
   ],
   "countReports": [
@@ -1082,9 +1129,37 @@
       "unit": "unknown",
       "trackerVictimCount": 11,
       "discrepancy": "Resolved in May 18 audit: tracker now has 11 victims through Feb. 22 after adding the Feb. 11 International Boulevard homicide."
+    },
+    {
+      "sourceDate": "2026-05-24",
+      "publisher": "Hoodline / Mercury News reference",
+      "title": "Deadly Park Stabbing Shocks San Antonio Neighborhood In East Oakland",
+      "url": "https://hoodline.com/2026/05/deadly-park-stabbing-shocks-san-antonio-neighborhood-in-east-oakland/",
+      "periodEnd": "2026-05-24",
+      "reportedTotal": 20,
+      "unit": "unknown",
+      "trackerVictimCount": 22,
+      "discrepancy": "Unresolved: tracker has 22 victims including the three May 16 vehicular-manslaughter deaths, but 19 victims if that crash is excluded; the cited OPD/Mercury count of 20 suggests at least one category/count difference or missing case remains."
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-05-26",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0016-V01",
+      "incidentId": "OAK-2026-0016",
+      "incidentDate": "2026-05-24",
+      "victimName": "unknown",
+      "location": "1700 block of East 19th Street / San Antonio Park",
+      "source": {
+        "sourceId": "OAK-2026-S0057",
+        "title": "Oakland police investigating fatal stabbing near San Antonio Park",
+        "publisher": "KTVU FOX 2",
+        "url": "https://www.ktvu.com/news/oakland-police-investigating-fatal-stabbing-near-san-antonio-park",
+        "sourceDate": "2026-05-25"
+      }
+    },
     {
       "dateFound": "2026-05-21",
       "type": "homicide_found",
