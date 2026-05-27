@@ -8,7 +8,11 @@ This public repo contains only the website and the cleaned public JSON data need
 
 You can use this repo as a template for a homicide clearance tracker in another city. Point Codex, Claude Code, or another agentic coding system to this repo and ask it to read [`START_A_CITY_TRACKER.md`](START_A_CITY_TRACKER.md), inspect the Oakland structure, and scaffold a private tracker plus public site for your city.
 
-When your city is running, email Gabriel Lenz at [gabe.lenz@gmail.com](mailto:gabe.lenz@gmail.com?subject=I%20started%20a%20homicide%20clearance%20tracker) with your public GitHub repo and live URL. It can be added to the Clear the Murders network at `yourcity.clearthemurders.org`.
+When your city is running, email the site owner, Gabriel, at [gabe.lenz@gmail.com](mailto:gabe.lenz@gmail.com?subject=I%20started%20a%20homicide%20clearance%20tracker) with your public GitHub repo and live URL. It can be added to the Clear the Murders network at `yourcity.clearthemurders.org`.
+
+## Public Language
+
+Use plain public-facing language such as "solving homicides" in headlines and calls to action. Keep "homicide clearance" in the page title, metadata, documentation, and explanatory copy so search engines and technical readers can still find the project by the standard term.
 
 ## Files
 

@@ -4,6 +4,8 @@ This repo is the public Oakland example. It contains a static website, cleaned p
 
 The goal is not to accuse individuals or replace official records. The goal is to track whether homicide cases have a public arrest or charging update, show the source links, and make it easier for residents to hold local government accountable for solving serious violence.
 
+Public-facing headlines should use plain language such as "solving homicides." Keep the standard phrase "homicide clearance" in metadata, documentation, and explanatory text so search engines and technical readers can still find the project.
+
 ## What You Need
 
 - A city, year, police agency, prosecutor, and court system to track.
@@ -70,7 +72,7 @@ First read the Oakland repo structure and README. Then propose the local file st
 
 ## Tell Us About Your Tracker
 
-When your city tracker is running, email Gabriel Lenz at [gabe.lenz@gmail.com](mailto:gabe.lenz@gmail.com?subject=I%20started%20a%20homicide%20clearance%20tracker) with:
+When your city tracker is running, email the site owner, Gabriel, at [gabe.lenz@gmail.com](mailto:gabe.lenz@gmail.com?subject=I%20started%20a%20homicide%20clearance%20tracker) with:
 
 - the city and year covered
 - the public GitHub repo

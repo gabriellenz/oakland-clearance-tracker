@@ -84,7 +84,8 @@ function arrestDetail(victim) {
 }
 
 function setText(id, value) {
-  document.getElementById(id).textContent = value;
+  const element = document.getElementById(id);
+  if (element) element.textContent = value;
 }
 
 function renderSummary(data) {
@@ -98,10 +99,6 @@ function renderSummary(data) {
   setText(
     "scopeNote",
     "This tracker focuses on homicides where the ordinary public question is whether police made an arrest. Fatal police shootings are handled through a different public accountability process, so they are left out of this arrest-rate count.",
-  );
-  setText(
-    "reconciliationNote",
-    "Some public reports say Oakland had 14 homicides through March 31. This tracker currently has 13 victims through that date, so one early-year case may still be missing or may have been counted differently by another source.",
   );
   setText("lastChecked", data.metadata.lastChecked || "unknown");
 }
