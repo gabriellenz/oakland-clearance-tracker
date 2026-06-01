@@ -3,26 +3,26 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-05-31T02:34:16-07:00",
-    "lastChecked": "2026-05-31",
+    "generatedAt": "2026-06-01T02:37:33-07:00",
+    "lastChecked": "2026-06-01",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 22,
-    "incidents": 16,
+    "victims": 23,
+    "incidents": 17,
     "arrestReportedVictims": 12,
-    "noPublicArrestVictims": 8,
+    "noPublicArrestVictims": 9,
     "unknownArrestStatusVictims": 2,
-    "publicArrestRateVictimLevel": 54.5,
+    "publicArrestRateVictimLevel": 52.2,
     "namedVictims": 15,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
     "yes": 12,
-    "no": 8,
+    "no": 9,
     "unknown": 2
   },
   "byMonth": [
@@ -57,9 +57,9 @@
     {
       "month": "2026-05",
       "yes": 3,
-      "no": 2,
+      "no": 3,
       "unknown": 0,
-      "total": 5
+      "total": 6
     }
   ],
   "cumulative": [
@@ -171,6 +171,11 @@
     {
       "date": "2026-05-24",
       "victims": 22,
+      "arrestReportedVictims": 12
+    },
+    {
+      "date": "2026-05-30",
+      "victims": 23,
       "arrestReportedVictims": 12
     }
   ],
@@ -834,6 +839,36 @@
       "caseStatus": "unknown",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "medium"
+    },
+    {
+      "victimId": "OAK-2026-0017-V01",
+      "incidentId": "OAK-2026-0017",
+      "name": "unknown",
+      "age": "33",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-05-30",
+      "incidentTime": "02:46",
+      "location": "1400 block of Harrison Street",
+      "neighborhood": "Downtown Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A 33-year-old San Leandro man was fatally shot in a downtown Oakland parking lot on Harrison Street. Public reports say OPD homicide detectives were investigating and no arrests had been announced.",
+      "caseNumber": "",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0067",
+      "arrestSourceUrl": "https://hoodline.com/2026/05/downtown-oakland-parking-lot-turns-deadly-in-2-46-a-m-shooting/",
+      "arrestSourceTitle": "Downtown Oakland Parking Lot Turns Deadly In 2:46 A.M. Shooting",
+      "arrestSourcePublisher": "Hoodline",
+      "arrestSourceDate": "2026-05-31",
+      "allegedPerpetratorsPublic": "unknown",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "medium"
     }
   ],
   "incidents": [
@@ -1028,6 +1063,18 @@
       "victimCount": "1",
       "caseNumber": "26-022187",
       "confidence": "medium"
+    },
+    {
+      "incidentId": "OAK-2026-0017",
+      "date": "2026-05-30",
+      "time": "02:46",
+      "location": "1400 block of Harrison Street",
+      "neighborhood": "Downtown Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A 33-year-old San Leandro man was fatally shot in a downtown Oakland parking lot on Harrison Street. Public reports say OPD homicide detectives were investigating and no arrests had been announced.",
+      "victimCount": "1",
+      "caseNumber": "",
+      "confidence": "medium"
     }
   ],
   "countReports": [
@@ -1143,6 +1190,23 @@
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-06-01",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0017-V01",
+      "incidentId": "OAK-2026-0017",
+      "incidentDate": "2026-05-30",
+      "victimName": "unknown",
+      "location": "1400 block of Harrison Street",
+      "source": {
+        "sourceId": "OAK-2026-S0067",
+        "title": "Downtown Oakland Parking Lot Turns Deadly In 2:46 A.M. Shooting",
+        "publisher": "Hoodline",
+        "url": "https://hoodline.com/2026/05/downtown-oakland-parking-lot-turns-deadly-in-2-46-a-m-shooting/",
+        "sourceDate": "2026-05-31"
+      }
+    },
     {
       "dateFound": "2026-05-26",
       "type": "homicide_found",
