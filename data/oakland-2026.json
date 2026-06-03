@@ -3,8 +3,8 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-06-02T02:34:38-07:00",
-    "lastChecked": "2026-06-02",
+    "generatedAt": "2026-06-03T02:36:07-07:00",
+    "lastChecked": "2026-06-03",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
@@ -13,23 +13,23 @@
   "summary": {
     "victims": 23,
     "incidents": 17,
-    "arrestReportedVictims": 12,
-    "noPublicArrestVictims": 9,
+    "arrestReportedVictims": 13,
+    "noPublicArrestVictims": 8,
     "unknownArrestStatusVictims": 2,
-    "publicArrestRateVictimLevel": 52.2,
+    "publicArrestRateVictimLevel": 56.5,
     "namedVictims": 15,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
-    "yes": 12,
-    "no": 9,
+    "yes": 13,
+    "no": 8,
     "unknown": 2
   },
   "byMonth": [
     {
       "month": "2026-01",
-      "yes": 5,
-      "no": 2,
+      "yes": 6,
+      "no": 1,
       "unknown": 1,
       "total": 8
     },
@@ -91,92 +91,92 @@
     {
       "date": "2026-01-09",
       "victims": 6,
-      "arrestReportedVictims": 5
+      "arrestReportedVictims": 6
     },
     {
       "date": "2026-01-16",
       "victims": 7,
-      "arrestReportedVictims": 5
+      "arrestReportedVictims": 6
     },
     {
       "date": "2026-01-17",
       "victims": 8,
-      "arrestReportedVictims": 5
+      "arrestReportedVictims": 6
     },
     {
       "date": "2026-02-01",
       "victims": 9,
-      "arrestReportedVictims": 5
+      "arrestReportedVictims": 6
     },
     {
       "date": "2026-02-02",
       "victims": 10,
-      "arrestReportedVictims": 6
+      "arrestReportedVictims": 7
     },
     {
       "date": "2026-02-11",
       "victims": 11,
-      "arrestReportedVictims": 6
+      "arrestReportedVictims": 7
     },
     {
       "date": "2026-03-01",
       "victims": 12,
-      "arrestReportedVictims": 6
+      "arrestReportedVictims": 7
     },
     {
       "date": "2026-03-07",
       "victims": 13,
-      "arrestReportedVictims": 6
+      "arrestReportedVictims": 7
     },
     {
       "date": "2026-03-07",
       "victims": 14,
-      "arrestReportedVictims": 6
-    },
-    {
-      "date": "2026-04-18",
-      "victims": 15,
       "arrestReportedVictims": 7
     },
     {
       "date": "2026-04-18",
-      "victims": 16,
+      "victims": 15,
       "arrestReportedVictims": 8
+    },
+    {
+      "date": "2026-04-18",
+      "victims": 16,
+      "arrestReportedVictims": 9
     },
     {
       "date": "2026-04-23",
       "victims": 17,
-      "arrestReportedVictims": 9
+      "arrestReportedVictims": 10
     },
     {
       "date": "2026-05-06",
       "victims": 18,
-      "arrestReportedVictims": 9
-    },
-    {
-      "date": "2026-05-16",
-      "victims": 19,
       "arrestReportedVictims": 10
     },
     {
       "date": "2026-05-16",
-      "victims": 20,
+      "victims": 19,
       "arrestReportedVictims": 11
     },
     {
       "date": "2026-05-16",
-      "victims": 21,
+      "victims": 20,
       "arrestReportedVictims": 12
+    },
+    {
+      "date": "2026-05-16",
+      "victims": 21,
+      "arrestReportedVictims": 13
     },
     {
       "date": "2026-05-24",
       "victims": 22,
-      "arrestReportedVictims": 12
+      "arrestReportedVictims": 13
     },
     {
       "date": "2026-05-30",
       "victims": 23,
-      "arrestReportedVictims": 12
+      "arrestReportedVictims": 13
     }
   ],
   "victims": [
@@ -342,22 +342,22 @@
       "location": "5400 block of Coliseum Way",
       "neighborhood": "",
       "method": "shooting",
-      "circumstancesSummary": "Jorge Alberto Rivas Rodriguez was fatally shot in the parking lot of the Oakland Coliseum Swap Meet on Coliseum Way. KTVU reported police said the shooting stemmed from a dispute over competing fake-ID sales and that the suspected gunman remained at large.",
+      "circumstancesSummary": "Jorge Alberto Rivas Rodriguez was fatally shot in the parking lot of the Oakland Coliseum Swap Meet on Coliseum Way. KTVU later reported that prosecutors charged one person with murder and another as an accessory after the fact.",
       "caseNumber": "26-001246",
-      "arrestMade": "no",
+      "arrestMade": "yes",
       "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0061",
-      "arrestSourceUrl": "https://www.ktvu.com/news/oakland-flea-market-shooting-dispute-fake-id-sales",
-      "arrestSourceTitle": "Oakland flea market shooting: Dispute over fake ID sales led to man's death",
+      "arrestSourceId": "OAK-2026-S0071",
+      "arrestSourceUrl": "https://www.ktvu.com/news/oakland-flea-market-killing-father-son-charged",
+      "arrestSourceTitle": "Father, son charged in fatal Oakland flea market shooting tied to fake ID dispute",
       "arrestSourcePublisher": "KTVU FOX 2",
-      "arrestSourceDate": "2026-01-16",
-      "allegedPerpetratorsPublic": "unknown",
+      "arrestSourceDate": "2026-05-29",
+      "allegedPerpetratorsPublic": "Israel Colin Figueroa; Dillan Figueroa-Cabrera",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
-      "chargesFiled": "unknown",
-      "leadCharge": "",
-      "publicChargeSummary": "None reported",
-      "caseStatus": "suspect_at_large_reported",
-      "clearanceStatus": "open_no_public_arrest",
+      "chargesFiled": "yes",
+      "leadCharge": "murder; accessory after the fact",
+      "publicChargeSummary": "Charge: murder; accessory after the fact",
+      "caseStatus": "charged",
+      "clearanceStatus": "arrest_reported",
       "confidence": "medium"
     },
     {
@@ -853,7 +853,7 @@
       "neighborhood": "Downtown Oakland",
       "method": "shooting",
       "circumstancesSummary": "A 33-year-old San Leandro man was fatally shot in a downtown Oakland parking lot on Harrison Street. Public reports say OPD homicide detectives were investigating and no arrests had been announced.",
-      "caseNumber": "",
+      "caseNumber": "26-023428",
       "arrestMade": "no",
       "arrestDate": "",
       "arrestSourceId": "OAK-2026-S0069",
@@ -915,7 +915,7 @@
       "location": "5400 block of Coliseum Way",
       "neighborhood": "",
       "method": "shooting",
-      "circumstancesSummary": "Jorge Alberto Rivas Rodriguez was fatally shot in the parking lot of the Oakland Coliseum Swap Meet on Coliseum Way. KTVU reported police said the shooting stemmed from a dispute over competing fake-ID sales and that the suspected gunman remained at large.",
+      "circumstancesSummary": "Jorge Alberto Rivas Rodriguez was fatally shot in the parking lot of the Oakland Coliseum Swap Meet on Coliseum Way. KTVU later reported that prosecutors charged one person with murder and another as an accessory after the fact.",
       "victimCount": "1",
       "caseNumber": "26-001246",
       "confidence": "medium"
@@ -1073,7 +1073,7 @@
       "method": "shooting",
       "circumstancesSummary": "A 33-year-old San Leandro man was fatally shot in a downtown Oakland parking lot on Harrison Street. Public reports say OPD homicide detectives were investigating and no arrests had been announced.",
       "victimCount": "1",
-      "caseNumber": "",
+      "caseNumber": "26-023428",
       "confidence": "medium"
     }
   ],
@@ -1190,6 +1190,23 @@
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-06-03",
+      "type": "arrest_found",
+      "label": "Arrest or charges found",
+      "victimId": "OAK-2026-0004-V01",
+      "incidentId": "OAK-2026-0004",
+      "incidentDate": "2026-01-09",
+      "victimName": "Jorge Alberto Rivas Rodriguez",
+      "location": "5400 block of Coliseum Way",
+      "source": {
+        "sourceId": "OAK-2026-S0071",
+        "title": "Father, son charged in fatal Oakland flea market shooting tied to fake ID dispute",
+        "publisher": "KTVU FOX 2",
+        "url": "https://www.ktvu.com/news/oakland-flea-market-killing-father-son-charged",
+        "sourceDate": "2026-05-29"
+      }
+    },
     {
       "dateFound": "2026-06-01",
       "type": "homicide_found",
