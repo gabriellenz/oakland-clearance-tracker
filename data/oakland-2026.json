@@ -3,8 +3,8 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-06-04T02:35:10-07:00",
-    "lastChecked": "2026-06-04",
+    "generatedAt": "2026-06-05T02:38:43-07:00",
+    "lastChecked": "2026-06-05",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
@@ -13,16 +13,16 @@
   "summary": {
     "victims": 23,
     "incidents": 17,
-    "arrestReportedVictims": 13,
-    "noPublicArrestVictims": 8,
+    "arrestReportedVictims": 14,
+    "noPublicArrestVictims": 7,
     "unknownArrestStatusVictims": 2,
-    "publicArrestRateVictimLevel": 56.5,
-    "namedVictims": 15,
+    "publicArrestRateVictimLevel": 60.9,
+    "namedVictims": 16,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
-    "yes": 13,
-    "no": 8,
+    "yes": 14,
+    "no": 7,
     "unknown": 2
   },
   "byMonth": [
@@ -56,8 +56,8 @@
     },
     {
       "month": "2026-05",
-      "yes": 3,
-      "no": 3,
+      "yes": 4,
+      "no": 2,
       "unknown": 0,
       "total": 6
     }
@@ -169,14 +169,14 @@
       "arrestReportedVictims": 13
     },
     {
-      "date": "2026-05-24",
+      "date": "2026-05-23",
       "victims": 22,
-      "arrestReportedVictims": 13
+      "arrestReportedVictims": 14
     },
     {
       "date": "2026-05-30",
       "victims": 23,
-      "arrestReportedVictims": 13
+      "arrestReportedVictims": 14
     }
   ],
   "victims": [
@@ -813,32 +813,32 @@
     {
       "victimId": "OAK-2026-0016-V01",
       "incidentId": "OAK-2026-0016",
-      "name": "unknown",
-      "age": "",
-      "gender": "unknown",
+      "name": "Aldon Rochel Mata Cardona",
+      "age": "19",
+      "gender": "male",
       "raceEthnicity": "",
-      "incidentDate": "2026-05-24",
+      "incidentDate": "2026-05-23",
       "incidentTime": "18:45",
       "location": "1700 block of East 19th Street / San Antonio Park",
       "neighborhood": "San Antonio",
       "method": "stabbing",
-      "circumstancesSummary": "A person was fatally stabbed near San Antonio Park/East 19th Street and died after being taken to a hospital. Public reports say OPD homicide investigators are investigating and the victim identity has not been released.",
+      "circumstancesSummary": "Aldon Rochel Mata Cardona was fatally stabbed near San Antonio Park/East 19th Street and died after being taken to a hospital. The Alameda County District Attorney later reported filing a murder charge in the East Oakland case.",
       "caseNumber": "26-022187",
-      "arrestMade": "no",
+      "arrestMade": "yes",
       "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0060",
-      "arrestSourceUrl": "https://hoodline.com/2026/05/deadly-park-stabbing-shocks-san-antonio-neighborhood-in-east-oakland/",
-      "arrestSourceTitle": "Deadly Park Stabbing Shocks San Antonio Neighborhood In East Oakland",
-      "arrestSourcePublisher": "Hoodline",
-      "arrestSourceDate": "2026-05-24",
-      "allegedPerpetratorsPublic": "unknown",
+      "arrestSourceId": "OAK-2026-S0076",
+      "arrestSourceUrl": "https://da.alamedacountyca.gov/oakland-man-charged-with-murder/",
+      "arrestSourceTitle": "OAKLAND MAN CHARGED WITH MURDER",
+      "arrestSourcePublisher": "Alameda County District Attorney",
+      "arrestSourceDate": "2026-06-04",
+      "allegedPerpetratorsPublic": "Ottoniel Salesgarcia",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
-      "chargesFiled": "unknown",
-      "leadCharge": "",
-      "publicChargeSummary": "None reported",
-      "caseStatus": "unknown",
-      "clearanceStatus": "open_no_public_arrest",
-      "confidence": "medium"
+      "chargesFiled": "yes",
+      "leadCharge": "murder",
+      "publicChargeSummary": "Charge: murder",
+      "caseStatus": "charged",
+      "clearanceStatus": "arrest_reported",
+      "confidence": "high"
     },
     {
       "victimId": "OAK-2026-0017-V01",
@@ -1054,15 +1054,15 @@
     },
     {
       "incidentId": "OAK-2026-0016",
-      "date": "2026-05-24",
+      "date": "2026-05-23",
       "time": "18:45",
       "location": "1700 block of East 19th Street / San Antonio Park",
       "neighborhood": "San Antonio",
       "method": "stabbing",
-      "circumstancesSummary": "A person was fatally stabbed near San Antonio Park/East 19th Street and died after being taken to a hospital. Public reports say OPD homicide investigators are investigating and the victim identity has not been released.",
+      "circumstancesSummary": "Aldon Rochel Mata Cardona was fatally stabbed near San Antonio Park/East 19th Street and died after being taken to a hospital. The Alameda County District Attorney later reported filing a murder charge in the East Oakland case.",
       "victimCount": "1",
       "caseNumber": "26-022187",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "incidentId": "OAK-2026-0017",
@@ -1191,6 +1191,23 @@
   ],
   "updateLog": [
     {
+      "dateFound": "2026-06-05",
+      "type": "arrest_found",
+      "label": "Arrest or charges found",
+      "victimId": "OAK-2026-0016-V01",
+      "incidentId": "OAK-2026-0016",
+      "incidentDate": "2026-05-23",
+      "victimName": "Aldon Rochel Mata Cardona",
+      "location": "1700 block of East 19th Street / San Antonio Park",
+      "source": {
+        "sourceId": "OAK-2026-S0076",
+        "title": "OAKLAND MAN CHARGED WITH MURDER",
+        "publisher": "Alameda County District Attorney",
+        "url": "https://da.alamedacountyca.gov/oakland-man-charged-with-murder/",
+        "sourceDate": "2026-06-04"
+      }
+    },
+    {
       "dateFound": "2026-06-03",
       "type": "arrest_found",
       "label": "Arrest or charges found",
@@ -1230,8 +1247,8 @@
       "label": "Homicide added to tracker",
       "victimId": "OAK-2026-0016-V01",
       "incidentId": "OAK-2026-0016",
-      "incidentDate": "2026-05-24",
-      "victimName": "unknown",
+      "incidentDate": "2026-05-23",
+      "victimName": "Aldon Rochel Mata Cardona",
       "location": "1700 block of East 19th Street / San Antonio Park",
       "source": {
         "sourceId": "OAK-2026-S0057",
