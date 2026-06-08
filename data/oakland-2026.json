@@ -3,8 +3,8 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-06-06T19:35:19-07:00",
-    "lastChecked": "2026-06-07",
+    "generatedAt": "2026-06-07T19:37:02-07:00",
+    "lastChecked": "2026-06-08",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
@@ -825,12 +825,12 @@
       "circumstancesSummary": "Aldon Rochel Mata Cardona was fatally stabbed near San Antonio Park/East 19th Street and died after being taken to a hospital. The Alameda County District Attorney later reported filing a murder charge in the East Oakland case.",
       "caseNumber": "26-022187",
       "arrestMade": "yes",
-      "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0076",
-      "arrestSourceUrl": "https://da.alamedacountyca.gov/oakland-man-charged-with-murder/",
-      "arrestSourceTitle": "OAKLAND MAN CHARGED WITH MURDER",
-      "arrestSourcePublisher": "Alameda County District Attorney",
-      "arrestSourceDate": "2026-06-04",
+      "arrestDate": "2026-06-05",
+      "arrestSourceId": "OAK-2026-S0081",
+      "arrestSourceUrl": "https://www.sfgate.com/news/bayarea/article/oakland-man-arrested-in-killing-of-19-year-old-22293786.php",
+      "arrestSourceTitle": "Oakland: Man Arrested In Killing Of 19-Year-Old From Guatemala",
+      "arrestSourcePublisher": "Bay City News via SFGATE",
+      "arrestSourceDate": "2026-06-05",
       "allegedPerpetratorsPublic": "Ottoniel Salesgarcia",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
@@ -1191,7 +1191,7 @@
   ],
   "updateLog": [
     {
-      "dateFound": "2026-06-05",
+      "dateFound": "2026-06-08",
       "type": "arrest_found",
       "label": "Arrest or charges found",
       "victimId": "OAK-2026-0016-V01",
@@ -1200,11 +1200,11 @@
       "victimName": "Aldon Rochel Mata Cardona",
       "location": "1700 block of East 19th Street / San Antonio Park",
       "source": {
-        "sourceId": "OAK-2026-S0076",
-        "title": "OAKLAND MAN CHARGED WITH MURDER",
-        "publisher": "Alameda County District Attorney",
-        "url": "https://da.alamedacountyca.gov/oakland-man-charged-with-murder/",
-        "sourceDate": "2026-06-04"
+        "sourceId": "OAK-2026-S0081",
+        "title": "Oakland: Man Arrested In Killing Of 19-Year-Old From Guatemala",
+        "publisher": "Bay City News via SFGATE",
+        "url": "https://www.sfgate.com/news/bayarea/article/oakland-man-arrested-in-killing-of-19-year-old-22293786.php",
+        "sourceDate": "2026-06-05"
       }
     },
     {
