@@ -20,6 +20,7 @@ REPO_DIR = Path(__file__).resolve().parents[1]
 TRACKER_DIR = REPO_DIR.parents[1] / "Oakland"
 OUT_PATH = REPO_DIR / "data" / "oakland-2026.json"
 UPDATE_LOG_START = "2026-05-18"
+GENERATED_AT_PATH = ("metadata", "generatedAt")
 
 
 def read_csv(name: str) -> list[dict[str, str]]:
@@ -100,6 +101,29 @@ def source_link(source: dict[str, str]) -> dict[str, str]:
         "url": source.get("url", ""),
         "sourceDate": source.get("source_date", ""),
     }
+
+
+def without_generated_at(data: dict) -> dict:
+    copy = json.loads(json.dumps(data))
+    node = copy
+    for key in GENERATED_AT_PATH[:-1]:
+        node = node.get(key, {})
+    node.pop(GENERATED_AT_PATH[-1], None)
+    return copy
+
+
+def preserve_generated_at_if_unchanged(data: dict) -> dict:
+    if not OUT_PATH.exists():
+        return data
+
+    try:
+        existing = json.loads(OUT_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return data
+
+    if without_generated_at(existing) == without_generated_at(data):
+        data["metadata"]["generatedAt"] = existing.get("metadata", {}).get("generatedAt", data["metadata"]["generatedAt"])
+    return data
 
 
 def main() -> None:
@@ -317,6 +341,7 @@ def main() -> None:
         "updateLog": update_log,
     }
 
+    data = preserve_generated_at_if_unchanged(data)
     OUT_PATH.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {OUT_PATH}")
 
