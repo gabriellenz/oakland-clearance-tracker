@@ -15,6 +15,7 @@ The public repo is the canonical home for the reusable model. Private working tr
 - Treat public arrest status as a source-backed public proxy, not final clearance or conviction.
 - Code race/ethnicity only from explicit credible sources.
 - Keep alleged perpetrator names out of public summaries and front-page tables unless your local rules explicitly choose otherwise.
+- Automate mechanical audits, but keep source judgment human/agent-reviewed.
 
 ## Repo Split
 
@@ -24,6 +25,8 @@ Use two repos:
 - Private repo: working CSVs, raw downloads, source cache, research notes, and automation memory.
 
 For Oakland, the private repo keeps this public repo as a submodule. Daily automation runs from the private workspace, updates private data, runs `scripts/publish_update.sh` in the public repo, and backs up the private repo with the current public-site pointer.
+
+Oakland's private repo includes `Oakland/scripts/audit_public_data.py`, which checks IDs, source references, status math, public JSON parity, and public-summary name leaks before publishing.
 
 ## Start One For Your City
 

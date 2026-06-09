@@ -15,36 +15,7 @@ if command -v node >/dev/null 2>&1; then
 fi
 
 if [[ -n "$SUPERPROJECT_DIR" ]]; then
-  SUPERPROJECT_DIR="$SUPERPROJECT_DIR" python3 - <<'PY'
-import csv
-import json
-import os
-from collections import Counter
-from pathlib import Path
-
-root = Path(os.environ["SUPERPROJECT_DIR"])
-public_data = json.loads((root / "public/oakland-clearance-tracker/data/oakland-2026.json").read_text(encoding="utf-8"))
-
-with (root / "Oakland/victims_2026.csv").open(newline="", encoding="utf-8") as f:
-    victims = list(csv.DictReader(f))
-
-status = Counter(row["arrest_made"] or "unknown" for row in victims)
-summary = public_data["summary"]
-expected = {
-    "victims": len(victims),
-    "incidents": len({row["incident_id"] for row in victims}),
-    "arrestReportedVictims": status["yes"],
-    "noPublicArrestVictims": status["no"],
-    "unknownArrestStatusVictims": status["unknown"],
-    "publicArrestRateVictimLevel": round((status["yes"] / len(victims)) * 100, 1) if victims else 0.0,
-}
-
-for key, value in expected.items():
-    if summary.get(key) != value:
-        raise SystemExit(f"public JSON summary mismatch for {key}: expected {value}, got {summary.get(key)}")
-
-print("Public JSON matches private tracker totals.")
-PY
+  python3 "$SUPERPROJECT_DIR/Oakland/scripts/audit_public_data.py"
 fi
 
 public_data_changed=0
