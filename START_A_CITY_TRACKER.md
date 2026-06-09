@@ -1,83 +1,43 @@
-# Start a Homicide Clearance Tracker for Your City
+# Start A Tracker For Your City
 
-This repo is the public Oakland example. It contains a static website, cleaned public JSON, and the build script that turns private tracker CSVs into public data.
+This public repo is the reusable reference. It should contain enough information for another city to copy the model without exposing Oakland's private research workspace.
 
-The goal is not to accuse individuals or replace official records. The goal is to track whether homicide cases have a public arrest or charging update, show the source links, and make it easier for residents to hold local government accountable for solving serious violence.
+## Setup Pattern
 
-Public-facing headlines should use plain language such as "solving homicides." Keep the standard phrase "homicide clearance" in metadata, documentation, and explanatory text so search engines and technical readers can still find the project.
+- Public repo: static site, cleaned JSON, reusable docs, and build/publish scripts.
+- Private repo or private folder: full CSVs, raw downloads, research notes, public-records drafts, and automation memory.
+- Published data: cleaned JSON only.
+- Recurring agent run: updates private data, rebuilds public JSON, validates privacy and counts, then publishes the public site.
 
-## What You Need
-
-- A city, year, police agency, prosecutor, and court system to track.
-- A private working folder for research notes, raw downloads, public-records drafts, and full CSVs.
-- A public repo for the static site and cleaned derived data only.
-- A daily or weekly agent run using Codex, Claude Code, or another agentic coding/research system.
-
-## Core Data Model
-
-Keep these tables privately:
-
-- `victims_YEAR.csv`: one row per homicide victim.
-- `incidents_YEAR.csv`: one row per incident, with short public-facing summaries.
-- `suspects_YEAR.csv`: one row per public alleged perpetrator.
-- `sources_YEAR.csv`: one row per article, official release, court item, or public-data extract.
-- `checks_YEAR.csv`: one row per recurring update run.
-- `count_reports_YEAR.csv`: published homicide-count claims used for reconciliation.
-
-Publish only a cleaned JSON export. Do not publish raw cache files, draft records requests, private notes, or anything that is not intended for the public site.
-
-## Scope Rules to Decide First
-
-- Which deaths count as in-scope homicides.
-- How to handle officer-involved fatal shootings.
-- How to handle vehicular homicides, delayed deaths, self-defense claims, and remains cases.
-- How to code race/ethnicity. The Oakland rule is source-only: leave it blank unless a credible source explicitly reports it.
-- How to display alleged perpetrator names. The Oakland public site does not render alleged names in summaries or front-page tables.
-- How to handle non-homicide charges tied to a homicide scene. Keep them as case-status notes unless the source directly ties the arrest or charge to the homicide death.
-
-## Suggested Agent Prompt
-
-Use this as a starting prompt in Codex, Claude Code, or a similar coding agent:
+## Starter Prompt
 
 ```text
 I want to create a public homicide clearance tracker for [CITY], [STATE] for [YEAR], modeled on https://github.com/gabriellenz/oakland-clearance-tracker.
 
-Set up a private working tracker with victim, incident, suspect, source, check, request, and count-report CSVs. Then create a public static site that publishes only cleaned JSON and public-facing pages.
+Read the public repo README and this starter guide. Set up a private working tracker plus a public static site.
+
+Private tracker tables:
+- victims_YEAR.csv, one row per homicide victim
+- incidents_YEAR.csv, one row per incident
+- suspects_YEAR.csv, one row per public alleged perpetrator
+- sources_YEAR.csv, one row per source item
+- checks_YEAR.csv, one row per recurring update run
+- count_reports_YEAR.csv, published homicide-count checkpoints
+- requests_YEAR.csv, public-records request tracker
 
 Rules:
-- One row per homicide victim.
-- Keep incident and suspect side tables for dedupe and arrest tracking.
-- Separate public arrest reported, charges filed, official clearance, and court outcome.
-- Do not infer race or ethnicity from names, photos, or context.
-- Do not render alleged perpetrator names in public summaries or front-page tables.
-- Do not treat weapons, ammunition, accessory, or unrelated custody updates as homicide arrests unless a source directly ties the arrest or charge to the homicide death.
-- Save source links and discovery dates so a public update log can show when new homicides and arrest updates were found.
-- Draft public-records emails for review; do not send automatically.
+- Use stable IDs and do not renumber old records.
+- Add source rows before fact rows.
+- Keep public arrest, charges, official clearance, and court outcome separate.
+- Do not infer race/ethnicity.
+- Do not publish private notes, raw cache files, or records-request drafts.
+- Keep alleged perpetrator names out of public summaries and front-page tables unless a local policy explicitly chooses otherwise.
+- Do not count weapons, ammunition, accessory, or unrelated custody updates as homicide arrests unless the source directly ties the person to a homicide/death arrest or charge.
+- Preserve count discrepancies until a sourced incident explains them.
 
-First read the Oakland repo structure and README. Then propose the local file structure, scope rules, source list, and first backfill plan for my city.
+First propose the city-specific scope rules, source registry, file structure, and first backfill plan.
 ```
 
-## Recurring Run Checklist
+## Tell Us
 
-1. Read the local instructions, tracker docs, and previous automation memory.
-2. Check official police releases, open data, weekly or monthly crime reports, prosecutor releases, court portals, and local news.
-3. Search published count reports and ordinal phrases such as "12th homicide" before broad month searches; these are often the fastest way to find missing cases.
-4. Search for new homicide incidents, victim identifications, arrest updates, charging updates, and published count reports.
-5. Add source rows first, then update victims, incidents, suspects, count reports, and check logs.
-6. Keep count discrepancies visible. Do not add placeholder victims just to match a published total; add a row only when date, location, and source evidence identify the incident.
-7. Use stable IDs. If you discover an earlier homicide late, give it the next available ID and sort public displays by date instead of renumbering existing rows.
-8. Rebuild public JSON and verify it contains no private paths, raw notes, or draft request text.
-9. Verify public summaries and homepage tables do not display alleged perpetrator names.
-10. Run the site locally, inspect it in a browser, commit, push, and confirm the Pages deploy.
-
-## Tell Us About Your Tracker
-
-When your city tracker is running, email the site owner, Gabriel, at [gabe.lenz@gmail.com](mailto:gabe.lenz@gmail.com?subject=I%20started%20a%20homicide%20clearance%20tracker) with:
-
-- the city and year covered
-- the public GitHub repo
-- the live site URL
-- the recurring update cadence
-- any important scope differences from Oakland
-
-If it is ready for public use, it can be linked from `yourcity.clearthemurders.org`.
+When your tracker is running, email Gabriel at [gabe.lenz@gmail.com](mailto:gabe.lenz@gmail.com?subject=I%20started%20a%20homicide%20clearance%20tracker) with the city/year, public repo, live URL, update cadence, and any scope differences from Oakland.
