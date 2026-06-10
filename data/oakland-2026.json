@@ -3,8 +3,8 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-06-08T19:35:29-07:00",
-    "lastChecked": "2026-06-09",
+    "generatedAt": "2026-06-09T19:35:38-07:00",
+    "lastChecked": "2026-06-10",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
@@ -13,16 +13,16 @@
   "summary": {
     "victims": 23,
     "incidents": 17,
-    "arrestReportedVictims": 14,
-    "noPublicArrestVictims": 7,
+    "arrestReportedVictims": 15,
+    "noPublicArrestVictims": 6,
     "unknownArrestStatusVictims": 2,
-    "publicArrestRateVictimLevel": 60.9,
+    "publicArrestRateVictimLevel": 65.2,
     "namedVictims": 16,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
-    "yes": 14,
-    "no": 7,
+    "yes": 15,
+    "no": 6,
     "unknown": 2
   },
   "byMonth": [
@@ -56,8 +56,8 @@
     },
     {
       "month": "2026-05",
-      "yes": 4,
-      "no": 2,
+      "yes": 5,
+      "no": 1,
       "unknown": 0,
       "total": 6
     }
@@ -174,9 +174,9 @@
       "arrestReportedVictims": 14
     },
     {
-      "date": "2026-05-30",
+      "date": "2026-05-31",
       "victims": 23,
-      "arrestReportedVictims": 14
+      "arrestReportedVictims": 15
     }
   ],
   "victims": [
@@ -847,28 +847,28 @@
       "age": "33",
       "gender": "male",
       "raceEthnicity": "",
-      "incidentDate": "2026-05-30",
-      "incidentTime": "02:46",
-      "location": "1400 block of Harrison Street",
+      "incidentDate": "2026-05-31",
+      "incidentTime": "02:40",
+      "location": "1400 block of Harrison Street / vicinity of 14th and Harrison streets",
       "neighborhood": "Downtown Oakland",
       "method": "shooting",
-      "circumstancesSummary": "A 33-year-old San Leandro man was fatally shot in a downtown Oakland parking lot on Harrison Street. Public reports say OPD homicide detectives were investigating and no arrests had been announced.",
+      "circumstancesSummary": "A 33-year-old San Leandro man was fatally shot in a downtown Oakland parking lot near 14th and Harrison streets. Alameda County prosecutors later reported filing a murder charge in the case.",
       "caseNumber": "26-023428",
-      "arrestMade": "no",
+      "arrestMade": "yes",
       "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0069",
-      "arrestSourceUrl": "https://www.ktvu.com/news/man-33-shot-dead-oakland-parking-lot",
-      "arrestSourceTitle": "San Leandro man, 33, shot in Oakland parking lot; dies at hospital",
-      "arrestSourcePublisher": "KTVU FOX 2",
-      "arrestSourceDate": "2026-06-01",
-      "allegedPerpetratorsPublic": "unknown",
+      "arrestSourceId": "OAK-2026-S0084",
+      "arrestSourceUrl": "https://da.alamedacountyca.gov/district-attorney-ursula-jones-dickson-announces-murder-charge-against-shacory-carnell-daniels/",
+      "arrestSourceTitle": "DISTRICT ATTORNEY URSULA JONES DICKSON ANNOUNCES MURDER CHARGE AGAINST SHACORY CARNELL DANIELS",
+      "arrestSourcePublisher": "Alameda County District Attorney",
+      "arrestSourceDate": "2026-06-09",
+      "allegedPerpetratorsPublic": "Shacory Carnell Daniels",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
-      "chargesFiled": "unknown",
-      "leadCharge": "",
-      "publicChargeSummary": "None reported",
-      "caseStatus": "",
-      "clearanceStatus": "open_no_public_arrest",
-      "confidence": "medium"
+      "chargesFiled": "yes",
+      "leadCharge": "murder",
+      "publicChargeSummary": "Charge: murder",
+      "caseStatus": "arraigned",
+      "clearanceStatus": "arrest_reported",
+      "confidence": "high"
     }
   ],
   "incidents": [
@@ -1066,15 +1066,15 @@
     },
     {
       "incidentId": "OAK-2026-0017",
-      "date": "2026-05-30",
-      "time": "02:46",
-      "location": "1400 block of Harrison Street",
+      "date": "2026-05-31",
+      "time": "02:40",
+      "location": "1400 block of Harrison Street / vicinity of 14th and Harrison streets",
       "neighborhood": "Downtown Oakland",
       "method": "shooting",
-      "circumstancesSummary": "A 33-year-old San Leandro man was fatally shot in a downtown Oakland parking lot on Harrison Street. Public reports say OPD homicide detectives were investigating and no arrests had been announced.",
+      "circumstancesSummary": "A 33-year-old San Leandro man was fatally shot in a downtown Oakland parking lot near 14th and Harrison streets. Alameda County prosecutors later reported filing a murder charge in the case.",
       "victimCount": "1",
       "caseNumber": "26-023428",
-      "confidence": "medium"
+      "confidence": "high"
     }
   ],
   "countReports": [
@@ -1191,6 +1191,40 @@
   ],
   "updateLog": [
     {
+      "dateFound": "2026-06-10",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0017-V01",
+      "incidentId": "OAK-2026-0017",
+      "incidentDate": "2026-05-31",
+      "victimName": "unknown",
+      "location": "1400 block of Harrison Street / vicinity of 14th and Harrison streets",
+      "source": {
+        "sourceId": "OAK-2026-S0083",
+        "title": "CrimeWatch HOMICIDE extract May 1-June 10 2026",
+        "publisher": "Oakland Police Department / City of Oakland Open Data",
+        "url": "https://data.oaklandca.gov/Public-Safety/CrimeWatch-Data/ppgh-7dqv/about_data",
+        "sourceDate": "2026-06-10"
+      }
+    },
+    {
+      "dateFound": "2026-06-10",
+      "type": "arrest_found",
+      "label": "Arrest or charges found",
+      "victimId": "OAK-2026-0017-V01",
+      "incidentId": "OAK-2026-0017",
+      "incidentDate": "2026-05-31",
+      "victimName": "unknown",
+      "location": "1400 block of Harrison Street / vicinity of 14th and Harrison streets",
+      "source": {
+        "sourceId": "OAK-2026-S0084",
+        "title": "DISTRICT ATTORNEY URSULA JONES DICKSON ANNOUNCES MURDER CHARGE AGAINST SHACORY CARNELL DANIELS",
+        "publisher": "Alameda County District Attorney",
+        "url": "https://da.alamedacountyca.gov/district-attorney-ursula-jones-dickson-announces-murder-charge-against-shacory-carnell-daniels/",
+        "sourceDate": "2026-06-09"
+      }
+    },
+    {
       "dateFound": "2026-06-08",
       "type": "arrest_found",
       "label": "Arrest or charges found",
@@ -1222,23 +1256,6 @@
         "publisher": "KTVU FOX 2",
         "url": "https://www.ktvu.com/news/oakland-flea-market-killing-father-son-charged",
         "sourceDate": "2026-05-29"
-      }
-    },
-    {
-      "dateFound": "2026-06-01",
-      "type": "homicide_found",
-      "label": "Homicide added to tracker",
-      "victimId": "OAK-2026-0017-V01",
-      "incidentId": "OAK-2026-0017",
-      "incidentDate": "2026-05-30",
-      "victimName": "unknown",
-      "location": "1400 block of Harrison Street",
-      "source": {
-        "sourceId": "OAK-2026-S0067",
-        "title": "Downtown Oakland Parking Lot Turns Deadly In 2:46 A.M. Shooting",
-        "publisher": "Hoodline",
-        "url": "https://hoodline.com/2026/05/downtown-oakland-parking-lot-turns-deadly-in-2-46-a-m-shooting/",
-        "sourceDate": "2026-05-31"
       }
     },
     {
