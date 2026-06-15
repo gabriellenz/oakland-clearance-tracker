@@ -3,8 +3,8 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-06-14T02:34:36-07:00",
-    "lastChecked": "2026-06-14",
+    "generatedAt": "2026-06-15T02:37:47-07:00",
+    "lastChecked": "2026-06-15",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
@@ -17,7 +17,7 @@
     "noPublicArrestVictims": 6,
     "unknownArrestStatusVictims": 2,
     "publicArrestRateVictimLevel": 65.2,
-    "namedVictims": 17,
+    "namedVictims": 18,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
@@ -663,8 +663,8 @@
     {
       "victimId": "OAK-2026-0012-V01",
       "incidentId": "OAK-2026-0012",
-      "name": "unknown",
-      "age": "",
+      "name": "Farhad Farsi",
+      "age": "38",
       "gender": "male",
       "raceEthnicity": "",
       "incidentDate": "2026-04-23",
@@ -672,7 +672,7 @@
       "location": "Wood and 18th streets near Raimondi Park / 1800 block of Wood Street",
       "neighborhood": "West Oakland",
       "method": "shooting",
-      "circumstancesSummary": "A man was fatally shot near Wood and 18th streets by Raimondi Park on April 23. Later reporting said prosecutors filed murder charges in the case.",
+      "circumstancesSummary": "Farhad Farsi was fatally shot near Wood and 18th streets by Raimondi Park on April 23. Later reporting said prosecutors filed murder charges in the case.",
       "caseNumber": "26-017599",
       "arrestMade": "yes",
       "arrestDate": "",
@@ -1023,7 +1023,7 @@
       "location": "Wood and 18th streets near Raimondi Park / 1800 block of Wood Street",
       "neighborhood": "West Oakland",
       "method": "shooting",
-      "circumstancesSummary": "A man was fatally shot near Wood and 18th streets by Raimondi Park on April 23. Later reporting said prosecutors filed murder charges in the case.",
+      "circumstancesSummary": "Farhad Farsi was fatally shot near Wood and 18th streets by Raimondi Park on April 23. Later reporting said prosecutors filed murder charges in the case.",
       "victimCount": "1",
       "caseNumber": "26-017599",
       "confidence": "high"
@@ -1190,6 +1190,23 @@
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-06-15",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0012-V01",
+      "incidentId": "OAK-2026-0012",
+      "incidentDate": "2026-04-23",
+      "victimName": "Farhad Farsi",
+      "location": "Wood and 18th streets near Raimondi Park / 1800 block of Wood Street",
+      "source": {
+        "sourceId": "OAK-2026-S0097",
+        "title": "OPD Facebook post: arrest in homicide of Farhad Farsi",
+        "publisher": "Oakland Police Department",
+        "url": "https://www.facebook.com/oaklandpoliceca/photos/the-oakland-police-department-opd-made-an-arrest-in-connection-with-the-homicide/1379945300843361/",
+        "sourceDate": "2026-05-14"
+      }
+    },
     {
       "dateFound": "2026-06-11",
       "type": "homicide_found",
