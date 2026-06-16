@@ -3,26 +3,26 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-06-15T02:37:47-07:00",
-    "lastChecked": "2026-06-15",
+    "generatedAt": "2026-06-16T02:36:56-07:00",
+    "lastChecked": "2026-06-16",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 23,
-    "incidents": 17,
+    "victims": 24,
+    "incidents": 18,
     "arrestReportedVictims": 15,
-    "noPublicArrestVictims": 6,
+    "noPublicArrestVictims": 7,
     "unknownArrestStatusVictims": 2,
-    "publicArrestRateVictimLevel": 65.2,
+    "publicArrestRateVictimLevel": 62.5,
     "namedVictims": 18,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
     "yes": 15,
-    "no": 6,
+    "no": 7,
     "unknown": 2
   },
   "byMonth": [
@@ -60,6 +60,13 @@
       "no": 1,
       "unknown": 0,
       "total": 6
+    },
+    {
+      "month": "2026-06",
+      "yes": 0,
+      "no": 1,
+      "unknown": 0,
+      "total": 1
     }
   ],
   "cumulative": [
@@ -176,6 +183,11 @@
     {
       "date": "2026-05-31",
       "victims": 23,
+      "arrestReportedVictims": 15
+    },
+    {
+      "date": "2026-06-14",
+      "victims": 24,
       "arrestReportedVictims": 15
     }
   ],
@@ -869,6 +881,36 @@
       "caseStatus": "arraigned",
       "clearanceStatus": "arrest_reported",
       "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0018-V01",
+      "incidentId": "OAK-2026-0018",
+      "name": "unknown",
+      "age": "41",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-06-14",
+      "incidentTime": "11:30",
+      "location": "1300 block of Seminary Avenue",
+      "neighborhood": "East Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A San Leandro man was fatally shot in the 1300 block of Seminary Avenue on June 14. Police-sourced reports said homicide investigators were reviewing the shooting and no arrests or suspect information had been announced.",
+      "caseNumber": "",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "",
+      "arrestSourceUrl": "",
+      "arrestSourceTitle": "",
+      "arrestSourcePublisher": "",
+      "arrestSourceDate": "",
+      "allegedPerpetratorsPublic": "",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "under_investigation",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
     }
   ],
   "incidents": [
@@ -1075,6 +1117,18 @@
       "victimCount": "1",
       "caseNumber": "26-023428",
       "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0018",
+      "date": "2026-06-14",
+      "time": "11:30",
+      "location": "1300 block of Seminary Avenue",
+      "neighborhood": "East Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A San Leandro man was fatally shot in the 1300 block of Seminary Avenue on June 14. Police-sourced reports said homicide investigators were reviewing the shooting and no arrests or suspect information had been announced.",
+      "victimCount": "1",
+      "caseNumber": "",
+      "confidence": "high"
     }
   ],
   "countReports": [
@@ -1190,6 +1244,23 @@
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-06-16",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0018-V01",
+      "incidentId": "OAK-2026-0018",
+      "incidentDate": "2026-06-14",
+      "victimName": "unknown",
+      "location": "1300 block of Seminary Avenue",
+      "source": {
+        "sourceId": "OAK-2026-S0101",
+        "title": "San Leandro man shot, killed in East Oakland",
+        "publisher": "Bay City News / NBC Bay Area",
+        "url": "https://www.nbcbayarea.com/news/local/san-leandro-man-killed-east-oakland/4099374/",
+        "sourceDate": "2026-06-15"
+      }
+    },
     {
       "dateFound": "2026-06-15",
       "type": "homicide_found",
