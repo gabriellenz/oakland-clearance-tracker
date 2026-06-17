@@ -3,26 +3,26 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-06-16T02:36:56-07:00",
-    "lastChecked": "2026-06-16",
+    "generatedAt": "2026-06-17T02:35:27-07:00",
+    "lastChecked": "2026-06-17",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 24,
-    "incidents": 18,
+    "victims": 25,
+    "incidents": 19,
     "arrestReportedVictims": 15,
-    "noPublicArrestVictims": 7,
+    "noPublicArrestVictims": 8,
     "unknownArrestStatusVictims": 2,
-    "publicArrestRateVictimLevel": 62.5,
+    "publicArrestRateVictimLevel": 60.0,
     "namedVictims": 18,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
     "yes": 15,
-    "no": 7,
+    "no": 8,
     "unknown": 2
   },
   "byMonth": [
@@ -64,9 +64,9 @@
     {
       "month": "2026-06",
       "yes": 0,
-      "no": 1,
+      "no": 2,
       "unknown": 0,
-      "total": 1
+      "total": 2
     }
   ],
   "cumulative": [
@@ -188,6 +188,11 @@
     {
       "date": "2026-06-14",
       "victims": 24,
+      "arrestReportedVictims": 15
+    },
+    {
+      "date": "2026-06-15",
+      "victims": 25,
       "arrestReportedVictims": 15
     }
   ],
@@ -911,6 +916,36 @@
       "caseStatus": "under_investigation",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0019-V01",
+      "incidentId": "OAK-2026-0019",
+      "name": "unknown",
+      "age": "unknown",
+      "gender": "unknown",
+      "raceEthnicity": "",
+      "incidentDate": "2026-06-15",
+      "incidentTime": "07:30",
+      "location": "1400 block of Fifth Street / near West Oakland BART",
+      "neighborhood": "West Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A person was fatally shot near West Oakland BART on June 15. Police-sourced reports said the victim died at the scene, the identity was withheld pending next-of-kin notification, and no suspects or arrests had been announced as of Tuesday morning.",
+      "caseNumber": "",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0106",
+      "arrestSourceUrl": "https://www.sfchronicle.com/crime/article/oakland-shooting-death-fifth-street-22307721.php",
+      "arrestSourceTitle": "Person shot and killed near West Oakland BART Station",
+      "arrestSourcePublisher": "San Francisco Chronicle",
+      "arrestSourceDate": "2026-06-16",
+      "allegedPerpetratorsPublic": "unknown",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
     }
   ],
   "incidents": [
@@ -1129,6 +1164,18 @@
       "victimCount": "1",
       "caseNumber": "",
       "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0019",
+      "date": "2026-06-15",
+      "time": "07:30",
+      "location": "1400 block of Fifth Street / near West Oakland BART",
+      "neighborhood": "West Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A person was fatally shot near West Oakland BART on June 15. Police-sourced reports said the victim died at the scene, the identity was withheld pending next-of-kin notification, and no suspects or arrests had been announced as of Tuesday morning.",
+      "victimCount": "1",
+      "caseNumber": "",
+      "confidence": "high"
     }
   ],
   "countReports": [
@@ -1244,6 +1291,23 @@
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-06-17",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0019-V01",
+      "incidentId": "OAK-2026-0019",
+      "incidentDate": "2026-06-15",
+      "victimName": "unknown",
+      "location": "1400 block of Fifth Street / near West Oakland BART",
+      "source": {
+        "sourceId": "OAK-2026-S0105",
+        "title": "Oakland: 1 Dead In West Oakland Shooting",
+        "publisher": "Bay City News via SFGATE",
+        "url": "https://www.sfgate.com/news/bayarea/article/oakland-1-dead-in-west-oakland-shooting-22307040.php",
+        "sourceDate": "2026-06-15"
+      }
+    },
     {
       "dateFound": "2026-06-16",
       "type": "homicide_found",
