@@ -3,8 +3,8 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-06-17T02:35:27-07:00",
-    "lastChecked": "2026-06-17",
+    "generatedAt": "2026-06-18T02:37:01-07:00",
+    "lastChecked": "2026-06-18",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
@@ -749,7 +749,7 @@
       "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
       "neighborhood": "East Oakland",
       "method": "vehicular manslaughter / hit-and-run",
-      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash.",
+      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash; a judge later released the teen to home confinement while charges remained pending.",
       "caseNumber": "",
       "arrestMade": "yes",
       "arrestDate": "",
@@ -763,7 +763,7 @@
       "chargesFiled": "yes",
       "leadCharge": "vehicular manslaughter; felony hit-and-run",
       "publicChargeSummary": "Charge: vehicular manslaughter; felony hit-and-run",
-      "caseStatus": "juvenile_charges_brought",
+      "caseStatus": "released_to_home_confinement",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
     },
@@ -779,7 +779,7 @@
       "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
       "neighborhood": "East Oakland",
       "method": "vehicular manslaughter / hit-and-run",
-      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash.",
+      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash; a judge later released the teen to home confinement while charges remained pending.",
       "caseNumber": "",
       "arrestMade": "yes",
       "arrestDate": "",
@@ -793,7 +793,7 @@
       "chargesFiled": "yes",
       "leadCharge": "vehicular manslaughter; felony hit-and-run",
       "publicChargeSummary": "Charge: vehicular manslaughter; felony hit-and-run",
-      "caseStatus": "juvenile_charges_brought",
+      "caseStatus": "released_to_home_confinement",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
     },
@@ -809,7 +809,7 @@
       "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
       "neighborhood": "East Oakland",
       "method": "vehicular manslaughter / hit-and-run",
-      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash.",
+      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash; a judge later released the teen to home confinement while charges remained pending.",
       "caseNumber": "",
       "arrestMade": "yes",
       "arrestDate": "",
@@ -823,7 +823,7 @@
       "chargesFiled": "yes",
       "leadCharge": "vehicular manslaughter; felony hit-and-run",
       "publicChargeSummary": "Charge: vehicular manslaughter; felony hit-and-run",
-      "caseStatus": "juvenile_charges_brought",
+      "caseStatus": "released_to_home_confinement",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
     },
@@ -1124,7 +1124,7 @@
       "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
       "neighborhood": "East Oakland",
       "method": "vehicular manslaughter / hit-and-run",
-      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash.",
+      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash; a judge later released the teen to home confinement while charges remained pending.",
       "victimCount": "3",
       "caseNumber": "",
       "confidence": "medium"
@@ -1288,6 +1288,17 @@
       "unit": "unknown",
       "trackerVictimCount": 22,
       "discrepancy": "Unresolved: tracker has 22 victims including the three May 16 vehicular-manslaughter deaths, but 19 victims if that crash is excluded; the cited OPD/Mercury count of 20 suggests at least one category/count difference or missing case remains."
+    },
+    {
+      "sourceDate": "2026-06-15",
+      "publisher": "Hoodline / Mercury News reference",
+      "title": "Tesla Drive Turns Deadly as San Francisco Man Gunned Down in East Oakland",
+      "url": "https://hoodline.com/2026/06/tesla-drive-turns-deadly-as-san-francisco-man-gunned-down-in-east-oakland/",
+      "periodEnd": "2026-06-14",
+      "reportedTotal": 24,
+      "unit": "unknown",
+      "trackerVictimCount": 24,
+      "discrepancy": "Tracker matches 24 victims through June 14 if the three May 16 vehicular-manslaughter deaths are included; tracker has 21 through June 14 if those crash deaths are excluded."
     }
   ],
   "updateLog": [
