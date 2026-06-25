@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Methodology for the 2026 Oakland homicide clearance tracker, including sources, counting rules, arrest-rate definitions, and limits."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://oakland.clearthemurders.org/methodology.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Clear the Murders" />
+    <meta property="og:title" content="Oakland Homicide Clearance Tracker Methodology" />
+    <meta
+      property="og:description"
+      content="Sources, counting rules, arrest-rate definitions, and limits for the 2026 Oakland homicide clearance tracker."
+    />
+    <meta property="og:url" content="https://oakland.clearthemurders.org/methodology.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Oakland Homicide Clearance Tracker Methodology" />
+    <meta
+      name="twitter:description"
+      content="Sources, counting rules, arrest-rate definitions, and limits for the 2026 Oakland homicide clearance tracker."
+    />
+    <title>Methodology | Oakland Homicide Clearance Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Oakland Homicide Clearance Tracker Methodology",
+        "url": "https://oakland.clearthemurders.org/methodology.html",
+        "description": "Methodology for the 2026 Oakland homicide clearance tracker, including sources, counting rules, arrest-rate definitions, and limits.",
+        "isPartOf": {
+          "@type": "Dataset",
+          "name": "Oakland Homicide Clearance Tracker",
+          "url": "https://oakland.clearthemurders.org/"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Gabriel Lenz",
+          "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of California, Berkeley"
+          },
+          "sameAs": "https://polisci.berkeley.edu/people/person/gabriel-lenz"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header compact-header">
+      <div class="header-inner">
+        <div>
+          <p class="eyebrow">Oakland, California · 2026</p>
+          <h1>Methodology</h1>
+          <p class="lede">
+            How this tracker counts Oakland homicide victims, reported arrests, unresolved cases, and public
+            source updates.
+          </p>
+          <nav class="site-nav" aria-label="Site navigation">
+            <a href="index.html">Dashboard</a>
+            <a href="updates.html">Update log</a>
+            <a href="methodology.html" aria-current="page">Methodology</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="methodology">
+        <article>
+          <h2>Purpose</h2>
+          <p>
+            The Oakland Homicide Clearance Tracker is a public 2026 dashboard for monitoring whether homicide
+            victims in Oakland have a public arrest or charging update. It is meant to make homicide clearance
+            easier to inspect in plain language, not to replace official police, prosecutor, court, or medical
+            examiner records.
+          </p>
+        </article>
+
+        <article>
+          <h2>Counting Rules</h2>
+          <p>
+            The tracker counts one row per homicide victim. Multi-victim incidents share an incident ID and OPD
+            case number when those are available. The public arrest rate is a victim-level proxy: a victim is
+            counted as arrest-reported only when a public source reports an arrest tied to that homicide case.
+            Cases with no clear public arrest report are counted as no public arrest or unknown.
+          </p>
+          <ul>
+            <li>Fatal police shootings are not included in the arrest-rate calculation.</li>
+            <li>Published homicide-count articles are used as reconciliation checkpoints, not as placeholder rows.</li>
+            <li>Race and ethnicity are shown only when a credible source reports them directly.</li>
+            <li>Charging updates are tracked separately from final conviction outcomes.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Sources And Limits</h2>
+          <p>
+            The tracker is built from public reporting, Oakland Police Department data, and court-adjacent public
+            records. Police data helps check case numbers and dates, but it is not treated as a complete victim
+            list by itself. Because public sources can lag, the tracker may temporarily miss recent homicides,
+            arrests, charging decisions, dismissals, or corrections.
+          </p>
+          <p>
+            Public summaries avoid naming alleged perpetrators on the front page. A reported arrest is not a
+            finding of guilt, and a case can change status as public information changes.
+          </p>
+        </article>
+
+        <article>
+          <h2>Maintainer</h2>
+          <p>
+            The tracker is maintained by
+            <a href="https://polisci.berkeley.edu/people/person/gabriel-lenz">Gabriel Lenz</a>, Professor of
+            Political Science at UC Berkeley. Problems, corrections, and suggestions can be filed in the
+            <a href="https://github.com/gabriellenz/oakland-clearance-tracker/issues/new">public GitHub repo</a>.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-cta">
+        <h2>Start a tracker for your city</h2>
+        <p>
+          The code and workflow are public. Use the GitHub repo to start your own nightly clearance-tracking
+          automation, then email the site owner, Gabriel, when your city is running so it can be added at
+          <code>yourcity.clearthemurders.org</code>.
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/gabriellenz/oakland-clearance-tracker">View the GitHub repo</a>
+          <a href="mailto:gabe.lenz@gmail.com?subject=I%20started%20a%20homicide%20clearance%20tracker">
+            Email the site owner
+          </a>
+        </div>
+      </div>
+      <p>
+        Contact: <a href="mailto:gabe.lenz@gmail.com">Gabriel</a>.
+      </p>
+      <p class="maintainer">
+        Maintained by
+        <a href="https://polisci.berkeley.edu/people/person/gabriel-lenz">Gabriel Lenz</a>,
+        Professor of Political Science at UC Berkeley.
+      </p>
+    </footer>
+  </body>
+</html>
