@@ -3,26 +3,26 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-06-24T02:37:52-07:00",
-    "lastChecked": "2026-06-24",
+    "generatedAt": "2026-06-25T02:34:42-07:00",
+    "lastChecked": "2026-06-25",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 25,
-    "incidents": 19,
+    "victims": 26,
+    "incidents": 20,
     "arrestReportedVictims": 15,
-    "noPublicArrestVictims": 8,
+    "noPublicArrestVictims": 9,
     "unknownArrestStatusVictims": 2,
-    "publicArrestRateVictimLevel": 60.0,
+    "publicArrestRateVictimLevel": 57.7,
     "namedVictims": 18,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
     "yes": 15,
-    "no": 8,
+    "no": 9,
     "unknown": 2
   },
   "byMonth": [
@@ -64,9 +64,9 @@
     {
       "month": "2026-06",
       "yes": 0,
-      "no": 2,
+      "no": 3,
       "unknown": 0,
-      "total": 2
+      "total": 3
     }
   ],
   "cumulative": [
@@ -193,6 +193,11 @@
     {
       "date": "2026-06-15",
       "victims": 25,
+      "arrestReportedVictims": 15
+    },
+    {
+      "date": "2026-06-24",
+      "victims": 26,
       "arrestReportedVictims": 15
     }
   ],
@@ -946,6 +951,36 @@
       "caseStatus": "",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0020-V01",
+      "incidentId": "OAK-2026-0020",
+      "name": "unknown",
+      "age": "30s",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-06-24",
+      "incidentTime": "15:00",
+      "location": "550 block of 17th Street / near Clay Street",
+      "neighborhood": "Downtown Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A man in his 30s was fatally shot in downtown Oakland near 17th and Clay streets on June 24. Police-sourced reports said he was taken to a hospital and died there; homicide investigators were reviewing the shooting and no arrests had been announced as of Wednesday evening.",
+      "caseNumber": "",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0128",
+      "arrestSourceUrl": "https://www.sfchronicle.com/bayarea/article/downtown-oakland-homicide-22319763.php",
+      "arrestSourceTitle": "Man fatally shot two blocks from City Hall in downtown Oakland",
+      "arrestSourcePublisher": "San Francisco Chronicle",
+      "arrestSourceDate": "2026-06-24",
+      "allegedPerpetratorsPublic": "unknown",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
     }
   ],
   "incidents": [
@@ -1176,6 +1211,18 @@
       "victimCount": "1",
       "caseNumber": "",
       "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0020",
+      "date": "2026-06-24",
+      "time": "15:00",
+      "location": "550 block of 17th Street / near Clay Street",
+      "neighborhood": "Downtown Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A man in his 30s was fatally shot in downtown Oakland near 17th and Clay streets on June 24. Police-sourced reports said he was taken to a hospital and died there; homicide investigators were reviewing the shooting and no arrests had been announced as of Wednesday evening.",
+      "victimCount": "1",
+      "caseNumber": "",
+      "confidence": "high"
     }
   ],
   "countReports": [
@@ -1299,9 +1346,37 @@
       "unit": "unknown",
       "trackerVictimCount": 24,
       "discrepancy": "Tracker matches 24 victims through June 14 if the three May 16 vehicular-manslaughter deaths are included; tracker has 21 through June 14 if those crash deaths are excluded."
+    },
+    {
+      "sourceDate": "2026-06-24",
+      "publisher": "San Francisco Chronicle",
+      "title": "Man fatally shot two blocks from City Hall in downtown Oakland",
+      "url": "https://www.sfchronicle.com/bayarea/article/downtown-oakland-homicide-22319763.php",
+      "periodEnd": "2026-06-24",
+      "reportedTotal": 26,
+      "unit": "unknown",
+      "trackerVictimCount": 26,
+      "discrepancy": "Tracker matches 26 victims through June 24 if the three May 16 vehicular-manslaughter deaths are included; tracker has 23 through June 24 if those crash deaths are excluded."
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-06-25",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0020-V01",
+      "incidentId": "OAK-2026-0020",
+      "incidentDate": "2026-06-24",
+      "victimName": "unknown",
+      "location": "550 block of 17th Street / near Clay Street",
+      "source": {
+        "sourceId": "OAK-2026-S0127",
+        "title": "Oakland: Man Dies In Fatal Shooting In Downtown Oakland Wednesday",
+        "publisher": "Bay City News via SFGATE",
+        "url": "https://www.sfgate.com/news/bayarea/article/oakland-man-dies-in-fatal-shooting-in-downtown-22319788.php",
+        "sourceDate": "2026-06-24"
+      }
+    },
     {
       "dateFound": "2026-06-17",
       "type": "homicide_found",
