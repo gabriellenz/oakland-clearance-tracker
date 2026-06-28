@@ -3,8 +3,8 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-06-27T02:36:49-07:00",
-    "lastChecked": "2026-06-27",
+    "generatedAt": "2026-06-28T02:36:05-07:00",
+    "lastChecked": "2026-06-28",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
@@ -935,7 +935,7 @@
       "neighborhood": "West Oakland",
       "method": "shooting",
       "circumstancesSummary": "A person was fatally shot near West Oakland BART on June 15. Police-sourced reports said the victim died at the scene, the identity was withheld pending next-of-kin notification, and no suspects or arrests had been announced as of Tuesday morning.",
-      "caseNumber": "",
+      "caseNumber": "26-025605",
       "arrestMade": "no",
       "arrestDate": "",
       "arrestSourceId": "OAK-2026-S0106",
@@ -1209,7 +1209,7 @@
       "method": "shooting",
       "circumstancesSummary": "A person was fatally shot near West Oakland BART on June 15. Police-sourced reports said the victim died at the scene, the identity was withheld pending next-of-kin notification, and no suspects or arrests had been announced as of Tuesday morning.",
       "victimCount": "1",
-      "caseNumber": "",
+      "caseNumber": "26-025605",
       "confidence": "high"
     },
     {
