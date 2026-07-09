@@ -7,6 +7,83 @@ PUBLIC_REPO_DIR="$(pwd)"
 SUPERPROJECT_DIR="$(git rev-parse --show-superproject-working-tree 2>/dev/null || true)"
 PAGES_WORKFLOW=".github/workflows/pages.yml"
 
+check_github_pages_deploy() {
+  local head_sha="$1"
+  local discovery_timeout_seconds="${GITHUB_ACTIONS_DISCOVERY_TIMEOUT_SECONDS:-300}"
+  local completion_timeout_seconds="${GITHUB_ACTIONS_CHECK_TIMEOUT_SECONDS:-1200}"
+  local started_at
+  local run_id=""
+  local run_url=""
+
+  if [[ "${SKIP_GITHUB_ACTIONS_CHECK:-0}" == "1" ]]; then
+    echo "Skipping GitHub Actions deployment check because SKIP_GITHUB_ACTIONS_CHECK=1."
+    return 0
+  fi
+
+  if ! command -v gh >/dev/null 2>&1; then
+    echo "Refusing to publish without deployment verification: GitHub CLI is not installed." >&2
+    exit 1
+  fi
+
+  if ! gh auth status >/dev/null 2>&1; then
+    echo "Refusing to publish without deployment verification: GitHub CLI is not authenticated." >&2
+    exit 1
+  fi
+
+  echo "Waiting for GitHub Pages workflow to start for commit $head_sha..."
+  started_at="$(date +%s)"
+  while [[ -z "$run_id" ]]; do
+    run_id="$(gh run list \
+      --workflow pages.yml \
+      --branch main \
+      --commit "$head_sha" \
+      --limit 1 \
+      --json databaseId \
+      --jq '.[0].databaseId // ""' 2>/dev/null || true)"
+
+    if [[ -n "$run_id" ]]; then
+      run_url="$(gh run view "$run_id" --json url --jq '.url' 2>/dev/null || true)"
+      break
+    fi
+
+    if (( $(date +%s) - started_at >= discovery_timeout_seconds )); then
+      echo "GitHub Pages workflow did not start within ${discovery_timeout_seconds}s for commit $head_sha." >&2
+      exit 1
+    fi
+
+    sleep 10
+  done
+
+  echo "Watching GitHub Pages workflow run $run_id: $run_url"
+  started_at="$(date +%s)"
+  while true; do
+    local status
+    local conclusion
+
+    status="$(gh run view "$run_id" --json status --jq '.status' 2>/dev/null || true)"
+    conclusion="$(gh run view "$run_id" --json conclusion --jq '.conclusion // ""' 2>/dev/null || true)"
+
+    if [[ "$status" == "completed" ]]; then
+      if [[ "$conclusion" == "success" ]]; then
+        echo "GitHub Pages deployment succeeded: $run_url"
+        return 0
+      fi
+
+      echo "GitHub Pages deployment failed with conclusion '$conclusion': $run_url" >&2
+      echo "Failed step logs:" >&2
+      gh run view "$run_id" --log-failed >&2 || true
+      exit 1
+    fi
+
+    if (( $(date +%s) - started_at >= completion_timeout_seconds )); then
+      echo "GitHub Pages workflow did not complete within ${completion_timeout_seconds}s: $run_url" >&2
+      exit 1
+    fi
+
+    sleep 15
+  done
+}
+
 if [[ -f "$PAGES_WORKFLOW" ]]; then
   required_actions=(
     "actions/checkout@v5"
@@ -48,6 +125,7 @@ else
   git add data/oakland-2026.json
   git commit -m "Update Oakland tracker public data"
   git push
+  check_github_pages_deploy "$(git rev-parse HEAD)"
 fi
 
 if [[ -n "$SUPERPROJECT_DIR" ]]; then
