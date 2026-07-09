@@ -3,25 +3,25 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-07-06T02:34:46-07:00",
-    "lastChecked": "2026-07-06",
+    "generatedAt": "2026-07-09T02:36:40-07:00",
+    "lastChecked": "2026-07-09",
     "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 26,
-    "incidents": 20,
-    "arrestReportedVictims": 15,
+    "victims": 27,
+    "incidents": 21,
+    "arrestReportedVictims": 16,
     "noPublicArrestVictims": 9,
     "unknownArrestStatusVictims": 2,
-    "publicArrestRateVictimLevel": 57.7,
-    "namedVictims": 18,
+    "publicArrestRateVictimLevel": 59.3,
+    "namedVictims": 19,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
-    "yes": 15,
+    "yes": 16,
     "no": 9,
     "unknown": 2
   },
@@ -63,10 +63,17 @@
     },
     {
       "month": "2026-06",
-      "yes": 0,
-      "no": 3,
+      "yes": 1,
+      "no": 2,
       "unknown": 0,
       "total": 3
+    },
+    {
+      "month": "2026-07",
+      "yes": 0,
+      "no": 1,
+      "unknown": 0,
+      "total": 1
     }
   ],
   "cumulative": [
@@ -188,17 +195,22 @@
     {
       "date": "2026-06-14",
       "victims": 24,
-      "arrestReportedVictims": 15
+      "arrestReportedVictims": 16
     },
     {
       "date": "2026-06-15",
       "victims": 25,
-      "arrestReportedVictims": 15
+      "arrestReportedVictims": 16
     },
     {
       "date": "2026-06-24",
       "victims": 26,
-      "arrestReportedVictims": 15
+      "arrestReportedVictims": 16
+    },
+    {
+      "date": "2026-07-07",
+      "victims": 27,
+      "arrestReportedVictims": 16
     }
   ],
   "victims": [
@@ -904,22 +916,22 @@
       "location": "1300 block of Seminary Avenue",
       "neighborhood": "East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "A San Leandro man was fatally shot in the 1300 block of Seminary Avenue on June 14. Police-sourced reports said homicide investigators were reviewing the shooting and no arrests or suspect information had been announced.",
+      "circumstancesSummary": "A San Leandro man was fatally shot while seated in a Tesla in the 1300 block of Seminary Avenue on June 14. Later reporting said prosecutors filed murder charges in the case.",
       "caseNumber": "26-025480",
-      "arrestMade": "no",
-      "arrestDate": "",
-      "arrestSourceId": "",
-      "arrestSourceUrl": "",
-      "arrestSourceTitle": "",
-      "arrestSourcePublisher": "",
-      "arrestSourceDate": "",
-      "allegedPerpetratorsPublic": "",
+      "arrestMade": "yes",
+      "arrestDate": "2026-07-01",
+      "arrestSourceId": "OAK-2026-S0148",
+      "arrestSourceUrl": "https://da.alamedacountyca.gov/district-attorney-ursula-jones-dickson-announces-murder-charges-in-oakland-fatal-shooting/",
+      "arrestSourceTitle": "District Attorney Ursula Jones Dickson Announces Murder Charges in Oakland Fatal Shooting",
+      "arrestSourcePublisher": "Alameda County District Attorney",
+      "arrestSourceDate": "2026-07-06",
+      "allegedPerpetratorsPublic": "Leonard Evans",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
-      "chargesFiled": "",
-      "leadCharge": "",
-      "publicChargeSummary": "None reported",
-      "caseStatus": "under_investigation",
-      "clearanceStatus": "open_no_public_arrest",
+      "chargesFiled": "yes",
+      "leadCharge": "murder",
+      "publicChargeSummary": "Charge: murder",
+      "caseStatus": "charged",
+      "clearanceStatus": "arrest_reported",
       "confidence": "high"
     },
     {
@@ -979,6 +991,36 @@
       "leadCharge": "",
       "publicChargeSummary": "None reported",
       "caseStatus": "",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0021-V01",
+      "incidentId": "OAK-2026-0021",
+      "name": "Jermaine Newton",
+      "age": "47",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-07-07",
+      "incidentTime": "06:15",
+      "location": "Old Quarry Loop and Leona Drive",
+      "neighborhood": "East Oakland hills / Leona Quarry area",
+      "method": "shooting",
+      "circumstancesSummary": "Jermaine Newton was fatally shot near Old Quarry Loop and Leona Drive on July 7. Police-sourced reports said OPD homicide detectives were investigating and no arrests had been announced.",
+      "caseNumber": "26-028833",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "",
+      "arrestSourceUrl": "",
+      "arrestSourceTitle": "",
+      "arrestSourcePublisher": "",
+      "arrestSourceDate": "",
+      "allegedPerpetratorsPublic": "",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "under_investigation",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "high"
     }
@@ -1195,7 +1237,7 @@
       "location": "1300 block of Seminary Avenue",
       "neighborhood": "East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "A San Leandro man was fatally shot in the 1300 block of Seminary Avenue on June 14. Police-sourced reports said homicide investigators were reviewing the shooting and no arrests or suspect information had been announced.",
+      "circumstancesSummary": "A San Leandro man was fatally shot while seated in a Tesla in the 1300 block of Seminary Avenue on June 14. Later reporting said prosecutors filed murder charges in the case.",
       "victimCount": "1",
       "caseNumber": "26-025480",
       "confidence": "high"
@@ -1222,6 +1264,18 @@
       "circumstancesSummary": "A man in his 30s was fatally shot in downtown Oakland near 17th and Clay streets on June 24. Police-sourced reports said he was taken to a hospital and died there; homicide investigators were reviewing the shooting and no arrests had been announced as of Wednesday evening.",
       "victimCount": "1",
       "caseNumber": "26-027020",
+      "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0021",
+      "date": "2026-07-07",
+      "time": "06:15",
+      "location": "Old Quarry Loop and Leona Drive",
+      "neighborhood": "East Oakland hills / Leona Quarry area",
+      "method": "shooting",
+      "circumstancesSummary": "Jermaine Newton was fatally shot near Old Quarry Loop and Leona Drive on July 7. Police-sourced reports said OPD homicide detectives were investigating and no arrests had been announced.",
+      "victimCount": "1",
+      "caseNumber": "26-028833",
       "confidence": "high"
     }
   ],
@@ -1357,9 +1411,54 @@
       "unit": "unknown",
       "trackerVictimCount": 26,
       "discrepancy": "Tracker matches 26 victims through June 24 if the three May 16 vehicular-manslaughter deaths are included; tracker has 23 through June 24 if those crash deaths are excluded."
+    },
+    {
+      "sourceDate": "2026-07-07",
+      "publisher": "Hoodline / Mercury News reference",
+      "title": "Pre-Dawn Oakland Hills Shooting Leaves Local Man Dead on Leona Drive",
+      "url": "https://hoodline.com/2026/07/pre-dawn-oakland-hills-shooting-leaves-local-man-dead-on-leona-drive/",
+      "periodEnd": "2026-07-07",
+      "reportedTotal": 27,
+      "unit": "victims",
+      "trackerVictimCount": 27,
+      "discrepancy": "Matches tracker only if the three May 16 vehicular-manslaughter deaths remain included; tracker has 24 victims excluding those crash deaths."
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-07-09",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0021-V01",
+      "incidentId": "OAK-2026-0021",
+      "incidentDate": "2026-07-07",
+      "victimName": "Jermaine Newton",
+      "location": "Old Quarry Loop and Leona Drive",
+      "source": {
+        "sourceId": "OAK-2026-S0149",
+        "title": "City worker shot to death near Old Quarry Loop in Oakland ID\u2019d",
+        "publisher": "NBC Bay Area",
+        "url": "https://www.nbcbayarea.com/news/local/oakland-fatal-shooting-6/4110363/",
+        "sourceDate": "2026-07-07"
+      }
+    },
+    {
+      "dateFound": "2026-07-09",
+      "type": "arrest_found",
+      "label": "Arrest or charges found",
+      "victimId": "OAK-2026-0018-V01",
+      "incidentId": "OAK-2026-0018",
+      "incidentDate": "2026-06-14",
+      "victimName": "unknown",
+      "location": "1300 block of Seminary Avenue",
+      "source": {
+        "sourceId": "OAK-2026-S0148",
+        "title": "District Attorney Ursula Jones Dickson Announces Murder Charges in Oakland Fatal Shooting",
+        "publisher": "Alameda County District Attorney",
+        "url": "https://da.alamedacountyca.gov/district-attorney-ursula-jones-dickson-announces-murder-charges-in-oakland-fatal-shooting/",
+        "sourceDate": "2026-07-06"
+      }
+    },
     {
       "dateFound": "2026-06-25",
       "type": "homicide_found",
