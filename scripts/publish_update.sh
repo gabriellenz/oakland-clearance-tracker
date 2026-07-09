@@ -5,6 +5,28 @@ cd "$(dirname "$0")/.."
 
 PUBLIC_REPO_DIR="$(pwd)"
 SUPERPROJECT_DIR="$(git rev-parse --show-superproject-working-tree 2>/dev/null || true)"
+PAGES_WORKFLOW=".github/workflows/pages.yml"
+
+if [[ -f "$PAGES_WORKFLOW" ]]; then
+  required_actions=(
+    "actions/checkout@v5"
+    "actions/configure-pages@v6"
+    "actions/upload-pages-artifact@v5"
+    "actions/deploy-pages@v5"
+  )
+
+  for action in "${required_actions[@]}"; do
+    if ! grep -q "uses: $action" "$PAGES_WORKFLOW"; then
+      echo "Refusing to publish: $PAGES_WORKFLOW must use $action." >&2
+      exit 1
+    fi
+  done
+
+  if grep -q "FORCE_JAVASCRIPT_ACTIONS_TO_NODE24" "$PAGES_WORKFLOW"; then
+    echo "Refusing to publish: remove FORCE_JAVASCRIPT_ACTIONS_TO_NODE24 from $PAGES_WORKFLOW." >&2
+    exit 1
+  fi
+fi
 
 python3 scripts/build_public_data.py
 python3 -m json.tool data/oakland-2026.json >/dev/null
