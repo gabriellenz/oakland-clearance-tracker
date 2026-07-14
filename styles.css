@@ -583,11 +583,6 @@ footer {
   font-weight: 750;
 }
 
-.maintainer {
-  margin-top: 8px;
-  font-size: 0.92rem;
-}
-
 .methodology {
   display: grid;
   gap: 16px;
