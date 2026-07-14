@@ -3,27 +3,28 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-07-14T02:37:58-07:00",
+    "generatedAt": "2026-07-14T09:24:00-07:00",
     "lastChecked": "2026-07-14",
-    "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
+    "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 27,
-    "incidents": 21,
-    "arrestReportedVictims": 16,
+    "victims": 24,
+    "incidents": 20,
+    "arrestReportedVictims": 11,
+    "chargeReportedVictims": 12,
     "noPublicArrestVictims": 9,
-    "unknownArrestStatusVictims": 2,
-    "publicArrestRateVictimLevel": 59.3,
-    "namedVictims": 19,
+    "unknownArrestStatusVictims": 4,
+    "publicArrestRateVictimLevel": 45.8,
+    "namedVictims": 16,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
-    "yes": 16,
+    "yes": 11,
     "no": 9,
-    "unknown": 2
+    "unknown": 4
   },
   "byMonth": [
     {
@@ -49,17 +50,17 @@
     },
     {
       "month": "2026-04",
-      "yes": 3,
+      "yes": 1,
       "no": 0,
-      "unknown": 0,
+      "unknown": 2,
       "total": 3
     },
     {
       "month": "2026-05",
-      "yes": 5,
+      "yes": 2,
       "no": 1,
       "unknown": 0,
-      "total": 6
+      "total": 3
     },
     {
       "month": "2026-06",
@@ -150,67 +151,52 @@
     {
       "date": "2026-04-18",
       "victims": 15,
-      "arrestReportedVictims": 8
+      "arrestReportedVictims": 7
     },
     {
       "date": "2026-04-18",
       "victims": 16,
-      "arrestReportedVictims": 9
+      "arrestReportedVictims": 7
     },
     {
       "date": "2026-04-23",
       "victims": 17,
-      "arrestReportedVictims": 10
+      "arrestReportedVictims": 8
     },
     {
       "date": "2026-05-06",
       "victims": 18,
-      "arrestReportedVictims": 10
-    },
-    {
-      "date": "2026-05-16",
-      "victims": 19,
-      "arrestReportedVictims": 11
-    },
-    {
-      "date": "2026-05-16",
-      "victims": 20,
-      "arrestReportedVictims": 12
-    },
-    {
-      "date": "2026-05-16",
-      "victims": 21,
-      "arrestReportedVictims": 13
+      "arrestReportedVictims": 8
     },
     {
       "date": "2026-05-23",
-      "victims": 22,
-      "arrestReportedVictims": 14
+      "victims": 19,
+      "arrestReportedVictims": 9
     },
     {
       "date": "2026-05-31",
-      "victims": 23,
-      "arrestReportedVictims": 15
+      "victims": 20,
+      "arrestReportedVictims": 10
     },
     {
       "date": "2026-06-14",
-      "victims": 24,
-      "arrestReportedVictims": 16
+      "victims": 21,
+      "arrestReportedVictims": 11
     },
     {
       "date": "2026-06-15",
-      "victims": 25,
-      "arrestReportedVictims": 16
+      "victims": 22,
+      "arrestReportedVictims": 11
     },
     {
       "date": "2026-06-24",
-      "victims": 26,
-      "arrestReportedVictims": 16
+      "victims": 23,
+      "arrestReportedVictims": 11
     },
     {
       "date": "2026-07-07",
-      "victims": 27,
-      "arrestReportedVictims": 16
+      "victims": 24,
+      "arrestReportedVictims": 11
     }
   ],
   "victims": [
@@ -270,7 +256,7 @@
       "chargesFiled": "unknown",
       "leadCharge": "",
       "publicChargeSummary": "Public arrest reported",
-      "caseStatus": "released_without_charges_reported",
+      "caseStatus": "unknown",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
     },
@@ -295,7 +281,7 @@
       "arrestSourceTitle": "Man charged with triple murder from drug shootout at Oakland market",
       "arrestSourcePublisher": "KTVU FOX 2",
       "arrestSourceDate": "2026-01-26",
-      "allegedPerpetratorsPublic": "Darrell Tatmon; Angelo Lemelle Pharr",
+      "allegedPerpetratorsPublic": "Darrell Tatmon",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
       "leadCharge": "murder",
@@ -325,7 +311,7 @@
       "arrestSourceTitle": "Man charged with triple murder from drug shootout at Oakland market",
       "arrestSourcePublisher": "KTVU FOX 2",
       "arrestSourceDate": "2026-01-26",
-      "allegedPerpetratorsPublic": "Darrell Tatmon; Angelo Lemelle Pharr",
+      "allegedPerpetratorsPublic": "Darrell Tatmon",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
       "leadCharge": "murder",
@@ -355,7 +341,7 @@
       "arrestSourceTitle": "Man charged with triple murder from drug shootout at Oakland market",
       "arrestSourcePublisher": "KTVU FOX 2",
       "arrestSourceDate": "2026-01-26",
-      "allegedPerpetratorsPublic": "Darrell Tatmon; Angelo Lemelle Pharr",
+      "allegedPerpetratorsPublic": "Darrell Tatmon",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
       "leadCharge": "murder",
@@ -385,11 +371,11 @@
       "arrestSourceTitle": "Father, son charged in fatal Oakland flea market shooting tied to fake ID dispute",
       "arrestSourcePublisher": "KTVU FOX 2",
       "arrestSourceDate": "2026-05-29",
-      "allegedPerpetratorsPublic": "Israel Colin Figueroa; Dillan Figueroa-Cabrera",
+      "allegedPerpetratorsPublic": "Israel Colin Figueroa",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
-      "leadCharge": "murder; accessory after the fact",
-      "publicChargeSummary": "Charge: murder; accessory after the fact",
+      "leadCharge": "murder",
+      "publicChargeSummary": "Charge: murder",
       "caseStatus": "charged",
       "clearanceStatus": "arrest_reported",
       "confidence": "medium"
@@ -445,9 +431,9 @@
       "arrestSourceTitle": "",
       "arrestSourcePublisher": "",
       "arrestSourceDate": "",
-      "allegedPerpetratorsPublic": "",
+      "allegedPerpetratorsPublic": "unknown",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
-      "chargesFiled": "",
+      "chargesFiled": "unknown",
       "leadCharge": "",
       "publicChargeSummary": "Unknown",
       "caseStatus": "",
@@ -475,9 +461,9 @@
       "arrestSourceTitle": "",
       "arrestSourcePublisher": "",
       "arrestSourceDate": "",
-      "allegedPerpetratorsPublic": "",
+      "allegedPerpetratorsPublic": "unknown",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
-      "chargesFiled": "",
+      "chargesFiled": "unknown",
       "leadCharge": "",
       "publicChargeSummary": "Unknown",
       "caseStatus": "",
@@ -646,22 +632,22 @@
       "location": "6400 block of Foothill Boulevard / 2800 block of 64th Avenue",
       "neighborhood": "East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "Derrick Hubbard and Isaanae Morton were killed in related shootings near Foothill Boulevard and 64th Avenue. Later reporting said prosecutors filed murder charges and an accessory-after-the-fact charge.",
+      "circumstancesSummary": "Derrick Hubbard and Isaanae Morton were killed in related shootings near Foothill Boulevard and 64th Avenue.",
       "caseNumber": "26-016885",
-      "arrestMade": "yes",
+      "arrestMade": "unknown",
       "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0039",
-      "arrestSourceUrl": "https://www.ktvu.com/news/first-fridays-dispute-sparks-deadly-shooting-revenge-killing-east-oakland.amp",
-      "arrestSourceTitle": "First Fridays dispute sparks deadly shooting, revenge killing in East Oakland",
-      "arrestSourcePublisher": "KTVU FOX 2",
-      "arrestSourceDate": "2026-04-28",
-      "allegedPerpetratorsPublic": "Davione Sharp; Reginald Jackson; Michael Baxter",
+      "arrestSourceId": "",
+      "arrestSourceUrl": "",
+      "arrestSourceTitle": "",
+      "arrestSourcePublisher": "",
+      "arrestSourceDate": "",
+      "allegedPerpetratorsPublic": "Davione Sharp",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
-      "leadCharge": "murder; accessory after the fact",
-      "publicChargeSummary": "Charge: murder; accessory after the fact",
+      "leadCharge": "murder",
+      "publicChargeSummary": "Charge: murder",
       "caseStatus": "charged",
-      "clearanceStatus": "arrest_reported",
+      "clearanceStatus": "unknown",
       "confidence": "medium"
     },
     {
@@ -676,22 +662,22 @@
       "location": "6400 block of Foothill Boulevard / 2800 block of 64th Avenue",
       "neighborhood": "East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "Derrick Hubbard and Isaanae Morton were killed in related shootings near Foothill Boulevard and 64th Avenue. Later reporting said prosecutors filed murder charges and an accessory-after-the-fact charge.",
+      "circumstancesSummary": "Derrick Hubbard and Isaanae Morton were killed in related shootings near Foothill Boulevard and 64th Avenue.",
       "caseNumber": "26-016885",
-      "arrestMade": "yes",
+      "arrestMade": "unknown",
       "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0039",
-      "arrestSourceUrl": "https://www.ktvu.com/news/first-fridays-dispute-sparks-deadly-shooting-revenge-killing-east-oakland.amp",
-      "arrestSourceTitle": "First Fridays dispute sparks deadly shooting, revenge killing in East Oakland",
-      "arrestSourcePublisher": "KTVU FOX 2",
-      "arrestSourceDate": "2026-04-28",
-      "allegedPerpetratorsPublic": "Davione Sharp; Reginald Jackson; Michael Baxter",
+      "arrestSourceId": "",
+      "arrestSourceUrl": "",
+      "arrestSourceTitle": "",
+      "arrestSourcePublisher": "",
+      "arrestSourceDate": "",
+      "allegedPerpetratorsPublic": "Reginald Jackson",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
-      "leadCharge": "murder; accessory after the fact",
-      "publicChargeSummary": "Charge: murder; accessory after the fact",
+      "leadCharge": "murder",
+      "publicChargeSummary": "Charge: murder",
       "caseStatus": "charged",
-      "clearanceStatus": "arrest_reported",
+      "clearanceStatus": "unknown",
       "confidence": "medium"
     },
     {
@@ -710,11 +696,11 @@
       "caseNumber": "26-017599",
       "arrestMade": "yes",
       "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0031",
-      "arrestSourceUrl": "https://www.sfchronicle.com/bayarea/article/oakland-murder-charge-22227123.php",
-      "arrestSourceTitle": "Man charged with murder in shooting near West Oakland park",
-      "arrestSourcePublisher": "San Francisco Chronicle",
-      "arrestSourceDate": "2026-04-26",
+      "arrestSourceId": "OAK-2026-S0097",
+      "arrestSourceUrl": "https://www.facebook.com/oaklandpoliceca/photos/the-oakland-police-department-opd-made-an-arrest-in-connection-with-the-homicide/1379945300843361/",
+      "arrestSourceTitle": "OPD Facebook post: arrest in homicide of Farhad Farsi",
+      "arrestSourcePublisher": "Oakland Police Department",
+      "arrestSourceDate": "2026-05-14",
       "allegedPerpetratorsPublic": "Tyrone Gobar",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
@@ -755,96 +741,6 @@
       "confidence": "medium"
     },
     {
-      "victimId": "OAK-2026-0015-V01",
-      "incidentId": "OAK-2026-0015",
-      "name": "Robert Joe Dixon",
-      "age": "64",
-      "gender": "male",
-      "raceEthnicity": "",
-      "incidentDate": "2026-05-16",
-      "incidentTime": "23:15",
-      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
-      "neighborhood": "East Oakland",
-      "method": "vehicular manslaughter / hit-and-run",
-      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash; a judge later released the teen to home confinement while charges remained pending.",
-      "caseNumber": "",
-      "arrestMade": "yes",
-      "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0051",
-      "arrestSourceUrl": "https://www.sfgate.com/news/bayarea/article/oakland-17-year-old-charged-in-crash-that-killed-22265512.php",
-      "arrestSourceTitle": "Oakland: 17-Year-Old Charged In Crash That Killed 3 Saturday Night",
-      "arrestSourcePublisher": "Bay City News via SFGATE",
-      "arrestSourceDate": "2026-05-18",
-      "allegedPerpetratorsPublic": "unnamed juvenile driver",
-      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
-      "chargesFiled": "yes",
-      "leadCharge": "vehicular manslaughter; felony hit-and-run",
-      "publicChargeSummary": "Charge: vehicular manslaughter; felony hit-and-run",
-      "caseStatus": "released_to_home_confinement",
-      "clearanceStatus": "arrest_reported",
-      "confidence": "medium"
-    },
-    {
-      "victimId": "OAK-2026-0015-V02",
-      "incidentId": "OAK-2026-0015",
-      "name": "Charles Ray Blackmon",
-      "age": "65",
-      "gender": "male",
-      "raceEthnicity": "",
-      "incidentDate": "2026-05-16",
-      "incidentTime": "23:15",
-      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
-      "neighborhood": "East Oakland",
-      "method": "vehicular manslaughter / hit-and-run",
-      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash; a judge later released the teen to home confinement while charges remained pending.",
-      "caseNumber": "",
-      "arrestMade": "yes",
-      "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0051",
-      "arrestSourceUrl": "https://www.sfgate.com/news/bayarea/article/oakland-17-year-old-charged-in-crash-that-killed-22265512.php",
-      "arrestSourceTitle": "Oakland: 17-Year-Old Charged In Crash That Killed 3 Saturday Night",
-      "arrestSourcePublisher": "Bay City News via SFGATE",
-      "arrestSourceDate": "2026-05-18",
-      "allegedPerpetratorsPublic": "unnamed juvenile driver",
-      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
-      "chargesFiled": "yes",
-      "leadCharge": "vehicular manslaughter; felony hit-and-run",
-      "publicChargeSummary": "Charge: vehicular manslaughter; felony hit-and-run",
-      "caseStatus": "released_to_home_confinement",
-      "clearanceStatus": "arrest_reported",
-      "confidence": "medium"
-    },
-    {
-      "victimId": "OAK-2026-0015-V03",
-      "incidentId": "OAK-2026-0015",
-      "name": "Miguel Angel Sanchez Ramirez",
-      "age": "44",
-      "gender": "male",
-      "raceEthnicity": "",
-      "incidentDate": "2026-05-16",
-      "incidentTime": "23:15",
-      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
-      "neighborhood": "East Oakland",
-      "method": "vehicular manslaughter / hit-and-run",
-      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash; a judge later released the teen to home confinement while charges remained pending.",
-      "caseNumber": "",
-      "arrestMade": "yes",
-      "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0051",
-      "arrestSourceUrl": "https://www.sfgate.com/news/bayarea/article/oakland-17-year-old-charged-in-crash-that-killed-22265512.php",
-      "arrestSourceTitle": "Oakland: 17-Year-Old Charged In Crash That Killed 3 Saturday Night",
-      "arrestSourcePublisher": "Bay City News via SFGATE",
-      "arrestSourceDate": "2026-05-18",
-      "allegedPerpetratorsPublic": "unnamed juvenile driver",
-      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
-      "chargesFiled": "yes",
-      "leadCharge": "vehicular manslaughter; felony hit-and-run",
-      "publicChargeSummary": "Charge: vehicular manslaughter; felony hit-and-run",
-      "caseStatus": "released_to_home_confinement",
-      "clearanceStatus": "arrest_reported",
-      "confidence": "medium"
-    },
-    {
       "victimId": "OAK-2026-0016-V01",
       "incidentId": "OAK-2026-0016",
       "name": "Aldon Rochel Mata Cardona",
@@ -865,7 +761,7 @@
       "arrestSourceTitle": "Oakland: Man Arrested In Killing Of 19-Year-Old From Guatemala",
       "arrestSourcePublisher": "Bay City News via SFGATE",
       "arrestSourceDate": "2026-06-05",
-      "allegedPerpetratorsPublic": "Ottoniel Salesgarcia",
+      "allegedPerpetratorsPublic": "Ottoniel Sales Garcia",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "yes",
       "leadCharge": "murder",
@@ -1165,7 +1061,7 @@
       "location": "6400 block of Foothill Boulevard / 2800 block of 64th Avenue",
       "neighborhood": "East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "Derrick Hubbard and Isaanae Morton were killed in related shootings near Foothill Boulevard and 64th Avenue. Later reporting said prosecutors filed murder charges and an accessory-after-the-fact charge.",
+      "circumstancesSummary": "Derrick Hubbard and Isaanae Morton were killed in related shootings near Foothill Boulevard and 64th Avenue.",
       "victimCount": "2",
       "caseNumber": "26-016885",
       "confidence": "medium"
@@ -1192,18 +1088,6 @@
       "circumstancesSummary": "A man was killed after an assault in the 800 block of West Grand Avenue on the evening of May 6. Initial reports said OPD homicide detectives were investigating and the victim's identity was withheld pending next-of-kin notification.",
       "victimCount": "1",
       "caseNumber": "26-019654",
-      "confidence": "medium"
-    },
-    {
-      "incidentId": "OAK-2026-0015",
-      "date": "2026-05-16",
-      "time": "23:15",
-      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
-      "neighborhood": "East Oakland",
-      "method": "vehicular manslaughter / hit-and-run",
-      "circumstancesSummary": "Three pedestrians were killed and others were injured when a 17-year-old driver allegedly struck parked vehicles and then drove onto the sidewalk near 85th Avenue and International Boulevard. Public reports say juvenile charges were brought after the crash; a judge later released the teen to home confinement while charges remained pending.",
-      "victimCount": "3",
-      "caseNumber": "",
       "confidence": "medium"
     },
     {
@@ -1387,8 +1271,8 @@
       "periodEnd": "2026-05-24",
       "reportedTotal": 20,
       "unit": "unknown",
-      "trackerVictimCount": 22,
-      "discrepancy": "Unresolved: tracker has 22 victims including the three May 16 vehicular-manslaughter deaths, but 19 victims if that crash is excluded; the cited OPD/Mercury count of 20 suggests at least one category/count difference or missing case remains."
+      "trackerVictimCount": 19,
+      "discrepancy": "After the traffic-death exclusion, the tracker has 19 victims through May 24; the cited count of 20 indicates at least one missing case or category difference."
     },
     {
       "sourceDate": "2026-06-15",
@@ -1398,8 +1282,8 @@
       "periodEnd": "2026-06-14",
       "reportedTotal": 24,
       "unit": "unknown",
-      "trackerVictimCount": 24,
-      "discrepancy": "Tracker matches 24 victims through June 14 if the three May 16 vehicular-manslaughter deaths are included; tracker has 21 through June 14 if those crash deaths are excluded."
+      "trackerVictimCount": 21,
+      "discrepancy": "After the traffic-death exclusion the tracker has 21 victims through June 14; the three-count difference remains unresolved."
     },
     {
       "sourceDate": "2026-06-24",
@@ -1409,8 +1293,8 @@
       "periodEnd": "2026-06-24",
       "reportedTotal": 26,
       "unit": "unknown",
-      "trackerVictimCount": 26,
-      "discrepancy": "Tracker matches 26 victims through June 24 if the three May 16 vehicular-manslaughter deaths are included; tracker has 23 through June 24 if those crash deaths are excluded."
+      "trackerVictimCount": 23,
+      "discrepancy": "After the traffic-death exclusion the tracker has 23 victims through June 24; the three-count difference remains unresolved."
     },
     {
       "sourceDate": "2026-07-07",
@@ -1420,8 +1304,8 @@
       "periodEnd": "2026-07-07",
       "reportedTotal": 27,
       "unit": "victims",
-      "trackerVictimCount": 27,
-      "discrepancy": "Matches tracker only if the three May 16 vehicular-manslaughter deaths remain included; tracker has 24 victims excluding those crash deaths."
+      "trackerVictimCount": 24,
+      "discrepancy": "Under the adopted traffic-death exclusion the tracker has 24 victims through July 7; the three-count difference remains unresolved."
     }
   ],
   "updateLog": [
@@ -1445,7 +1329,7 @@
     {
       "dateFound": "2026-07-09",
       "type": "arrest_found",
-      "label": "Arrest or charges found",
+      "label": "Arrest found",
       "victimId": "OAK-2026-0018-V01",
       "incidentId": "OAK-2026-0018",
       "incidentDate": "2026-06-14",
@@ -1528,6 +1412,23 @@
       }
     },
     {
+      "dateFound": "2026-06-15",
+      "type": "arrest_found",
+      "label": "Arrest found",
+      "victimId": "OAK-2026-0012-V01",
+      "incidentId": "OAK-2026-0012",
+      "incidentDate": "2026-04-23",
+      "victimName": "Farhad Farsi",
+      "location": "Wood and 18th streets near Raimondi Park / 1800 block of Wood Street",
+      "source": {
+        "sourceId": "OAK-2026-S0097",
+        "title": "OPD Facebook post: arrest in homicide of Farhad Farsi",
+        "publisher": "Oakland Police Department",
+        "url": "https://www.facebook.com/oaklandpoliceca/photos/the-oakland-police-department-opd-made-an-arrest-in-connection-with-the-homicide/1379945300843361/",
+        "sourceDate": "2026-05-14"
+      }
+    },
+    {
       "dateFound": "2026-06-11",
       "type": "homicide_found",
       "label": "Homicide added to tracker",
@@ -1547,7 +1448,7 @@
     {
       "dateFound": "2026-06-11",
       "type": "arrest_found",
-      "label": "Arrest or charges found",
+      "label": "Arrest found",
       "victimId": "OAK-2026-0017-V01",
       "incidentId": "OAK-2026-0017",
       "incidentDate": "2026-05-31",
@@ -1564,7 +1465,7 @@
     {
       "dateFound": "2026-06-08",
       "type": "arrest_found",
-      "label": "Arrest or charges found",
+      "label": "Arrest found",
       "victimId": "OAK-2026-0016-V01",
       "incidentId": "OAK-2026-0016",
       "incidentDate": "2026-05-23",
@@ -1581,7 +1482,7 @@
     {
       "dateFound": "2026-06-03",
       "type": "arrest_found",
-      "label": "Arrest or charges found",
+      "label": "Arrest found",
       "victimId": "OAK-2026-0004-V01",
       "incidentId": "OAK-2026-0004",
       "incidentDate": "2026-01-09",
@@ -1610,108 +1511,6 @@
         "publisher": "KTVU FOX 2",
         "url": "https://www.ktvu.com/news/oakland-police-investigating-fatal-stabbing-near-san-antonio-park",
         "sourceDate": "2026-05-25"
-      }
-    },
-    {
-      "dateFound": "2026-05-21",
-      "type": "homicide_found",
-      "label": "Homicide added to tracker",
-      "victimId": "OAK-2026-0015-V03",
-      "incidentId": "OAK-2026-0015",
-      "incidentDate": "2026-05-16",
-      "victimName": "Miguel Angel Sanchez Ramirez",
-      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
-      "source": {
-        "sourceId": "OAK-2026-S0052",
-        "title": "Alameda County DA charges teen accused in fatal Oakland crash",
-        "publisher": "KTVU FOX 2",
-        "url": "https://www.ktvu.com/news/alameda-county-da-announce-charges-against-teen-accused-fatal-oakland-crash",
-        "sourceDate": "2026-05-20"
-      }
-    },
-    {
-      "dateFound": "2026-05-21",
-      "type": "arrest_found",
-      "label": "Arrest or charges found",
-      "victimId": "OAK-2026-0015-V03",
-      "incidentId": "OAK-2026-0015",
-      "incidentDate": "2026-05-16",
-      "victimName": "Miguel Angel Sanchez Ramirez",
-      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
-      "source": {
-        "sourceId": "OAK-2026-S0051",
-        "title": "Oakland: 17-Year-Old Charged In Crash That Killed 3 Saturday Night",
-        "publisher": "Bay City News via SFGATE",
-        "url": "https://www.sfgate.com/news/bayarea/article/oakland-17-year-old-charged-in-crash-that-killed-22265512.php",
-        "sourceDate": "2026-05-18"
-      }
-    },
-    {
-      "dateFound": "2026-05-21",
-      "type": "homicide_found",
-      "label": "Homicide added to tracker",
-      "victimId": "OAK-2026-0015-V02",
-      "incidentId": "OAK-2026-0015",
-      "incidentDate": "2026-05-16",
-      "victimName": "Charles Ray Blackmon",
-      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
-      "source": {
-        "sourceId": "OAK-2026-S0052",
-        "title": "Alameda County DA charges teen accused in fatal Oakland crash",
-        "publisher": "KTVU FOX 2",
-        "url": "https://www.ktvu.com/news/alameda-county-da-announce-charges-against-teen-accused-fatal-oakland-crash",
-        "sourceDate": "2026-05-20"
-      }
-    },
-    {
-      "dateFound": "2026-05-21",
-      "type": "arrest_found",
-      "label": "Arrest or charges found",
-      "victimId": "OAK-2026-0015-V02",
-      "incidentId": "OAK-2026-0015",
-      "incidentDate": "2026-05-16",
-      "victimName": "Charles Ray Blackmon",
-      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
-      "source": {
-        "sourceId": "OAK-2026-S0051",
-        "title": "Oakland: 17-Year-Old Charged In Crash That Killed 3 Saturday Night",
-        "publisher": "Bay City News via SFGATE",
-        "url": "https://www.sfgate.com/news/bayarea/article/oakland-17-year-old-charged-in-crash-that-killed-22265512.php",
-        "sourceDate": "2026-05-18"
-      }
-    },
-    {
-      "dateFound": "2026-05-21",
-      "type": "homicide_found",
-      "label": "Homicide added to tracker",
-      "victimId": "OAK-2026-0015-V01",
-      "incidentId": "OAK-2026-0015",
-      "incidentDate": "2026-05-16",
-      "victimName": "Robert Joe Dixon",
-      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
-      "source": {
-        "sourceId": "OAK-2026-S0052",
-        "title": "Alameda County DA charges teen accused in fatal Oakland crash",
-        "publisher": "KTVU FOX 2",
-        "url": "https://www.ktvu.com/news/alameda-county-da-announce-charges-against-teen-accused-fatal-oakland-crash",
-        "sourceDate": "2026-05-20"
-      }
-    },
-    {
-      "dateFound": "2026-05-21",
-      "type": "arrest_found",
-      "label": "Arrest or charges found",
-      "victimId": "OAK-2026-0015-V01",
-      "incidentId": "OAK-2026-0015",
-      "incidentDate": "2026-05-16",
-      "victimName": "Robert Joe Dixon",
-      "location": "85th Avenue and International Boulevard / outside East Bay Market Liquor",
-      "source": {
-        "sourceId": "OAK-2026-S0051",
-        "title": "Oakland: 17-Year-Old Charged In Crash That Killed 3 Saturday Night",
-        "publisher": "Bay City News via SFGATE",
-        "url": "https://www.sfgate.com/news/bayarea/article/oakland-17-year-old-charged-in-crash-that-killed-22265512.php",
-        "sourceDate": "2026-05-18"
       }
     },
     {

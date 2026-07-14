@@ -14,6 +14,7 @@ from collections import Counter, defaultdict
 from datetime import date, datetime
 from pathlib import Path
 import re
+from urllib.parse import urlparse
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
@@ -42,6 +43,15 @@ def public_value(value: str) -> str:
     return value if value else "unknown"
 
 
+def http_url(value: str, label: str) -> str:
+    if not value:
+        return ""
+    parsed = urlparse(value)
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        raise ValueError(f"{label} must use an http or https URL")
+    return value
+
+
 def split_names(value: str) -> list[str]:
     if not value or value == "unknown":
         return []
@@ -51,11 +61,11 @@ def split_names(value: str) -> list[str]:
 def charge_summary(row: dict[str, str]) -> str:
     charges = row["charges_filed"] or "unknown"
     lead = row["lead_charge_public"].strip()
+    if charges == "yes" and lead:
+        return f"Charge: {lead}"
+    if charges == "yes":
+        return "Charges filed"
     if row["arrest_made"] == "yes":
-        if charges == "yes" and lead:
-            return f"Charge: {lead}"
-        if charges == "yes":
-            return "Charges"
         return "Public arrest reported"
     if row["arrest_made"] == "no":
         return "None reported"
@@ -98,7 +108,7 @@ def source_link(source: dict[str, str]) -> dict[str, str]:
         "sourceId": source.get("source_id", ""),
         "title": source.get("title", ""),
         "publisher": source.get("publisher", ""),
-        "url": source.get("url", ""),
+        "url": http_url(source.get("url", ""), source.get("source_id", "source")),
         "sourceDate": source.get("source_date", ""),
     }
 
@@ -132,6 +142,11 @@ def main() -> None:
     sources = read_csv("sources_2026.csv")
     count_reports = read_csv("count_reports_2026.csv")
     checks = read_csv("checks_2026.csv")
+
+    for source in sources:
+        http_url(source.get("url", ""), source.get("source_id", "source"))
+    for report in count_reports:
+        http_url(report.get("url", ""), report.get("count_report_id", "count report"))
 
     victims = sorted(victims, key=lambda r: (r["incident_date"], r["incident_time"], r["victim_id"]))
     incidents_by_id = {r["incident_id"]: r for r in incidents}
@@ -254,7 +269,7 @@ def main() -> None:
                     {
                         "dateFound": arrest_found,
                         "type": "arrest_found",
-                        "label": "Arrest or charges found",
+                        "label": "Arrest found",
                         "victimId": row["victim_id"],
                         "incidentId": row["incident_id"],
                         "incidentDate": row["incident_date"],
@@ -299,6 +314,7 @@ def main() -> None:
     arrest_yes = status_counts.get("yes", 0)
     arrest_no = status_counts.get("no", 0)
     arrest_unknown = status_counts.get("unknown", 0)
+    charge_yes = sum(1 for row in victims if row["charges_filed"] == "yes")
     incident_count = len({r["incident_id"] for r in victims})
     named_victims = sum(1 for r in victims if r["victim_name"] and r["victim_name"] != "unknown")
     last_checked = max(
@@ -317,7 +333,7 @@ def main() -> None:
             "year": 2026,
             "generatedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
             "lastChecked": last_checked,
-            "scopeNote": "Officer-involved fatal shootings are excluded from the main tracker. Arrest reported is a public-source proxy, not an official clearance determination.",
+            "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
             "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
             "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
             "updateLogStartDate": UPDATE_LOG_START,
@@ -326,6 +342,7 @@ def main() -> None:
             "victims": total_victims,
             "incidents": incident_count,
             "arrestReportedVictims": arrest_yes,
+            "chargeReportedVictims": charge_yes,
             "noPublicArrestVictims": arrest_no,
             "unknownArrestStatusVictims": arrest_unknown,
             "publicArrestRateVictimLevel": pct(arrest_yes, total_victims),

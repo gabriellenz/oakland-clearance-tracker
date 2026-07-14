@@ -19,10 +19,20 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function safeUrl(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === "http:" || url.protocol === "https:" ? url.href : "";
+  } catch {
+    return "";
+  }
+}
+
 function sourceLink(source) {
-  if (!source?.url) return escapeHtml(source?.publisher || source?.title || "Source");
+  const url = safeUrl(source?.url);
+  if (!url) return escapeHtml(source?.publisher || source?.title || "Source");
   const label = source.publisher || source.title || "Source";
-  return `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
+  return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
 }
 
 function renderLog(data) {

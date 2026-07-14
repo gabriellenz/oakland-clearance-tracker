@@ -53,6 +53,15 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function safeUrl(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === "http:" || url.protocol === "https:" ? url.href : "";
+  } catch {
+    return "";
+  }
+}
+
 function statusClass(status) {
   return status === "yes" || status === "no" ? status : "unknown";
 }
@@ -75,8 +84,9 @@ function arrestDetail(victim) {
     : victim.arrestSourceTitle
       ? "Source"
       : "";
-  const sourceLine = victim.arrestSourceUrl
-    ? `<a href="${escapeHtml(victim.arrestSourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(sourceLabel || "Source")}</a>`
+  const sourceUrl = safeUrl(victim.arrestSourceUrl);
+  const sourceLine = sourceUrl
+    ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(sourceLabel || "Source")}</a>`
     : sourceLabel
       ? escapeHtml(sourceLabel)
       : "";
@@ -95,10 +105,11 @@ function renderSummary(data) {
   setText("metricVictims", s.victims);
   setText("metricIncidents", s.incidents);
   setText("metricArrests", s.arrestReportedVictims);
+  setText("metricCharges", s.chargeReportedVictims);
   setText("metricUnresolved", s.noPublicArrestVictims + s.unknownArrestStatusVictims);
   setText(
     "scopeNote",
-    "This tracker focuses on homicides where the ordinary public question is whether police made an arrest. Fatal police shootings are handled through a different public accountability process, so they are left out of this arrest-rate count.",
+    data.metadata.scopeNote,
   );
   setText("lastChecked", data.metadata.lastChecked || "unknown");
 }
@@ -113,6 +124,10 @@ function linePath(points) {
 
 function renderCumulativeChart(data) {
   const rows = data.cumulative;
+  if (!rows.length) {
+    document.getElementById("cumulativeChart").innerHTML = `<div class="empty-state">No victim records to chart.</div>`;
+    return;
+  }
   const width = 780;
   const height = 385;
   const pad = { top: 54, right: 28, bottom: 48, left: 44 };
@@ -283,12 +298,16 @@ function renderCountReports(data) {
     .map(
       (report) => {
         const publisher = escapeHtml(report.publisher);
-        const publisherLink = report.url
-          ? `<a href="${escapeHtml(report.url)}" target="_blank" rel="noopener noreferrer">${publisher}</a>`
+        const reportUrl = safeUrl(report.url);
+        const publisherLink = reportUrl
+          ? `<a href="${escapeHtml(reportUrl)}" target="_blank" rel="noopener noreferrer">${publisher}</a>`
           : publisher;
+        const comparison = report.unit === "victims"
+          ? `comparable tracker count: ${report.trackerVictimCount}`
+          : "context only; count unit not confirmed";
         return `<div class="count-item">
           <strong>${report.reportedTotal} reported through ${fmtDate(report.periodEnd)}</strong>
-          <span>${publisherLink} · comparable tracker count: ${report.trackerVictimCount}</span>
+          <span>${publisherLink} · ${comparison}</span>
           <div class="subtext">${escapeHtml(report.discrepancy)}</div>
         </div>`;
       },

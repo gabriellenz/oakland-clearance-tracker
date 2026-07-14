@@ -100,6 +100,10 @@
           <strong id="metricArrests">--</strong>
         </div>
         <div class="metric">
+          <span>Victims with charges filed</span>
+          <strong id="metricCharges">--</strong>
+        </div>
+        <div class="metric">
           <span>No public arrest / unknown</span>
           <strong id="metricUnresolved">--</strong>
         </div>
@@ -109,7 +113,7 @@
         <h2>Why hold Oakland accountable for solving homicides?</h2>
         <p>
           Holding the city accountable for solving homicides means tracking homicide clearance in plain language:
-          whether each killing has a public arrest or charging update. Homicides are solved through witnesses,
+          tracking arrests and charges separately for each killing. Homicides are solved through witnesses,
           families, and neighbors who believe the justice system will listen to them and protect them. If Oakland
           wants more killings solved, police have to make the community their partners, not their enemies.
         </p>
@@ -230,10 +234,12 @@
             <p id="scopeNote"></p>
           </div>
           <ul class="rules">
-            <li>Fatal police shootings are not included in the arrest-rate calculation.</li>
+            <li>Traffic-collision deaths are excluded unless classified as murder or nonnegligent manslaughter.</li>
+            <li>Fatal police shootings are excluded from both the victim total and arrest-rate calculation.</li>
             <li>Race and ethnicity are shown only when a credible source reports them directly.</li>
             <li>Police data helps check case numbers and dates, but it is not treated as a complete victim list.</li>
             <li>Cases with no clear public arrest report are not counted as cleared.</li>
+            <li>Charges are tracked separately and never count as arrests.</li>
           </ul>
         </article>
       </section>
