@@ -3,8 +3,8 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-07-16T02:35:28-07:00",
-    "lastChecked": "2026-07-16",
+    "generatedAt": "2026-07-17T02:38:38-07:00",
+    "lastChecked": "2026-07-17",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
@@ -1306,6 +1306,17 @@
       "unit": "victims",
       "trackerVictimCount": 24,
       "discrepancy": "Under the adopted traffic-death exclusion the tracker has 24 victims through July 7; the three-count difference remains unresolved."
+    },
+    {
+      "sourceDate": "2026-06-15",
+      "publisher": "Oakland Public Safety Planning and Oversight Commission",
+      "title": "June 15 2026 OPSPOC meeting agenda packet with OPD priority spending plan update",
+      "url": "https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/oakland-public-safety-planning-and-oversight-commission/2026-attachments/6-15-2026-opspoc-meeting-agenda-packet.pdf",
+      "periodEnd": "2026-06-10",
+      "reportedTotal": 22,
+      "unit": "unknown",
+      "trackerVictimCount": 19,
+      "discrepancy": "Traffic-excluded tracker matches the 19 187(a)PC count through the report date, while the official subtotal exceeds the tracker by three All Other homicides."
     }
   ],
   "updateLog": [
