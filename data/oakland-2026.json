@@ -3,27 +3,27 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-07-19T02:35:38-07:00",
-    "lastChecked": "2026-07-19",
+    "generatedAt": "2026-07-20T02:36:46-07:00",
+    "lastChecked": "2026-07-20",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 24,
-    "incidents": 20,
+    "victims": 25,
+    "incidents": 21,
     "arrestReportedVictims": 11,
     "chargeReportedVictims": 12,
-    "noPublicArrestVictims": 9,
+    "noPublicArrestVictims": 10,
     "unknownArrestStatusVictims": 4,
-    "publicArrestRateVictimLevel": 45.8,
+    "publicArrestRateVictimLevel": 44.0,
     "namedVictims": 16,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
     "yes": 11,
-    "no": 9,
+    "no": 10,
     "unknown": 4
   },
   "byMonth": [
@@ -72,9 +72,9 @@
     {
       "month": "2026-07",
       "yes": 0,
-      "no": 1,
+      "no": 2,
       "unknown": 0,
-      "total": 1
+      "total": 2
     }
   ],
   "cumulative": [
@@ -196,6 +196,11 @@
     {
       "date": "2026-07-07",
       "victims": 24,
+      "arrestReportedVictims": 11
+    },
+    {
+      "date": "2026-07-19",
+      "victims": 25,
       "arrestReportedVictims": 11
     }
   ],
@@ -919,6 +924,36 @@
       "caseStatus": "under_investigation",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0022-V01",
+      "incidentId": "OAK-2026-0022",
+      "name": "unknown",
+      "age": "30s",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-07-19",
+      "incidentTime": "02:50",
+      "location": "1400 block of Lakeside Drive near 14th Street / Lake Merritt",
+      "neighborhood": "Lake Merritt / Downtown Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A man believed to be in his 30s was fatally shot early July 19 near Lake Merritt. Chronicle reports officers responded after ShotSpotter alerts and pursued a white BMW SUV leaving the scene, but no arrest was made.",
+      "caseNumber": "",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "",
+      "arrestSourceUrl": "",
+      "arrestSourceTitle": "",
+      "arrestSourcePublisher": "",
+      "arrestSourceDate": "",
+      "allegedPerpetratorsPublic": "unknown",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
     }
   ],
   "incidents": [
@@ -1161,6 +1196,18 @@
       "victimCount": "1",
       "caseNumber": "26-028833",
       "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0022",
+      "date": "2026-07-19",
+      "time": "02:50",
+      "location": "1400 block of Lakeside Drive near 14th Street / Lake Merritt",
+      "neighborhood": "Lake Merritt / Downtown Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A man believed to be in his 30s was fatally shot early July 19 near Lake Merritt. Chronicle reports officers responded after ShotSpotter alerts and pursued a white BMW SUV leaving the scene, but no arrest was made.",
+      "victimCount": "1",
+      "caseNumber": "",
+      "confidence": "high"
     }
   ],
   "countReports": [
@@ -1317,9 +1364,37 @@
       "unit": "unknown",
       "trackerVictimCount": 19,
       "discrepancy": "Traffic-excluded tracker matches the 19 187(a)PC count through the report date, while the official subtotal exceeds the tracker by three All Other homicides."
+    },
+    {
+      "sourceDate": "2026-07-19",
+      "publisher": "San Francisco Chronicle",
+      "title": "Man fatally shot near Oakland's Lake Merritt",
+      "url": "https://www.sfchronicle.com/crime/article/oakland-fatal-shooting-lake-merritt-22351358.php",
+      "periodEnd": "2026-07-19",
+      "reportedTotal": 29,
+      "unit": "victims",
+      "trackerVictimCount": 25,
+      "discrepancy": "After adding the July 19 Lakeside Drive shooting, the traffic-excluded tracker has 25 victims through July 19; the Chronicle count is four higher."
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-07-20",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0022-V01",
+      "incidentId": "OAK-2026-0022",
+      "incidentDate": "2026-07-19",
+      "victimName": "unknown",
+      "location": "1400 block of Lakeside Drive near 14th Street / Lake Merritt",
+      "source": {
+        "sourceId": "OAK-2026-S0170",
+        "title": "Man fatally shot near Oakland's Lake Merritt",
+        "publisher": "San Francisco Chronicle",
+        "url": "https://www.sfchronicle.com/crime/article/oakland-fatal-shooting-lake-merritt-22351358.php",
+        "sourceDate": "2026-07-19"
+      }
+    },
     {
       "dateFound": "2026-07-09",
       "type": "homicide_found",
