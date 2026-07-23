@@ -3,27 +3,27 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-07-22T02:36:14-07:00",
-    "lastChecked": "2026-07-22",
+    "generatedAt": "2026-07-23T02:37:24-07:00",
+    "lastChecked": "2026-07-23",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 25,
-    "incidents": 21,
+    "victims": 26,
+    "incidents": 22,
     "arrestReportedVictims": 11,
     "chargeReportedVictims": 12,
-    "noPublicArrestVictims": 10,
+    "noPublicArrestVictims": 11,
     "unknownArrestStatusVictims": 4,
-    "publicArrestRateVictimLevel": 44.0,
+    "publicArrestRateVictimLevel": 42.3,
     "namedVictims": 16,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
     "yes": 11,
-    "no": 10,
+    "no": 11,
     "unknown": 4
   },
   "byMonth": [
@@ -72,9 +72,9 @@
     {
       "month": "2026-07",
       "yes": 0,
-      "no": 2,
+      "no": 3,
       "unknown": 0,
-      "total": 2
+      "total": 3
     }
   ],
   "cumulative": [
@@ -201,6 +201,11 @@
     {
       "date": "2026-07-19",
       "victims": 25,
+      "arrestReportedVictims": 11
+    },
+    {
+      "date": "2026-07-22",
+      "victims": 26,
       "arrestReportedVictims": 11
     }
   ],
@@ -954,6 +959,36 @@
       "caseStatus": "",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0023-V01",
+      "incidentId": "OAK-2026-0023",
+      "name": "unknown",
+      "age": "",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-07-22",
+      "incidentTime": "07:30",
+      "location": "4300 block of Martin Luther King Jr. Way near MacArthur BART",
+      "neighborhood": "Longfellow / North Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A man was fatally shot in North Oakland's Longfellow neighborhood on the morning of July 22. Police-sourced reports said officers responded to gunfire reports and found the victim on the ground with at least one gunshot wound; firefighters pronounced him dead at the scene.",
+      "caseNumber": "",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0177",
+      "arrestSourceUrl": "https://www.sfchronicle.com/bayarea/article/north-oakland-homicide-22356354.php",
+      "arrestSourceTitle": "Man fatally shot in North Oakland neighborhood",
+      "arrestSourcePublisher": "San Francisco Chronicle",
+      "arrestSourceDate": "2026-07-22",
+      "allegedPerpetratorsPublic": "unknown",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
     }
   ],
   "incidents": [
@@ -1208,6 +1243,18 @@
       "victimCount": "1",
       "caseNumber": "",
       "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0023",
+      "date": "2026-07-22",
+      "time": "07:30",
+      "location": "4300 block of Martin Luther King Jr. Way near MacArthur BART",
+      "neighborhood": "Longfellow / North Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A man was fatally shot in North Oakland's Longfellow neighborhood on the morning of July 22. Police-sourced reports said officers responded to gunfire reports and found the victim on the ground with at least one gunshot wound; firefighters pronounced him dead at the scene.",
+      "victimCount": "1",
+      "caseNumber": "",
+      "confidence": "high"
     }
   ],
   "countReports": [
@@ -1378,6 +1425,23 @@
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-07-23",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0023-V01",
+      "incidentId": "OAK-2026-0023",
+      "incidentDate": "2026-07-22",
+      "victimName": "unknown",
+      "location": "4300 block of Martin Luther King Jr. Way near MacArthur BART",
+      "source": {
+        "sourceId": "OAK-2026-S0176",
+        "title": "Man shot killed in North Oakland",
+        "publisher": "NBC Bay Area / Bay City News",
+        "url": "https://www.nbcbayarea.com/news/local/man-shot-killed-north-oakland/4117482/",
+        "sourceDate": "2026-07-22"
+      }
+    },
     {
       "dateFound": "2026-07-20",
       "type": "homicide_found",
