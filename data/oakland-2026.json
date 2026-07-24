@@ -3,8 +3,8 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-07-23T02:37:24-07:00",
-    "lastChecked": "2026-07-23",
+    "generatedAt": "2026-07-24T02:34:59-07:00",
+    "lastChecked": "2026-07-24",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
@@ -943,7 +943,7 @@
       "neighborhood": "Lake Merritt / Downtown Oakland",
       "method": "shooting",
       "circumstancesSummary": "A man believed to be in his 30s was fatally shot early July 19 near Lake Merritt. Chronicle reports officers responded after ShotSpotter alerts and pursued a white BMW SUV leaving the scene, but no arrest was made.",
-      "caseNumber": "",
+      "caseNumber": "26-030841",
       "arrestMade": "no",
       "arrestDate": "",
       "arrestSourceId": "",
@@ -1241,7 +1241,7 @@
       "method": "shooting",
       "circumstancesSummary": "A man believed to be in his 30s was fatally shot early July 19 near Lake Merritt. Chronicle reports officers responded after ShotSpotter alerts and pursued a white BMW SUV leaving the scene, but no arrest was made.",
       "victimCount": "1",
-      "caseNumber": "",
+      "caseNumber": "26-030841",
       "confidence": "high"
     },
     {
