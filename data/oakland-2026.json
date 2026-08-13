@@ -3,7 +3,7 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-08-03T02:40:46-07:00",
+    "generatedAt": "2026-08-13T08:05:27-07:00",
     "lastChecked": "2026-08-03",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
@@ -11,19 +11,19 @@
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 26,
-    "incidents": 22,
+    "victims": 28,
+    "incidents": 24,
     "arrestReportedVictims": 11,
     "chargeReportedVictims": 12,
-    "noPublicArrestVictims": 11,
+    "noPublicArrestVictims": 13,
     "unknownArrestStatusVictims": 4,
-    "publicArrestRateVictimLevel": 42.3,
+    "publicArrestRateVictimLevel": 39.3,
     "namedVictims": 16,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
     "yes": 11,
-    "no": 11,
+    "no": 13,
     "unknown": 4
   },
   "byMonth": [
@@ -72,9 +72,16 @@
     {
       "month": "2026-07",
       "yes": 0,
-      "no": 3,
+      "no": 4,
       "unknown": 0,
-      "total": 3
+      "total": 4
+    },
+    {
+      "month": "2026-08",
+      "yes": 0,
+      "no": 1,
+      "unknown": 0,
+      "total": 1
     }
   ],
   "cumulative": [
@@ -206,6 +213,16 @@
     {
       "date": "2026-07-22",
       "victims": 26,
+      "arrestReportedVictims": 11
+    },
+    {
+      "date": "2026-07-31",
+      "victims": 27,
+      "arrestReportedVictims": 11
+    },
+    {
+      "date": "2026-08-08",
+      "victims": 28,
       "arrestReportedVictims": 11
     }
   ],
@@ -989,6 +1006,66 @@
       "caseStatus": "",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0024-V01",
+      "incidentId": "OAK-2026-0024",
+      "name": "unknown",
+      "age": "20s",
+      "gender": "female",
+      "raceEthnicity": "",
+      "incidentDate": "2026-07-31",
+      "incidentTime": "09:07",
+      "location": "Parker Community Resource Center / 7900 block of Ney Avenue near Ritchie Street",
+      "neighborhood": "Eastmont / East Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "OPD and KQED report two women in their 20s were shot at the Parker Community Resource Center; one died and the other was hospitalized in stable condition. Police described the shooting as intentional rather than random and said they had multiple suspect leads.",
+      "caseNumber": "26-032636",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0188",
+      "arrestSourceUrl": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/july/opd-daily-log-31-jul-26-01-aug-26.pdf",
+      "arrestSourceTitle": "OPD Daily Log July 31-August 1 2026",
+      "arrestSourcePublisher": "Oakland Police Department",
+      "arrestSourceDate": "2026-07-31",
+      "allegedPerpetratorsPublic": "",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "under_investigation",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0025-V01",
+      "incidentId": "OAK-2026-0025",
+      "name": "unknown",
+      "age": "",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-08-08",
+      "incidentTime": "15:30",
+      "location": "800 block of 75th Avenue",
+      "neighborhood": "East Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "The OPD Daily Log records a male victim who suffered fatal gunshot wounds in a 187 PC homicide in the 800 block of 75th Avenue.",
+      "caseNumber": "26-033930",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0190",
+      "arrestSourceUrl": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/aug/opd-daily-log-08-09-aug-26.pdf",
+      "arrestSourceTitle": "OPD Daily Log August 8-9 2026",
+      "arrestSourcePublisher": "Oakland Police Department",
+      "arrestSourceDate": "2026-08-08",
+      "allegedPerpetratorsPublic": "",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "under_investigation",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
     }
   ],
   "incidents": [
@@ -1255,6 +1332,30 @@
       "victimCount": "1",
       "caseNumber": "",
       "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0024",
+      "date": "2026-07-31",
+      "time": "09:07",
+      "location": "Parker Community Resource Center / 7900 block of Ney Avenue near Ritchie Street",
+      "neighborhood": "Eastmont / East Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "OPD and KQED report two women in their 20s were shot at the Parker Community Resource Center; one died and the other was hospitalized in stable condition. Police described the shooting as intentional rather than random and said they had multiple suspect leads.",
+      "victimCount": "1",
+      "caseNumber": "26-032636",
+      "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0025",
+      "date": "2026-08-08",
+      "time": "15:30",
+      "location": "800 block of 75th Avenue",
+      "neighborhood": "East Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "The OPD Daily Log records a male victim who suffered fatal gunshot wounds in a 187 PC homicide in the 800 block of 75th Avenue.",
+      "victimCount": "1",
+      "caseNumber": "26-033930",
+      "confidence": "high"
     }
   ],
   "countReports": [
@@ -1436,6 +1537,40 @@
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-08-13",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0025-V01",
+      "incidentId": "OAK-2026-0025",
+      "incidentDate": "2026-08-08",
+      "victimName": "unknown",
+      "location": "800 block of 75th Avenue",
+      "source": {
+        "sourceId": "OAK-2026-S0190",
+        "title": "OPD Daily Log August 8-9 2026",
+        "publisher": "Oakland Police Department",
+        "url": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/aug/opd-daily-log-08-09-aug-26.pdf",
+        "sourceDate": "2026-08-08"
+      }
+    },
+    {
+      "dateFound": "2026-08-13",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0024-V01",
+      "incidentId": "OAK-2026-0024",
+      "incidentDate": "2026-07-31",
+      "victimName": "unknown",
+      "location": "Parker Community Resource Center / 7900 block of Ney Avenue near Ritchie Street",
+      "source": {
+        "sourceId": "OAK-2026-S0188",
+        "title": "OPD Daily Log July 31-August 1 2026",
+        "publisher": "Oakland Police Department",
+        "url": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/july/opd-daily-log-31-jul-26-01-aug-26.pdf",
+        "sourceDate": "2026-07-31"
+      }
+    },
     {
       "dateFound": "2026-07-25",
       "type": "homicide_found",
