@@ -3,7 +3,7 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-08-13T08:05:27-07:00",
+    "generatedAt": "2026-08-24T02:37:12-07:00",
     "lastChecked": "2026-08-03",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
@@ -11,19 +11,19 @@
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 28,
-    "incidents": 24,
+    "victims": 29,
+    "incidents": 25,
     "arrestReportedVictims": 11,
     "chargeReportedVictims": 12,
-    "noPublicArrestVictims": 13,
+    "noPublicArrestVictims": 14,
     "unknownArrestStatusVictims": 4,
-    "publicArrestRateVictimLevel": 39.3,
+    "publicArrestRateVictimLevel": 37.9,
     "namedVictims": 16,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
     "yes": 11,
-    "no": 13,
+    "no": 14,
     "unknown": 4
   },
   "byMonth": [
@@ -65,9 +65,9 @@
     {
       "month": "2026-06",
       "yes": 1,
-      "no": 2,
+      "no": 3,
       "unknown": 0,
-      "total": 3
+      "total": 4
     },
     {
       "month": "2026-07",
@@ -186,43 +186,48 @@
       "arrestReportedVictims": 10
     },
     {
-      "date": "2026-06-14",
+      "date": "2026-06-09",
       "victims": 21,
-      "arrestReportedVictims": 11
+      "arrestReportedVictims": 10
     },
     {
-      "date": "2026-06-15",
+      "date": "2026-06-14",
       "victims": 22,
       "arrestReportedVictims": 11
     },
     {
-      "date": "2026-06-24",
+      "date": "2026-06-15",
       "victims": 23,
       "arrestReportedVictims": 11
     },
     {
-      "date": "2026-07-07",
+      "date": "2026-06-24",
       "victims": 24,
       "arrestReportedVictims": 11
     },
     {
-      "date": "2026-07-19",
+      "date": "2026-07-07",
       "victims": 25,
       "arrestReportedVictims": 11
     },
     {
-      "date": "2026-07-22",
+      "date": "2026-07-19",
       "victims": 26,
       "arrestReportedVictims": 11
     },
     {
-      "date": "2026-07-31",
+      "date": "2026-07-22",
       "victims": 27,
       "arrestReportedVictims": 11
     },
     {
-      "date": "2026-08-08",
+      "date": "2026-07-31",
       "victims": 28,
+      "arrestReportedVictims": 11
+    },
+    {
+      "date": "2026-08-08",
+      "victims": 29,
       "arrestReportedVictims": 11
     }
   ],
@@ -828,6 +833,36 @@
       "confidence": "high"
     },
     {
+      "victimId": "OAK-2026-0026-V01",
+      "incidentId": "OAK-2026-0026",
+      "name": "unknown",
+      "age": "",
+      "gender": "unknown",
+      "raceEthnicity": "",
+      "incidentDate": "2026-06-09",
+      "incidentTime": "11:45",
+      "location": "500 block of 34th Street",
+      "neighborhood": "",
+      "method": "unknown",
+      "circumstancesSummary": "The OPD Daily Log records an unidentified person deceased in a 187 PC homicide in the 500 block of 34th Street. The log lists no suspect and zero people in custody.",
+      "caseNumber": "26-024801",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0193",
+      "arrestSourceUrl": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/june/opd-daily-log-09-10-jun-26.pdf",
+      "arrestSourceTitle": "OPD Daily Log June 9-10 2026",
+      "arrestSourcePublisher": "Oakland Police Department",
+      "arrestSourceDate": "2026-06-09",
+      "allegedPerpetratorsPublic": "",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "under_investigation",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
+    },
+    {
       "victimId": "OAK-2026-0018-V01",
       "incidentId": "OAK-2026-0018",
       "name": "unknown",
@@ -1262,6 +1297,18 @@
       "confidence": "high"
     },
     {
+      "incidentId": "OAK-2026-0026",
+      "date": "2026-06-09",
+      "time": "11:45",
+      "location": "500 block of 34th Street",
+      "neighborhood": "",
+      "method": "unknown",
+      "circumstancesSummary": "The OPD Daily Log records an unidentified person deceased in a 187 PC homicide in the 500 block of 34th Street. The log lists no suspect and zero people in custody.",
+      "victimCount": "1",
+      "caseNumber": "26-024801",
+      "confidence": "high"
+    },
+    {
       "incidentId": "OAK-2026-0018",
       "date": "2026-06-14",
       "time": "11:30",
@@ -1477,8 +1524,8 @@
       "periodEnd": "2026-06-14",
       "reportedTotal": 24,
       "unit": "unknown",
-      "trackerVictimCount": 21,
-      "discrepancy": "After the traffic-death exclusion the tracker has 21 victims through June 14; the three-count difference remains unresolved."
+      "trackerVictimCount": 22,
+      "discrepancy": "After adding the June 9 34th Street homicide the traffic-excluded tracker has 22 victims through June 14; the two-count difference remains unresolved."
     },
     {
       "sourceDate": "2026-06-24",
@@ -1488,8 +1535,8 @@
       "periodEnd": "2026-06-24",
       "reportedTotal": 26,
       "unit": "unknown",
-      "trackerVictimCount": 23,
-      "discrepancy": "After the traffic-death exclusion the tracker has 23 victims through June 24; the three-count difference remains unresolved."
+      "trackerVictimCount": 24,
+      "discrepancy": "After adding the June 9 34th Street homicide the traffic-excluded tracker has 24 victims through June 24; the two-count difference remains unresolved."
     },
     {
       "sourceDate": "2026-07-07",
@@ -1499,8 +1546,8 @@
       "periodEnd": "2026-07-07",
       "reportedTotal": 27,
       "unit": "victims",
-      "trackerVictimCount": 24,
-      "discrepancy": "Under the adopted traffic-death exclusion the tracker has 24 victims through July 7; the three-count difference remains unresolved."
+      "trackerVictimCount": 25,
+      "discrepancy": "After adding the June 9 34th Street homicide the traffic-excluded tracker has 25 victims through July 7; the two-count difference remains unresolved."
     },
     {
       "sourceDate": "2026-06-15",
@@ -1510,8 +1557,8 @@
       "periodEnd": "2026-06-10",
       "reportedTotal": 22,
       "unit": "unknown",
-      "trackerVictimCount": 19,
-      "discrepancy": "Traffic-excluded tracker matches the 19 187(a)PC count through the report date, while the official subtotal exceeds the tracker by three All Other homicides."
+      "trackerVictimCount": 21,
+      "discrepancy": "After adding the official June 9 187 PC homicide the traffic-excluded tracker has 21 victims through June 10, one below the official subtotal; the packet does not state an exact data cutoff, so category-by-category reconciliation remains provisional."
     },
     {
       "sourceDate": "2026-07-19",
@@ -1521,8 +1568,8 @@
       "periodEnd": "2026-07-19",
       "reportedTotal": 29,
       "unit": "victims",
-      "trackerVictimCount": 25,
-      "discrepancy": "After adding the July 19 Lakeside Drive shooting, the traffic-excluded tracker has 25 victims through July 19; the Chronicle count is four higher."
+      "trackerVictimCount": 26,
+      "discrepancy": "After adding the June 9 34th Street homicide, the traffic-excluded tracker has 26 victims through July 19; the Chronicle count is three higher."
     },
     {
       "sourceDate": "2026-07-23",
@@ -1532,11 +1579,28 @@
       "periodEnd": "2026-07-22",
       "reportedTotal": 30,
       "unit": "victims",
-      "trackerVictimCount": 26,
-      "discrepancy": "Traffic-excluded tracker has 26 victims through July 22; this secondary count is four higher and remains unresolved pending official OPD category detail or missing-case identification."
+      "trackerVictimCount": 27,
+      "discrepancy": "After adding the June 9 34th Street homicide the traffic-excluded tracker has 27 victims through July 22; this secondary count is three higher and remains unresolved pending official OPD category detail or missing-case identification."
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-08-24",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0026-V01",
+      "incidentId": "OAK-2026-0026",
+      "incidentDate": "2026-06-09",
+      "victimName": "unknown",
+      "location": "500 block of 34th Street",
+      "source": {
+        "sourceId": "OAK-2026-S0193",
+        "title": "OPD Daily Log June 9-10 2026",
+        "publisher": "Oakland Police Department",
+        "url": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/june/opd-daily-log-09-10-jun-26.pdf",
+        "sourceDate": "2026-06-09"
+      }
+    },
     {
       "dateFound": "2026-08-13",
       "type": "homicide_found",
