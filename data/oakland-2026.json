@@ -3,7 +3,7 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-08-24T02:37:12-07:00",
+    "generatedAt": "2026-08-31T02:47:27-07:00",
     "lastChecked": "2026-08-03",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
@@ -11,18 +11,18 @@
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 29,
-    "incidents": 25,
-    "arrestReportedVictims": 11,
-    "chargeReportedVictims": 12,
+    "victims": 31,
+    "incidents": 27,
+    "arrestReportedVictims": 13,
+    "chargeReportedVictims": 14,
     "noPublicArrestVictims": 14,
     "unknownArrestStatusVictims": 4,
-    "publicArrestRateVictimLevel": 37.9,
-    "namedVictims": 16,
+    "publicArrestRateVictimLevel": 41.9,
+    "namedVictims": 18,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
-    "yes": 11,
+    "yes": 13,
     "no": 14,
     "unknown": 4
   },
@@ -64,8 +64,8 @@
     },
     {
       "month": "2026-06",
-      "yes": 1,
-      "no": 3,
+      "yes": 2,
+      "no": 2,
       "unknown": 0,
       "total": 4
     },
@@ -78,10 +78,10 @@
     },
     {
       "month": "2026-08",
-      "yes": 0,
-      "no": 1,
+      "yes": 1,
+      "no": 2,
       "unknown": 0,
-      "total": 1
+      "total": 3
     }
   ],
   "cumulative": [
@@ -188,47 +188,57 @@
     {
       "date": "2026-06-09",
       "victims": 21,
-      "arrestReportedVictims": 10
+      "arrestReportedVictims": 11
     },
     {
       "date": "2026-06-14",
       "victims": 22,
-      "arrestReportedVictims": 11
+      "arrestReportedVictims": 12
     },
     {
       "date": "2026-06-15",
       "victims": 23,
-      "arrestReportedVictims": 11
+      "arrestReportedVictims": 12
     },
     {
       "date": "2026-06-24",
       "victims": 24,
-      "arrestReportedVictims": 11
+      "arrestReportedVictims": 12
     },
     {
       "date": "2026-07-07",
       "victims": 25,
-      "arrestReportedVictims": 11
+      "arrestReportedVictims": 12
     },
     {
       "date": "2026-07-19",
       "victims": 26,
-      "arrestReportedVictims": 11
+      "arrestReportedVictims": 12
     },
     {
       "date": "2026-07-22",
       "victims": 27,
-      "arrestReportedVictims": 11
+      "arrestReportedVictims": 12
     },
     {
       "date": "2026-07-31",
       "victims": 28,
-      "arrestReportedVictims": 11
+      "arrestReportedVictims": 12
     },
     {
       "date": "2026-08-08",
       "victims": 29,
-      "arrestReportedVictims": 11
+      "arrestReportedVictims": 12
+    },
+    {
+      "date": "2026-08-24",
+      "victims": 30,
+      "arrestReportedVictims": 12
+    },
+    {
+      "date": "2026-08-24",
+      "victims": 31,
+      "arrestReportedVictims": 13
     }
   ],
   "victims": [
@@ -835,31 +845,31 @@
     {
       "victimId": "OAK-2026-0026-V01",
       "incidentId": "OAK-2026-0026",
-      "name": "unknown",
-      "age": "",
-      "gender": "unknown",
+      "name": "Gaspar Sanchez",
+      "age": "43",
+      "gender": "male",
       "raceEthnicity": "",
       "incidentDate": "2026-06-09",
       "incidentTime": "11:45",
       "location": "500 block of 34th Street",
       "neighborhood": "",
-      "method": "unknown",
-      "circumstancesSummary": "The OPD Daily Log records an unidentified person deceased in a 187 PC homicide in the 500 block of 34th Street. The log lists no suspect and zero people in custody.",
+      "method": "assault",
+      "circumstancesSummary": "OPD investigators found Gaspar Sanchez, 43, buried and bound at a homeless encampment in the 500 block of 34th Street. Later reporting said prosecutors filed murder charges in the case.",
       "caseNumber": "26-024801",
-      "arrestMade": "no",
-      "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0193",
-      "arrestSourceUrl": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/june/opd-daily-log-09-10-jun-26.pdf",
-      "arrestSourceTitle": "OPD Daily Log June 9-10 2026",
-      "arrestSourcePublisher": "Oakland Police Department",
-      "arrestSourceDate": "2026-06-09",
-      "allegedPerpetratorsPublic": "",
+      "arrestMade": "yes",
+      "arrestDate": "2026-08-26",
+      "arrestSourceId": "OAK-2026-S0202",
+      "arrestSourceUrl": "https://www.sfchronicle.com/bayarea/article/murder-oakland-homeless-camp-22408768.php",
+      "arrestSourceTitle": "42-year-old facing murder charge after man found buried in Oakland",
+      "arrestSourcePublisher": "San Francisco Chronicle",
+      "arrestSourceDate": "2026-08-28",
+      "allegedPerpetratorsPublic": "Sergio Omar Flores",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
-      "chargesFiled": "unknown",
-      "leadCharge": "",
-      "publicChargeSummary": "None reported",
-      "caseStatus": "under_investigation",
-      "clearanceStatus": "open_no_public_arrest",
+      "chargesFiled": "yes",
+      "leadCharge": "murder",
+      "publicChargeSummary": "Charge: murder",
+      "caseStatus": "charged",
+      "clearanceStatus": "arrest_reported",
       "confidence": "high"
     },
     {
@@ -1101,6 +1111,66 @@
       "caseStatus": "under_investigation",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0027-V01",
+      "incidentId": "OAK-2026-0027",
+      "name": "unknown",
+      "age": "",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-08-24",
+      "incidentTime": "10:32",
+      "location": "2000 block of 23rd Avenue / near East 20th Street",
+      "neighborhood": "San Antonio",
+      "method": "shooting",
+      "circumstancesSummary": "Oakland police responding to a gunfire-detection alert found an unidentified male victim suffering from gunshot wounds in the 2000 block of 23rd Avenue. He was pronounced dead at the scene.",
+      "caseNumber": "26-036167",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0197",
+      "arrestSourceUrl": "https://www.sfchronicle.com/bayarea/article/oakland-fatal-shooting-san-antonio-22402106.php",
+      "arrestSourceTitle": "One killed in East Oakland shooting no arrests",
+      "arrestSourcePublisher": "San Francisco Chronicle",
+      "arrestSourceDate": "2026-08-24",
+      "allegedPerpetratorsPublic": "unknown",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0028-V01",
+      "incidentId": "OAK-2026-0028",
+      "name": "Gonzalo Lopez",
+      "age": "58",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-08-24",
+      "incidentTime": "19:21",
+      "location": "Cesar Chavez Park / 3700 block of Foothill Boulevard near 38th Avenue",
+      "neighborhood": "Fruitvale / East Oakland",
+      "method": "stabbing",
+      "circumstancesSummary": "Gonzalo Lopez, 58, was fatally stabbed at Cesar Chavez Park in the first of five apparently random attacks during about 30 minutes. Later reporting said prosecutors filed murder charges in the case.",
+      "caseNumber": "26-036225",
+      "arrestMade": "yes",
+      "arrestDate": "2026-08-24",
+      "arrestSourceId": "OAK-2026-S0200",
+      "arrestSourceUrl": "https://da.alamedacountyca.gov/alameda-county-district-attorney-ursula-jones-dickson-announces-murder-and-attempted-murder-charges-following-stabbing-near-fruitvale-bart-station/",
+      "arrestSourceTitle": "Murder and attempted murder charges following stabbing near Fruitvale BART Station",
+      "arrestSourcePublisher": "Alameda County District Attorney",
+      "arrestSourceDate": "2026-08-27",
+      "allegedPerpetratorsPublic": "Jose Jesus Rodriguez",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "yes",
+      "leadCharge": "murder",
+      "publicChargeSummary": "Charge: murder",
+      "caseStatus": "charged",
+      "clearanceStatus": "arrest_reported",
+      "confidence": "high"
     }
   ],
   "incidents": [
@@ -1302,8 +1372,8 @@
       "time": "11:45",
       "location": "500 block of 34th Street",
       "neighborhood": "",
-      "method": "unknown",
-      "circumstancesSummary": "The OPD Daily Log records an unidentified person deceased in a 187 PC homicide in the 500 block of 34th Street. The log lists no suspect and zero people in custody.",
+      "method": "assault",
+      "circumstancesSummary": "OPD investigators found Gaspar Sanchez, 43, buried and bound at a homeless encampment in the 500 block of 34th Street. Later reporting said prosecutors filed murder charges in the case.",
       "victimCount": "1",
       "caseNumber": "26-024801",
       "confidence": "high"
@@ -1402,6 +1472,30 @@
       "circumstancesSummary": "The OPD Daily Log records a male victim who suffered fatal gunshot wounds in a 187 PC homicide in the 800 block of 75th Avenue.",
       "victimCount": "1",
       "caseNumber": "26-033930",
+      "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0027",
+      "date": "2026-08-24",
+      "time": "10:32",
+      "location": "2000 block of 23rd Avenue / near East 20th Street",
+      "neighborhood": "San Antonio",
+      "method": "shooting",
+      "circumstancesSummary": "Oakland police responding to a gunfire-detection alert found an unidentified male victim suffering from gunshot wounds in the 2000 block of 23rd Avenue. He was pronounced dead at the scene.",
+      "victimCount": "1",
+      "caseNumber": "26-036167",
+      "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0028",
+      "date": "2026-08-24",
+      "time": "19:21",
+      "location": "Cesar Chavez Park / 3700 block of Foothill Boulevard near 38th Avenue",
+      "neighborhood": "Fruitvale / East Oakland",
+      "method": "stabbing",
+      "circumstancesSummary": "Gonzalo Lopez, 58, was fatally stabbed at Cesar Chavez Park in the first of five apparently random attacks during about 30 minutes. Later reporting said prosecutors filed murder charges in the case.",
+      "victimCount": "1",
+      "caseNumber": "26-036225",
       "confidence": "high"
     }
   ],
@@ -1581,24 +1675,103 @@
       "unit": "victims",
       "trackerVictimCount": 27,
       "discrepancy": "After adding the June 9 34th Street homicide the traffic-excluded tracker has 27 victims through July 22; this secondary count is three higher and remains unresolved pending official OPD category detail or missing-case identification."
+    },
+    {
+      "sourceDate": "2026-08-24",
+      "publisher": "Hoodline",
+      "title": "Man shot dead on East Oakland's 23rd Avenue police beg for tips",
+      "url": "https://hoodline.com/2026/08/man-shot-dead-on-east-oakland-s-23rd-avenue-police-beg-for-tips/",
+      "periodEnd": "2026-08-08",
+      "reportedTotal": 33,
+      "unit": "victims",
+      "trackerVictimCount": 29,
+      "discrepancy": "The traffic-excluded tracker has 29 victims through August 8; the secondary count is four higher and remains unresolved pending official OPD category detail or missing-case identification."
     }
   ],
   "updateLog": [
     {
-      "dateFound": "2026-08-24",
+      "dateFound": "2026-08-31",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0028-V01",
+      "incidentId": "OAK-2026-0028",
+      "incidentDate": "2026-08-24",
+      "victimName": "Gonzalo Lopez",
+      "location": "Cesar Chavez Park / 3700 block of Foothill Boulevard near 38th Avenue",
+      "source": {
+        "sourceId": "OAK-2026-S0199",
+        "title": "Oakland police describe Monday stabbing spree as random victim identified",
+        "publisher": "Local News Matters / Bay City News",
+        "url": "https://localnewsmatters.org/2026/08/25/east-oakland-stabbings-suspect-arrested/",
+        "sourceDate": "2026-08-25"
+      }
+    },
+    {
+      "dateFound": "2026-08-31",
+      "type": "arrest_found",
+      "label": "Arrest found",
+      "victimId": "OAK-2026-0028-V01",
+      "incidentId": "OAK-2026-0028",
+      "incidentDate": "2026-08-24",
+      "victimName": "Gonzalo Lopez",
+      "location": "Cesar Chavez Park / 3700 block of Foothill Boulevard near 38th Avenue",
+      "source": {
+        "sourceId": "OAK-2026-S0200",
+        "title": "Murder and attempted murder charges following stabbing near Fruitvale BART Station",
+        "publisher": "Alameda County District Attorney",
+        "url": "https://da.alamedacountyca.gov/alameda-county-district-attorney-ursula-jones-dickson-announces-murder-and-attempted-murder-charges-following-stabbing-near-fruitvale-bart-station/",
+        "sourceDate": "2026-08-27"
+      }
+    },
+    {
+      "dateFound": "2026-08-31",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0027-V01",
+      "incidentId": "OAK-2026-0027",
+      "incidentDate": "2026-08-24",
+      "victimName": "unknown",
+      "location": "2000 block of 23rd Avenue / near East 20th Street",
+      "source": {
+        "sourceId": "OAK-2026-S0196",
+        "title": "East Oakland shooting leaves 1 person dead police say",
+        "publisher": "KTVU FOX 2",
+        "url": "https://www.ktvu.com/news/east-oakland-fatal-shooting-aug-24.amp",
+        "sourceDate": "2026-08-24"
+      }
+    },
+    {
+      "dateFound": "2026-08-31",
       "type": "homicide_found",
       "label": "Homicide added to tracker",
       "victimId": "OAK-2026-0026-V01",
       "incidentId": "OAK-2026-0026",
       "incidentDate": "2026-06-09",
-      "victimName": "unknown",
+      "victimName": "Gaspar Sanchez",
       "location": "500 block of 34th Street",
       "source": {
-        "sourceId": "OAK-2026-S0193",
-        "title": "OPD Daily Log June 9-10 2026",
-        "publisher": "Oakland Police Department",
-        "url": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/june/opd-daily-log-09-10-jun-26.pdf",
-        "sourceDate": "2026-06-09"
+        "sourceId": "OAK-2026-S0202",
+        "title": "42-year-old facing murder charge after man found buried in Oakland",
+        "publisher": "San Francisco Chronicle",
+        "url": "https://www.sfchronicle.com/bayarea/article/murder-oakland-homeless-camp-22408768.php",
+        "sourceDate": "2026-08-28"
+      }
+    },
+    {
+      "dateFound": "2026-08-31",
+      "type": "arrest_found",
+      "label": "Arrest found",
+      "victimId": "OAK-2026-0026-V01",
+      "incidentId": "OAK-2026-0026",
+      "incidentDate": "2026-06-09",
+      "victimName": "Gaspar Sanchez",
+      "location": "500 block of 34th Street",
+      "source": {
+        "sourceId": "OAK-2026-S0202",
+        "title": "42-year-old facing murder charge after man found buried in Oakland",
+        "publisher": "San Francisco Chronicle",
+        "url": "https://www.sfchronicle.com/bayarea/article/murder-oakland-homeless-camp-22408768.php",
+        "sourceDate": "2026-08-28"
       }
     },
     {
