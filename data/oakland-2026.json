@@ -3,7 +3,7 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-08-31T02:47:27-07:00",
+    "generatedAt": "2026-09-07T02:48:06-07:00",
     "lastChecked": "2026-08-03",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
@@ -11,19 +11,19 @@
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 31,
-    "incidents": 27,
+    "victims": 32,
+    "incidents": 28,
     "arrestReportedVictims": 13,
     "chargeReportedVictims": 14,
-    "noPublicArrestVictims": 14,
+    "noPublicArrestVictims": 15,
     "unknownArrestStatusVictims": 4,
-    "publicArrestRateVictimLevel": 41.9,
+    "publicArrestRateVictimLevel": 40.6,
     "namedVictims": 18,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
     "yes": 13,
-    "no": 14,
+    "no": 15,
     "unknown": 4
   },
   "byMonth": [
@@ -82,6 +82,13 @@
       "no": 2,
       "unknown": 0,
       "total": 3
+    },
+    {
+      "month": "2026-09",
+      "yes": 0,
+      "no": 1,
+      "unknown": 0,
+      "total": 1
     }
   ],
   "cumulative": [
@@ -238,6 +245,11 @@
     {
       "date": "2026-08-24",
       "victims": 31,
+      "arrestReportedVictims": 13
+    },
+    {
+      "date": "2026-09-04",
+      "victims": 32,
       "arrestReportedVictims": 13
     }
   ],
@@ -1171,6 +1183,36 @@
       "caseStatus": "charged",
       "clearanceStatus": "arrest_reported",
       "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0029-V01",
+      "incidentId": "OAK-2026-0029",
+      "name": "unknown",
+      "age": "33",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-09-04",
+      "incidentTime": "22:45",
+      "location": "9300 block of Walter Avenue",
+      "neighborhood": "Elmhurst / East Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A 33-year-old man was found suffering from a gunshot wound late September 4 in the 9300 block of Walter Avenue. He was pronounced dead at the scene, and police had not identified a potential suspect.",
+      "caseNumber": "",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0208",
+      "arrestSourceUrl": "https://hoodline.com/2026/09/33-year-old-man-found-shot-dead-on-walter-avenue-oakland-s-34th-homicide-of-2026/",
+      "arrestSourceTitle": "33-Year-Old Man Found Shot Dead on Walter Avenue Oakland's 34th Homicide of 2026",
+      "arrestSourcePublisher": "Hoodline",
+      "arrestSourceDate": "2026-09-05",
+      "allegedPerpetratorsPublic": "unknown",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
     }
   ],
   "incidents": [
@@ -1497,6 +1539,18 @@
       "victimCount": "1",
       "caseNumber": "26-036225",
       "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0029",
+      "date": "2026-09-04",
+      "time": "22:45",
+      "location": "9300 block of Walter Avenue",
+      "neighborhood": "Elmhurst / East Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A 33-year-old man was found suffering from a gunshot wound late September 4 in the 9300 block of Walter Avenue. He was pronounced dead at the scene, and police had not identified a potential suspect.",
+      "victimCount": "1",
+      "caseNumber": "",
+      "confidence": "high"
     }
   ],
   "countReports": [
@@ -1686,9 +1740,37 @@
       "unit": "victims",
       "trackerVictimCount": 29,
       "discrepancy": "The traffic-excluded tracker has 29 victims through August 8; the secondary count is four higher and remains unresolved pending official OPD category detail or missing-case identification."
+    },
+    {
+      "sourceDate": "2026-09-05",
+      "publisher": "Hoodline",
+      "title": "33-Year-Old Man Found Shot Dead on Walter Avenue Oakland's 34th Homicide of 2026",
+      "url": "https://hoodline.com/2026/09/33-year-old-man-found-shot-dead-on-walter-avenue-oakland-s-34th-homicide-of-2026/",
+      "periodEnd": "2026-09-04",
+      "reportedTotal": 34,
+      "unit": "victims",
+      "trackerVictimCount": 32,
+      "discrepancy": "After adding the Walter Avenue victim the traffic-excluded tracker has 32 victims through September 4; the secondary count is two higher and remains unresolved pending official OPD category detail or missing-case identification."
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-09-07",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0029-V01",
+      "incidentId": "OAK-2026-0029",
+      "incidentDate": "2026-09-04",
+      "victimName": "unknown",
+      "location": "9300 block of Walter Avenue",
+      "source": {
+        "sourceId": "OAK-2026-S0207",
+        "title": "Man shot and killed in East Oakland",
+        "publisher": "San Francisco Chronicle",
+        "url": "https://www.sfchronicle.com/crime/article/police-investigating-fatal-shooting-east-oakland-22419127.php",
+        "sourceDate": "2026-09-05"
+      }
+    },
     {
       "dateFound": "2026-08-31",
       "type": "homicide_found",
