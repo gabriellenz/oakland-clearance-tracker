@@ -3,7 +3,7 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-09-07T02:48:06-07:00",
+    "generatedAt": "2026-09-14T02:41:46-07:00",
     "lastChecked": "2026-08-03",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
@@ -1068,7 +1068,7 @@
       "victimId": "OAK-2026-0024-V01",
       "incidentId": "OAK-2026-0024",
       "name": "unknown",
-      "age": "20s",
+      "age": "26",
       "gender": "female",
       "raceEthnicity": "",
       "incidentDate": "2026-07-31",
@@ -1076,7 +1076,7 @@
       "location": "Parker Community Resource Center / 7900 block of Ney Avenue near Ritchie Street",
       "neighborhood": "Eastmont / East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "OPD and KQED report two women in their 20s were shot at the Parker Community Resource Center; one died and the other was hospitalized in stable condition. Police described the shooting as intentional rather than random and said they had multiple suspect leads.",
+      "circumstancesSummary": "A 26-year-old woman attending a carpentry class was killed and another woman in her 20s was wounded at the Parker Community Resource Center. Police described the shooting as intentional rather than random and said they had multiple suspect leads.",
       "caseNumber": "26-032636",
       "arrestMade": "no",
       "arrestDate": "",
@@ -1499,7 +1499,7 @@
       "location": "Parker Community Resource Center / 7900 block of Ney Avenue near Ritchie Street",
       "neighborhood": "Eastmont / East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "OPD and KQED report two women in their 20s were shot at the Parker Community Resource Center; one died and the other was hospitalized in stable condition. Police described the shooting as intentional rather than random and said they had multiple suspect leads.",
+      "circumstancesSummary": "A 26-year-old woman attending a carpentry class was killed and another woman in her 20s was wounded at the Parker Community Resource Center. Police described the shooting as intentional rather than random and said they had multiple suspect leads.",
       "victimCount": "1",
       "caseNumber": "26-032636",
       "confidence": "high"
@@ -1751,6 +1751,17 @@
       "unit": "victims",
       "trackerVictimCount": 32,
       "discrepancy": "After adding the Walter Avenue victim the traffic-excluded tracker has 32 victims through September 4; the secondary count is two higher and remains unresolved pending official OPD category detail or missing-case identification."
+    },
+    {
+      "sourceDate": "2026-07-12",
+      "publisher": "Oakland Police Department",
+      "title": "Weekly Crime Report Citywide July 6-12 2026",
+      "url": "https://oaklanddata.org/doc/9236",
+      "periodEnd": "2026-07-12",
+      "reportedTotal": 27,
+      "unit": "incidents",
+      "trackerVictimCount": 25,
+      "discrepancy": "The tracker has 25 victims across 21 incidents through July 12, versus 24 official 187(a)PC incidents and 27 total incidents. Multi-victim cases and the report's three All Other incidents prevent direct row matching without an official incident list."
     }
   ],
   "updateLog": [
