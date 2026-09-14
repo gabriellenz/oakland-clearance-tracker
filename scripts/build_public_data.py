@@ -321,7 +321,8 @@ def main() -> None:
         (
             r["checked_at"][:10]
             for r in checks
-            if r.get("checked_at") and r.get("scope", "").startswith("daily automation")
+            if r.get("checked_at")
+            and r.get("scope", "").startswith(("daily automation", "weekly automation"))
         ),
         default=max((r["last_checked"] for r in victims if r["last_checked"]), default=""),
     )
