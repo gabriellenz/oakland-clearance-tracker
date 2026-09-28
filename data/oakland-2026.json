@@ -3,27 +3,27 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-09-21T02:35:12-07:00",
-    "lastChecked": "2026-09-21",
+    "generatedAt": "2026-09-28T02:41:41-07:00",
+    "lastChecked": "2026-09-28",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 32,
-    "incidents": 28,
-    "arrestReportedVictims": 13,
+    "victims": 34,
+    "incidents": 30,
+    "arrestReportedVictims": 14,
     "chargeReportedVictims": 14,
-    "noPublicArrestVictims": 15,
+    "noPublicArrestVictims": 16,
     "unknownArrestStatusVictims": 4,
-    "publicArrestRateVictimLevel": 40.6,
+    "publicArrestRateVictimLevel": 41.2,
     "namedVictims": 18,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
-    "yes": 13,
-    "no": 15,
+    "yes": 14,
+    "no": 16,
     "unknown": 4
   },
   "byMonth": [
@@ -85,10 +85,10 @@
     },
     {
       "month": "2026-09",
-      "yes": 0,
-      "no": 1,
+      "yes": 1,
+      "no": 2,
       "unknown": 0,
-      "total": 1
+      "total": 3
     }
   ],
   "cumulative": [
@@ -251,6 +251,16 @@
       "date": "2026-09-04",
       "victims": 32,
       "arrestReportedVictims": 13
+    },
+    {
+      "date": "2026-09-18",
+      "victims": 33,
+      "arrestReportedVictims": 14
+    },
+    {
+      "date": "2026-09-20",
+      "victims": 34,
+      "arrestReportedVictims": 14
     }
   ],
   "victims": [
@@ -1213,6 +1223,66 @@
       "caseStatus": "",
       "clearanceStatus": "open_no_public_arrest",
       "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0030-V01",
+      "incidentId": "OAK-2026-0030",
+      "name": "unknown",
+      "age": "",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-09-18",
+      "incidentTime": "17:54",
+      "location": "1500 block of Magnolia Street",
+      "neighborhood": "West Oakland / near DeFremery Park",
+      "method": "shooting",
+      "circumstancesSummary": "A man was fatally shot around 5:54 p.m. September 18 in the 1500 block of Magnolia Street. OPD reported one suspect in custody; no suspect identity or charges were released.",
+      "caseNumber": "26-040125",
+      "arrestMade": "yes",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0217",
+      "arrestSourceUrl": "https://www.sfchronicle.com/bayarea/article/west-oakland-homicide-22439325.php",
+      "arrestSourceTitle": "Man fatally shot in West Oakland, suspect arrested, police say",
+      "arrestSourcePublisher": "San Francisco Chronicle",
+      "arrestSourceDate": "2026-09-18",
+      "allegedPerpetratorsPublic": "unknown",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "Public arrest reported",
+      "caseStatus": "arrest_reported",
+      "clearanceStatus": "arrest_reported",
+      "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0031-V01",
+      "incidentId": "OAK-2026-0031",
+      "name": "unknown",
+      "age": "37",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-09-20",
+      "incidentTime": "01:56",
+      "location": "3200 block of Grand Avenue / parking lot near Grand Lake Theatre",
+      "neighborhood": "Grand Lake",
+      "method": "shooting",
+      "circumstancesSummary": "A man was shot in a parking lot shortly before 2 a.m. September 20 in the 3200 block of Grand Avenue. He died after transport to a hospital; the OPD patrol log lists zero people in custody.",
+      "caseNumber": "26-040309",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0218",
+      "arrestSourceUrl": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/sept/opd-daily-log-19-20-sep-26.pdf",
+      "arrestSourceTitle": "OPD Daily Log September 19-20 2026",
+      "arrestSourcePublisher": "Oakland Police Department",
+      "arrestSourceDate": "2026-09-20",
+      "allegedPerpetratorsPublic": "unknown",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "open_no_public_arrest",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
     }
   ],
   "incidents": [
@@ -1551,6 +1621,30 @@
       "victimCount": "1",
       "caseNumber": "",
       "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0030",
+      "date": "2026-09-18",
+      "time": "17:54",
+      "location": "1500 block of Magnolia Street",
+      "neighborhood": "West Oakland / near DeFremery Park",
+      "method": "shooting",
+      "circumstancesSummary": "A man was fatally shot around 5:54 p.m. September 18 in the 1500 block of Magnolia Street. OPD reported one suspect in custody; no suspect identity or charges were released.",
+      "victimCount": "1",
+      "caseNumber": "26-040125",
+      "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0031",
+      "date": "2026-09-20",
+      "time": "01:56",
+      "location": "3200 block of Grand Avenue / parking lot near Grand Lake Theatre",
+      "neighborhood": "Grand Lake",
+      "method": "shooting",
+      "circumstancesSummary": "A man was shot in a parking lot shortly before 2 a.m. September 20 in the 3200 block of Grand Avenue. He died after transport to a hospital; the OPD patrol log lists zero people in custody.",
+      "victimCount": "1",
+      "caseNumber": "26-040309",
+      "confidence": "high"
     }
   ],
   "countReports": [
@@ -1762,9 +1856,71 @@
       "unit": "incidents",
       "trackerVictimCount": 25,
       "discrepancy": "The tracker has 25 victims across 21 incidents through July 12, versus 24 official 187(a)PC incidents and 27 total incidents. Multi-victim cases and the report's three All Other incidents prevent direct row matching without an official incident list."
+    },
+    {
+      "sourceDate": "2026-09-20",
+      "publisher": "Hoodline",
+      "title": "San Francisco Man Shot Dead in Grand Lake Lot Oakland 39th Homicide",
+      "url": "https://hoodline.com/2026/09/san-francisco-man-shot-dead-in-grand-lake-lot-oakland-s-39th-homicide/",
+      "periodEnd": "2026-09-20",
+      "reportedTotal": 39,
+      "unit": "victims",
+      "trackerVictimCount": 34,
+      "discrepancy": "The traffic-excluded tracker has 34 victims across 30 incidents through September 20; the secondary ordinal is five victims higher. Definitions and missing-case detail are unresolved."
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-09-28",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0031-V01",
+      "incidentId": "OAK-2026-0031",
+      "incidentDate": "2026-09-20",
+      "victimName": "unknown",
+      "location": "3200 block of Grand Avenue / parking lot near Grand Lake Theatre",
+      "source": {
+        "sourceId": "OAK-2026-S0218",
+        "title": "OPD Daily Log September 19-20 2026",
+        "publisher": "Oakland Police Department",
+        "url": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/sept/opd-daily-log-19-20-sep-26.pdf",
+        "sourceDate": "2026-09-20"
+      }
+    },
+    {
+      "dateFound": "2026-09-28",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0030-V01",
+      "incidentId": "OAK-2026-0030",
+      "incidentDate": "2026-09-18",
+      "victimName": "unknown",
+      "location": "1500 block of Magnolia Street",
+      "source": {
+        "sourceId": "OAK-2026-S0216",
+        "title": "OPD Daily Log September 18-19 2026",
+        "publisher": "Oakland Police Department",
+        "url": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/sept/opd-daily-log-18-19-sep-26.pdf",
+        "sourceDate": "2026-09-18"
+      }
+    },
+    {
+      "dateFound": "2026-09-28",
+      "type": "arrest_found",
+      "label": "Arrest found",
+      "victimId": "OAK-2026-0030-V01",
+      "incidentId": "OAK-2026-0030",
+      "incidentDate": "2026-09-18",
+      "victimName": "unknown",
+      "location": "1500 block of Magnolia Street",
+      "source": {
+        "sourceId": "OAK-2026-S0217",
+        "title": "Man fatally shot in West Oakland, suspect arrested, police say",
+        "publisher": "San Francisco Chronicle",
+        "url": "https://www.sfchronicle.com/bayarea/article/west-oakland-homicide-22439325.php",
+        "sourceDate": "2026-09-18"
+      }
+    },
     {
       "dateFound": "2026-09-07",
       "type": "homicide_found",
