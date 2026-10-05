@@ -3,8 +3,8 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-09-28T02:41:41-07:00",
-    "lastChecked": "2026-09-28",
+    "generatedAt": "2026-10-05T02:35:39-07:00",
+    "lastChecked": "2026-10-05",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
@@ -1867,6 +1867,17 @@
       "unit": "victims",
       "trackerVictimCount": 34,
       "discrepancy": "The traffic-excluded tracker has 34 victims across 30 incidents through September 20; the secondary ordinal is five victims higher. Definitions and missing-case detail are unresolved."
+    },
+    {
+      "sourceDate": "",
+      "publisher": "The Peoples Data Oakland",
+      "title": "Oakland crime statistics dashboard YTD through September 27 2026",
+      "url": "https://thepeoplesdataoakland.com/oakland-crime-statistics-dashboard/",
+      "periodEnd": "2026-09-27",
+      "reportedTotal": 35,
+      "unit": "unknown",
+      "trackerVictimCount": 34,
+      "discrepancy": "Citywide chart is one above tracker; separate area values total 39, five above tracker. Internal dashboard discrepancy and count unit/category remain unresolved."
     }
   ],
   "updateLog": [
