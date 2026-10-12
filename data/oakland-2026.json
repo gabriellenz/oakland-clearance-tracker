@@ -3,26 +3,26 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-10-05T02:35:39-07:00",
-    "lastChecked": "2026-10-05",
+    "generatedAt": "2026-10-12T02:37:56-07:00",
+    "lastChecked": "2026-10-12",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 34,
-    "incidents": 30,
-    "arrestReportedVictims": 14,
+    "victims": 35,
+    "incidents": 31,
+    "arrestReportedVictims": 15,
     "chargeReportedVictims": 14,
     "noPublicArrestVictims": 16,
     "unknownArrestStatusVictims": 4,
-    "publicArrestRateVictimLevel": 41.2,
-    "namedVictims": 18,
+    "publicArrestRateVictimLevel": 42.9,
+    "namedVictims": 20,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
-    "yes": 14,
+    "yes": 15,
     "no": 16,
     "unknown": 4
   },
@@ -89,6 +89,13 @@
       "no": 2,
       "unknown": 0,
       "total": 3
+    },
+    {
+      "month": "2026-10",
+      "yes": 1,
+      "no": 0,
+      "unknown": 0,
+      "total": 1
     }
   ],
   "cumulative": [
@@ -261,6 +268,11 @@
       "date": "2026-09-20",
       "victims": 34,
       "arrestReportedVictims": 14
+    },
+    {
+      "date": "2026-10-11",
+      "victims": 35,
+      "arrestReportedVictims": 15
     }
   ],
   "victims": [
@@ -1077,8 +1089,8 @@
     {
       "victimId": "OAK-2026-0024-V01",
       "incidentId": "OAK-2026-0024",
-      "name": "unknown",
-      "age": "26",
+      "name": "Kimarii McLemore",
+      "age": "25",
       "gender": "female",
       "raceEthnicity": "",
       "incidentDate": "2026-07-31",
@@ -1086,7 +1098,7 @@
       "location": "Parker Community Resource Center / 7900 block of Ney Avenue near Ritchie Street",
       "neighborhood": "Eastmont / East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "A 26-year-old woman attending a carpentry class was killed and another woman in her 20s was wounded at the Parker Community Resource Center. Police described the shooting as intentional rather than random and said they had multiple suspect leads.",
+      "circumstancesSummary": "Kimarii McLemore, reported by her family as 25, was killed while attending a carpentry class at the Parker Community Resource Center; another woman was wounded. Police described a targeted shooting.",
       "caseNumber": "26-032636",
       "arrestMade": "no",
       "arrestDate": "",
@@ -1282,6 +1294,36 @@
       "publicChargeSummary": "None reported",
       "caseStatus": "open_no_public_arrest",
       "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0032-V01",
+      "incidentId": "OAK-2026-0032",
+      "name": "Mackayla Paige",
+      "age": "29",
+      "gender": "female",
+      "raceEthnicity": "",
+      "incidentDate": "2026-10-11",
+      "incidentTime": "01:30",
+      "location": "200 block of 14th Street",
+      "neighborhood": "Downtown Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A 29-year-old Richmond woman was fatally shot early October 11 in the 200 block of 14th Street and died after hospital transport. Police reported arresting another Richmond woman in connection with the killing.",
+      "caseNumber": "",
+      "arrestMade": "yes",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0233",
+      "arrestSourceUrl": "https://www.ktvu.com/news/oakland-shooting-richmond-sunday",
+      "arrestSourceTitle": "Richmond woman killed in overnight Oakland shooting",
+      "arrestSourcePublisher": "KTVU FOX 2",
+      "arrestSourceDate": "2026-10-11",
+      "allegedPerpetratorsPublic": "",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "Public arrest reported",
+      "caseStatus": "under_investigation",
+      "clearanceStatus": "arrest_reported",
       "confidence": "high"
     }
   ],
@@ -1569,7 +1611,7 @@
       "location": "Parker Community Resource Center / 7900 block of Ney Avenue near Ritchie Street",
       "neighborhood": "Eastmont / East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "A 26-year-old woman attending a carpentry class was killed and another woman in her 20s was wounded at the Parker Community Resource Center. Police described the shooting as intentional rather than random and said they had multiple suspect leads.",
+      "circumstancesSummary": "Kimarii McLemore, reported by her family as 25, was killed while attending a carpentry class at the Parker Community Resource Center; another woman was wounded. Police described a targeted shooting.",
       "victimCount": "1",
       "caseNumber": "26-032636",
       "confidence": "high"
@@ -1644,6 +1686,18 @@
       "circumstancesSummary": "A man was shot in a parking lot shortly before 2 a.m. September 20 in the 3200 block of Grand Avenue. He died after transport to a hospital; the OPD patrol log lists zero people in custody.",
       "victimCount": "1",
       "caseNumber": "26-040309",
+      "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0032",
+      "date": "2026-10-11",
+      "time": "01:30",
+      "location": "200 block of 14th Street",
+      "neighborhood": "Downtown Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A 29-year-old Richmond woman was fatally shot early October 11 in the 200 block of 14th Street and died after hospital transport. Police reported arresting another Richmond woman in connection with the killing.",
+      "victimCount": "1",
+      "caseNumber": "",
       "confidence": "high"
     }
   ],
@@ -1878,9 +1932,54 @@
       "unit": "unknown",
       "trackerVictimCount": 34,
       "discrepancy": "Citywide chart is one above tracker; separate area values total 39, five above tracker. Internal dashboard discrepancy and count unit/category remain unresolved."
+    },
+    {
+      "sourceDate": "",
+      "publisher": "The Peoples Data Oakland",
+      "title": "Oakland crime statistics dashboard YTD through October 4 2026",
+      "url": "https://thepeoplesdataoakland.com/oakland-crime-statistics-dashboard/",
+      "periodEnd": "2026-10-04",
+      "reportedTotal": 40,
+      "unit": "incidents",
+      "trackerVictimCount": 34,
+      "discrepancy": "Through October 4 tracker has 34 victims / 30 incidents versus secondary 36 murder-category and 40 combined incidents. Category and unit differences prevent direct reconciliation."
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-10-12",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0032-V01",
+      "incidentId": "OAK-2026-0032",
+      "incidentDate": "2026-10-11",
+      "victimName": "Mackayla Paige",
+      "location": "200 block of 14th Street",
+      "source": {
+        "sourceId": "OAK-2026-S0233",
+        "title": "Richmond woman killed in overnight Oakland shooting",
+        "publisher": "KTVU FOX 2",
+        "url": "https://www.ktvu.com/news/oakland-shooting-richmond-sunday",
+        "sourceDate": "2026-10-11"
+      }
+    },
+    {
+      "dateFound": "2026-10-12",
+      "type": "arrest_found",
+      "label": "Arrest found",
+      "victimId": "OAK-2026-0032-V01",
+      "incidentId": "OAK-2026-0032",
+      "incidentDate": "2026-10-11",
+      "victimName": "Mackayla Paige",
+      "location": "200 block of 14th Street",
+      "source": {
+        "sourceId": "OAK-2026-S0233",
+        "title": "Richmond woman killed in overnight Oakland shooting",
+        "publisher": "KTVU FOX 2",
+        "url": "https://www.ktvu.com/news/oakland-shooting-richmond-sunday",
+        "sourceDate": "2026-10-11"
+      }
+    },
     {
       "dateFound": "2026-09-28",
       "type": "homicide_found",
@@ -2058,7 +2157,7 @@
       "victimId": "OAK-2026-0024-V01",
       "incidentId": "OAK-2026-0024",
       "incidentDate": "2026-07-31",
-      "victimName": "unknown",
+      "victimName": "Kimarii McLemore",
       "location": "Parker Community Resource Center / 7900 block of Ney Avenue near Ritchie Street",
       "source": {
         "sourceId": "OAK-2026-S0188",
