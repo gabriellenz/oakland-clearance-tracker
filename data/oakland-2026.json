@@ -3,8 +3,8 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-10-12T02:37:56-07:00",
-    "lastChecked": "2026-10-12",
+    "generatedAt": "2026-10-19T02:36:18-07:00",
+    "lastChecked": "2026-10-19",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
@@ -14,7 +14,7 @@
     "victims": 35,
     "incidents": 31,
     "arrestReportedVictims": 15,
-    "chargeReportedVictims": 14,
+    "chargeReportedVictims": 15,
     "noPublicArrestVictims": 16,
     "unknownArrestStatusVictims": 4,
     "publicArrestRateVictimLevel": 42.9,
@@ -1304,25 +1304,25 @@
       "gender": "female",
       "raceEthnicity": "",
       "incidentDate": "2026-10-11",
-      "incidentTime": "01:30",
+      "incidentTime": "01:35",
       "location": "200 block of 14th Street",
       "neighborhood": "Downtown Oakland",
       "method": "shooting",
-      "circumstancesSummary": "A 29-year-old Richmond woman was fatally shot early October 11 in the 200 block of 14th Street and died after hospital transport. Police reported arresting another Richmond woman in connection with the killing.",
-      "caseNumber": "",
+      "circumstancesSummary": "Mackayla Paige, 29, was fatally shot near 14th and Harrison streets early October 11. Police reported an arrest that day; prosecutors later filed involuntary manslaughter and firearm charges against her sister after a reported attempt to intervene in a fight.",
+      "caseNumber": "26-043429",
       "arrestMade": "yes",
-      "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0233",
-      "arrestSourceUrl": "https://www.ktvu.com/news/oakland-shooting-richmond-sunday",
-      "arrestSourceTitle": "Richmond woman killed in overnight Oakland shooting",
-      "arrestSourcePublisher": "KTVU FOX 2",
-      "arrestSourceDate": "2026-10-11",
-      "allegedPerpetratorsPublic": "",
+      "arrestDate": "2026-10-11",
+      "arrestSourceId": "OAK-2026-S0239",
+      "arrestSourceUrl": "https://www.sfgate.com/bayarea/article/mackayla-paige-kash-sister-killing-22474234.php",
+      "arrestSourceTitle": "Sister of reality TV star Kash charged in her Bay Area killing",
+      "arrestSourcePublisher": "SFGATE",
+      "arrestSourceDate": "2026-10-14",
+      "allegedPerpetratorsPublic": "Vernika Dunbar",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
-      "chargesFiled": "unknown",
-      "leadCharge": "",
-      "publicChargeSummary": "Public arrest reported",
-      "caseStatus": "under_investigation",
+      "chargesFiled": "yes",
+      "leadCharge": "involuntary manslaughter",
+      "publicChargeSummary": "Charge: involuntary manslaughter",
+      "caseStatus": "charged",
       "clearanceStatus": "arrest_reported",
       "confidence": "high"
     }
@@ -1691,13 +1691,13 @@
     {
       "incidentId": "OAK-2026-0032",
       "date": "2026-10-11",
-      "time": "01:30",
+      "time": "01:35",
       "location": "200 block of 14th Street",
       "neighborhood": "Downtown Oakland",
       "method": "shooting",
-      "circumstancesSummary": "A 29-year-old Richmond woman was fatally shot early October 11 in the 200 block of 14th Street and died after hospital transport. Police reported arresting another Richmond woman in connection with the killing.",
+      "circumstancesSummary": "Mackayla Paige, 29, was fatally shot near 14th and Harrison streets early October 11. Police reported an arrest that day; prosecutors later filed involuntary manslaughter and firearm charges against her sister after a reported attempt to intervene in a fight.",
       "victimCount": "1",
-      "caseNumber": "",
+      "caseNumber": "26-043429",
       "confidence": "high"
     }
   ],
@@ -1943,11 +1943,33 @@
       "unit": "incidents",
       "trackerVictimCount": 34,
       "discrepancy": "Through October 4 tracker has 34 victims / 30 incidents versus secondary 36 murder-category and 40 combined incidents. Category and unit differences prevent direct reconciliation."
+    },
+    {
+      "sourceDate": "2026-10-15",
+      "publisher": "CBS News Bay Area / KPIX",
+      "title": "Police chief reports 41 homicides year to date",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/oakland-crime-rate-down-homicides/",
+      "periodEnd": "2026-10-15",
+      "reportedTotal": 41,
+      "unit": "unknown",
+      "trackerVictimCount": 35,
+      "discrepancy": "Tracker has 35 victims across 31 incidents; six below reported headline. Category exclusions, Panoramic classification and missing-case detail unresolved."
+    },
+    {
+      "sourceDate": "2026-10-11",
+      "publisher": "The Peoples Data Oakland",
+      "title": "Dashboard through October 11: 37 murder plus four Other Homicide",
+      "url": "https://thepeoplesdataoakland.com/oakland-crime-statistics-dashboard/",
+      "periodEnd": "2026-10-11",
+      "reportedTotal": 41,
+      "unit": "incidents",
+      "trackerVictimCount": 35,
+      "discrepancy": "Tracker has 35 victims across 31 incidents; incident categories and victim units prevent direct comparison. Original official PDF and incident list still needed."
     }
   ],
   "updateLog": [
     {
-      "dateFound": "2026-10-12",
+      "dateFound": "2026-10-19",
       "type": "homicide_found",
       "label": "Homicide added to tracker",
       "victimId": "OAK-2026-0032-V01",
@@ -1956,15 +1978,15 @@
       "victimName": "Mackayla Paige",
       "location": "200 block of 14th Street",
       "source": {
-        "sourceId": "OAK-2026-S0233",
-        "title": "Richmond woman killed in overnight Oakland shooting",
-        "publisher": "KTVU FOX 2",
-        "url": "https://www.ktvu.com/news/oakland-shooting-richmond-sunday",
-        "sourceDate": "2026-10-11"
+        "sourceId": "OAK-2026-S0239",
+        "title": "Sister of reality TV star Kash charged in her Bay Area killing",
+        "publisher": "SFGATE",
+        "url": "https://www.sfgate.com/bayarea/article/mackayla-paige-kash-sister-killing-22474234.php",
+        "sourceDate": "2026-10-14"
       }
     },
     {
-      "dateFound": "2026-10-12",
+      "dateFound": "2026-10-19",
       "type": "arrest_found",
       "label": "Arrest found",
       "victimId": "OAK-2026-0032-V01",
@@ -1973,11 +1995,11 @@
       "victimName": "Mackayla Paige",
       "location": "200 block of 14th Street",
       "source": {
-        "sourceId": "OAK-2026-S0233",
-        "title": "Richmond woman killed in overnight Oakland shooting",
-        "publisher": "KTVU FOX 2",
-        "url": "https://www.ktvu.com/news/oakland-shooting-richmond-sunday",
-        "sourceDate": "2026-10-11"
+        "sourceId": "OAK-2026-S0239",
+        "title": "Sister of reality TV star Kash charged in her Bay Area killing",
+        "publisher": "SFGATE",
+        "url": "https://www.sfgate.com/bayarea/article/mackayla-paige-kash-sister-killing-22474234.php",
+        "sourceDate": "2026-10-14"
       }
     },
     {
