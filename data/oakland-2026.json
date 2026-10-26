@@ -3,27 +3,27 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-10-19T02:36:18-07:00",
-    "lastChecked": "2026-10-19",
+    "generatedAt": "2026-10-26T02:32:29-07:00",
+    "lastChecked": "2026-10-26",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 35,
-    "incidents": 31,
+    "victims": 36,
+    "incidents": 32,
     "arrestReportedVictims": 15,
     "chargeReportedVictims": 15,
-    "noPublicArrestVictims": 16,
+    "noPublicArrestVictims": 17,
     "unknownArrestStatusVictims": 4,
-    "publicArrestRateVictimLevel": 42.9,
+    "publicArrestRateVictimLevel": 41.7,
     "namedVictims": 20,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
     "yes": 15,
-    "no": 16,
+    "no": 17,
     "unknown": 4
   },
   "byMonth": [
@@ -93,9 +93,9 @@
     {
       "month": "2026-10",
       "yes": 1,
-      "no": 0,
+      "no": 1,
       "unknown": 0,
-      "total": 1
+      "total": 2
     }
   ],
   "cumulative": [
@@ -272,6 +272,11 @@
     {
       "date": "2026-10-11",
       "victims": 35,
+      "arrestReportedVictims": 15
+    },
+    {
+      "date": "2026-10-21",
+      "victims": 36,
       "arrestReportedVictims": 15
     }
   ],
@@ -1325,6 +1330,36 @@
       "caseStatus": "charged",
       "clearanceStatus": "arrest_reported",
       "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0033-V01",
+      "incidentId": "OAK-2026-0033",
+      "name": "unknown",
+      "age": "",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-10-21",
+      "incidentTime": "01:28",
+      "location": "2000 block of International Boulevard",
+      "neighborhood": "San Antonio",
+      "method": "shooting",
+      "circumstancesSummary": "A man was fatally shot early October 21 in the 2000 block of International Boulevard and died after hospital transport. The OPD patrol log records one male victim and zero people in custody; his identity has not been released.",
+      "caseNumber": "26-045001",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0262",
+      "arrestSourceUrl": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/oct/opd-daily-log-20-21-oct-26.pdf",
+      "arrestSourceTitle": "OPD Daily Log October 20-21 2026",
+      "arrestSourcePublisher": "Oakland Police Department",
+      "arrestSourceDate": "2026-10-21",
+      "allegedPerpetratorsPublic": "",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "under_investigation",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
     }
   ],
   "incidents": [
@@ -1699,6 +1734,18 @@
       "victimCount": "1",
       "caseNumber": "26-043429",
       "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0033",
+      "date": "2026-10-21",
+      "time": "01:28",
+      "location": "2000 block of International Boulevard",
+      "neighborhood": "San Antonio",
+      "method": "shooting",
+      "circumstancesSummary": "A man was fatally shot early October 21 in the 2000 block of International Boulevard and died after hospital transport. The OPD patrol log records one male victim and zero people in custody; his identity has not been released.",
+      "victimCount": "1",
+      "caseNumber": "26-045001",
+      "confidence": "high"
     }
   ],
   "countReports": [
@@ -1965,9 +2012,48 @@
       "unit": "incidents",
       "trackerVictimCount": 35,
       "discrepancy": "Tracker has 35 victims across 31 incidents; incident categories and victim units prevent direct comparison. Original official PDF and incident list still needed."
+    },
+    {
+      "sourceDate": "2026-10-18",
+      "publisher": "The Peoples Data Oakland",
+      "title": "Oakland crime statistics dashboard through October 18 2026",
+      "url": "https://thepeoplesdataoakland.com/oakland-crime-statistics-dashboard/",
+      "periodEnd": "2026-10-18",
+      "reportedTotal": 41,
+      "unit": "incidents",
+      "trackerVictimCount": 35,
+      "discrepancy": "41 combined category incidents versus 35 tracked victims through October 18; scope and units differ."
+    },
+    {
+      "sourceDate": "2026-10-22",
+      "publisher": "Hoodline",
+      "title": "Man in His 50s Gunned Down on Oakland International Boulevard No Arrests",
+      "url": "https://hoodline.com/2026/10/man-in-his-50s-gunned-down-on-oakland-s-international-boulevard-no-arrests/",
+      "periodEnd": "2026-10-21",
+      "reportedTotal": 42,
+      "unit": "unknown",
+      "trackerVictimCount": 36,
+      "discrepancy": "Secondary 42 investigations versus 36 tracked victims; category/unit details unavailable."
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-10-26",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0033-V01",
+      "incidentId": "OAK-2026-0033",
+      "incidentDate": "2026-10-21",
+      "victimName": "unknown",
+      "location": "2000 block of International Boulevard",
+      "source": {
+        "sourceId": "OAK-2026-S0262",
+        "title": "OPD Daily Log October 20-21 2026",
+        "publisher": "Oakland Police Department",
+        "url": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/oct/opd-daily-log-20-21-oct-26.pdf",
+        "sourceDate": "2026-10-21"
+      }
+    },
     {
       "dateFound": "2026-10-19",
       "type": "homicide_found",
