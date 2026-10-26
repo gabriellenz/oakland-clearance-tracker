@@ -3,7 +3,7 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-10-26T02:32:29-07:00",
+    "generatedAt": "2026-10-26T08:04:54-07:00",
     "lastChecked": "2026-10-26",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
@@ -586,21 +586,21 @@
       "incidentId": "OAK-2026-0014",
       "name": "unknown",
       "age": "",
-      "gender": "unknown",
+      "gender": "male",
       "raceEthnicity": "",
       "incidentDate": "2026-02-11",
-      "incidentTime": "18:45",
+      "incidentTime": "18:48",
       "location": "International Boulevard near 98th Avenue",
       "neighborhood": "East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "A person was fatally shot on International Boulevard near 98th Avenue on the evening of February 11. Police said officers found the victim dead and that the circumstances were under investigation.",
-      "caseNumber": "",
+      "circumstancesSummary": "A man was fatally shot on International Boulevard near 98th Avenue on the evening of February 11. The OPD patrol log records one male victim deceased at the scene and zero people in custody.",
+      "caseNumber": "26-006571",
       "arrestMade": "no",
       "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0047",
-      "arrestSourceUrl": "https://www.sfchronicle.com/crime/article/oakland-fatal-shooting-21350124.php",
-      "arrestSourceTitle": "Fatal shooting on Oakland's International Boulevard",
-      "arrestSourcePublisher": "San Francisco Chronicle",
+      "arrestSourceId": "OAK-2026-S0313",
+      "arrestSourceUrl": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/feb/opd-daily-log-11-12-feb-26.pdf",
+      "arrestSourceTitle": "OPD Daily Log 02/11/26 - 02/12/26(PDF,\u00a0520KB)",
+      "arrestSourcePublisher": "Oakland Police Department",
       "arrestSourceDate": "2026-02-12",
       "allegedPerpetratorsPublic": "unknown",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
@@ -609,7 +609,7 @@
       "publicChargeSummary": "None reported",
       "caseStatus": "",
       "clearanceStatus": "open_no_public_arrest",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "victimId": "OAK-2026-0009-V01",
@@ -1069,19 +1069,19 @@
       "gender": "male",
       "raceEthnicity": "",
       "incidentDate": "2026-07-22",
-      "incidentTime": "07:30",
+      "incidentTime": "07:35",
       "location": "4300 block of Martin Luther King Jr. Way near 43rd Street / AC Transit bus stop",
       "neighborhood": "Longfellow / North Oakland",
       "method": "shooting",
       "circumstancesSummary": "A 74-year-old man was fatally shot at a bus stop in North Oakland on the morning of July 22. KTVU, citing OPD, reported officers responding to a person-down call found him suffering at least one gunshot wound; firefighters declared him dead.",
-      "caseNumber": "",
+      "caseNumber": "26-031283",
       "arrestMade": "no",
       "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0177",
-      "arrestSourceUrl": "https://www.sfchronicle.com/bayarea/article/north-oakland-homicide-22356354.php",
-      "arrestSourceTitle": "Man fatally shot in North Oakland neighborhood",
-      "arrestSourcePublisher": "San Francisco Chronicle",
-      "arrestSourceDate": "2026-07-22",
+      "arrestSourceId": "OAK-2026-S0314",
+      "arrestSourceUrl": "https://www.oaklandca.gov/files/assets/city/v/2/police/documents/police-services-amp-priorities/opd-daily-log/2026/july/opd-daily-log-22-23-jul-26.pdf",
+      "arrestSourceTitle": "OPD Daily Log 07/22/26 - 07/23/26(PDF,\u00a0547KB)",
+      "arrestSourcePublisher": "Oakland Police Department",
+      "arrestSourceDate": "2026-07-23",
       "allegedPerpetratorsPublic": "unknown",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "unknown",
@@ -1335,7 +1335,7 @@
       "victimId": "OAK-2026-0033-V01",
       "incidentId": "OAK-2026-0033",
       "name": "unknown",
-      "age": "",
+      "age": "50s",
       "gender": "male",
       "raceEthnicity": "",
       "incidentDate": "2026-10-21",
@@ -1347,10 +1347,10 @@
       "caseNumber": "26-045001",
       "arrestMade": "no",
       "arrestDate": "",
-      "arrestSourceId": "OAK-2026-S0262",
-      "arrestSourceUrl": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/oct/opd-daily-log-20-21-oct-26.pdf",
-      "arrestSourceTitle": "OPD Daily Log October 20-21 2026",
-      "arrestSourcePublisher": "Oakland Police Department",
+      "arrestSourceId": "OAK-2026-S0319",
+      "arrestSourceUrl": "https://www.sfchronicle.com/bayarea/article/oakland-homicide-san-antonio-district-22488402.php",
+      "arrestSourceTitle": "Man fatally shot in Oakland\u2019s San Antonio district",
+      "arrestSourcePublisher": "San Francisco Chronicle",
       "arrestSourceDate": "2026-10-21",
       "allegedPerpetratorsPublic": "",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
@@ -1462,14 +1462,14 @@
     {
       "incidentId": "OAK-2026-0014",
       "date": "2026-02-11",
-      "time": "18:45",
+      "time": "18:48",
       "location": "International Boulevard near 98th Avenue",
       "neighborhood": "East Oakland",
       "method": "shooting",
-      "circumstancesSummary": "A person was fatally shot on International Boulevard near 98th Avenue on the evening of February 11. Police said officers found the victim dead and that the circumstances were under investigation.",
+      "circumstancesSummary": "A man was fatally shot on International Boulevard near 98th Avenue on the evening of February 11. The OPD patrol log records one male victim deceased at the scene and zero people in custody.",
       "victimCount": "1",
-      "caseNumber": "",
-      "confidence": "medium"
+      "caseNumber": "26-006571",
+      "confidence": "high"
     },
     {
       "incidentId": "OAK-2026-0009",
@@ -1630,13 +1630,13 @@
     {
       "incidentId": "OAK-2026-0023",
       "date": "2026-07-22",
-      "time": "07:30",
+      "time": "07:35",
       "location": "4300 block of Martin Luther King Jr. Way near 43rd Street / AC Transit bus stop",
       "neighborhood": "Longfellow / North Oakland",
       "method": "shooting",
       "circumstancesSummary": "A 74-year-old man was fatally shot at a bus stop in North Oakland on the morning of July 22. KTVU, citing OPD, reported officers responding to a person-down call found him suffering at least one gunshot wound; firefighters declared him dead.",
       "victimCount": "1",
-      "caseNumber": "",
+      "caseNumber": "26-031283",
       "confidence": "high"
     },
     {
@@ -2034,6 +2034,50 @@
       "unit": "unknown",
       "trackerVictimCount": 36,
       "discrepancy": "Secondary 42 investigations versus 36 tracked victims; category/unit details unavailable."
+    },
+    {
+      "sourceDate": "2026-10-26",
+      "publisher": "Oakland Police Department",
+      "title": "261026_Citywide Weekly Crime Report 19Oct26 - 25Oct26",
+      "url": "https://cityofoakland2.app.box.com/s/sjiq7usfy27gy9dfe51hp8arz5l1ixad/file/2550466382342",
+      "periodEnd": "2026-10-25",
+      "reportedTotal": 42,
+      "unit": "incidents",
+      "trackerVictimCount": 36,
+      "discrepancy": "Official combined offense count 42 versus 36 tracker victims; scope and units differ. Not a confirmed missing-victim count."
+    },
+    {
+      "sourceDate": "2026-06-01",
+      "publisher": "Oakland Police Department",
+      "title": "260601_Citywide Weekly Crime Report 25May26 - 31May26",
+      "url": "https://cityofoakland2.app.box.com/s/sjiq7usfy27gy9dfe51hp8arz5l1ixad/file/2257591002778",
+      "periodEnd": "2026-05-31",
+      "reportedTotal": 22,
+      "unit": "incidents",
+      "trackerVictimCount": 20,
+      "discrepancy": "Official combined offense count 22 versus 20 tracker victims; scope and units differ. Not a confirmed missing-victim count."
+    },
+    {
+      "sourceDate": "2026-07-27",
+      "publisher": "Oakland Police Department",
+      "title": "260727_Citywide Weekly Crime Report 20Jul26 - 26Jul26",
+      "url": "https://cityofoakland2.app.box.com/s/sjiq7usfy27gy9dfe51hp8arz5l1ixad/file/2371290686102",
+      "periodEnd": "2026-07-26",
+      "reportedTotal": 31,
+      "unit": "incidents",
+      "trackerVictimCount": 27,
+      "discrepancy": "Official combined offense count 31 versus 27 tracker victims; scope and units differ. Not a confirmed missing-victim count."
+    },
+    {
+      "sourceDate": "2026-08-24",
+      "publisher": "Oakland Police Department",
+      "title": "260824_Citywide Weekly Crime Report 17Aug26 - 23Aug26",
+      "url": "https://cityofoakland2.app.box.com/s/sjiq7usfy27gy9dfe51hp8arz5l1ixad/file/2424072507754",
+      "periodEnd": "2026-08-23",
+      "reportedTotal": 34,
+      "unit": "incidents",
+      "trackerVictimCount": 29,
+      "discrepancy": "Official combined offense count 34 versus 29 tracker victims; scope and units differ. Not a confirmed missing-victim count."
     }
   ],
   "updateLog": [
@@ -2052,6 +2096,40 @@
         "publisher": "Oakland Police Department",
         "url": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/oct/opd-daily-log-20-21-oct-26.pdf",
         "sourceDate": "2026-10-21"
+      }
+    },
+    {
+      "dateFound": "2026-10-26",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0023-V01",
+      "incidentId": "OAK-2026-0023",
+      "incidentDate": "2026-07-22",
+      "victimName": "unknown",
+      "location": "4300 block of Martin Luther King Jr. Way near 43rd Street / AC Transit bus stop",
+      "source": {
+        "sourceId": "OAK-2026-S0314",
+        "title": "OPD Daily Log 07/22/26 - 07/23/26(PDF,\u00a0547KB)",
+        "publisher": "Oakland Police Department",
+        "url": "https://www.oaklandca.gov/files/assets/city/v/2/police/documents/police-services-amp-priorities/opd-daily-log/2026/july/opd-daily-log-22-23-jul-26.pdf",
+        "sourceDate": "2026-07-23"
+      }
+    },
+    {
+      "dateFound": "2026-10-26",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0014-V01",
+      "incidentId": "OAK-2026-0014",
+      "incidentDate": "2026-02-11",
+      "victimName": "unknown",
+      "location": "International Boulevard near 98th Avenue",
+      "source": {
+        "sourceId": "OAK-2026-S0313",
+        "title": "OPD Daily Log 02/11/26 - 02/12/26(PDF,\u00a0520KB)",
+        "publisher": "Oakland Police Department",
+        "url": "https://www.oaklandca.gov/files/assets/city/v/1/police/documents/police-services-amp-priorities/opd-daily-log/2026/feb/opd-daily-log-11-12-feb-26.pdf",
+        "sourceDate": "2026-02-12"
       }
     },
     {
@@ -2276,23 +2354,6 @@
       }
     },
     {
-      "dateFound": "2026-07-25",
-      "type": "homicide_found",
-      "label": "Homicide added to tracker",
-      "victimId": "OAK-2026-0023-V01",
-      "incidentId": "OAK-2026-0023",
-      "incidentDate": "2026-07-22",
-      "victimName": "unknown",
-      "location": "4300 block of Martin Luther King Jr. Way near 43rd Street / AC Transit bus stop",
-      "source": {
-        "sourceId": "OAK-2026-S0182",
-        "title": "North Oakland bus stop shooting leaves man dead",
-        "publisher": "KTVU FOX 2",
-        "url": "https://www.ktvu.com/news/man-fatally-shot-north-oakland-bus-stop-investigation-underway",
-        "sourceDate": "2026-07-22"
-      }
-    },
-    {
       "dateFound": "2026-07-20",
       "type": "homicide_found",
       "label": "Homicide added to tracker",
@@ -2511,23 +2572,6 @@
         "publisher": "KTVU FOX 2",
         "url": "https://www.ktvu.com/news/oakland-police-investigating-fatal-stabbing-near-san-antonio-park",
         "sourceDate": "2026-05-25"
-      }
-    },
-    {
-      "dateFound": "2026-05-18",
-      "type": "homicide_found",
-      "label": "Homicide added to tracker",
-      "victimId": "OAK-2026-0014-V01",
-      "incidentId": "OAK-2026-0014",
-      "incidentDate": "2026-02-11",
-      "victimName": "unknown",
-      "location": "International Boulevard near 98th Avenue",
-      "source": {
-        "sourceId": "OAK-2026-S0047",
-        "title": "Fatal shooting on Oakland's International Boulevard",
-        "publisher": "San Francisco Chronicle",
-        "url": "https://www.sfchronicle.com/crime/article/oakland-fatal-shooting-21350124.php",
-        "sourceDate": "2026-02-12"
       }
     }
   ]
