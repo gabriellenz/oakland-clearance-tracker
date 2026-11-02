@@ -3,27 +3,27 @@
     "city": "Oakland",
     "state": "CA",
     "year": 2026,
-    "generatedAt": "2026-10-26T08:04:54-07:00",
-    "lastChecked": "2026-10-26",
+    "generatedAt": "2026-11-02T02:30:44-08:00",
+    "lastChecked": "2026-11-02",
     "scopeNote": "Traffic-collision deaths and fatal police shootings are excluded from the tracked victim total and arrest-rate calculation. A traffic death is included only when authorities classify the killing as murder or nonnegligent manslaughter. Charges are tracked separately and never count as arrests. Arrest reported is a public-source proxy, not an official clearance determination.",
     "q1ReconciliationNote": "Published OPD/news count reports indicate 14 homicides through March 31. A May 18 audit found a Feb. 11 fatal shooting near International Boulevard and 98th Avenue, bringing the coded tracker to 14 victims through March 31.",
     "allegedPerpetratorNote": "Public datasets may include names of alleged perpetrators from cited sources. The website does not display those names in summaries or the front-page table, and names should be read as allegations, not findings of guilt.",
     "updateLogStartDate": "2026-05-18"
   },
   "summary": {
-    "victims": 36,
-    "incidents": 32,
+    "victims": 37,
+    "incidents": 33,
     "arrestReportedVictims": 15,
     "chargeReportedVictims": 15,
-    "noPublicArrestVictims": 17,
+    "noPublicArrestVictims": 18,
     "unknownArrestStatusVictims": 4,
-    "publicArrestRateVictimLevel": 41.7,
+    "publicArrestRateVictimLevel": 40.5,
     "namedVictims": 20,
     "raceEthnicityKnownVictims": 0
   },
   "statusCounts": {
     "yes": 15,
-    "no": 17,
+    "no": 18,
     "unknown": 4
   },
   "byMonth": [
@@ -93,9 +93,9 @@
     {
       "month": "2026-10",
       "yes": 1,
-      "no": 1,
+      "no": 2,
       "unknown": 0,
-      "total": 2
+      "total": 3
     }
   ],
   "cumulative": [
@@ -277,6 +277,11 @@
     {
       "date": "2026-10-21",
       "victims": 36,
+      "arrestReportedVictims": 15
+    },
+    {
+      "date": "2026-10-31",
+      "victims": 37,
       "arrestReportedVictims": 15
     }
   ],
@@ -1317,10 +1322,10 @@
       "caseNumber": "26-043429",
       "arrestMade": "yes",
       "arrestDate": "2026-10-11",
-      "arrestSourceId": "OAK-2026-S0239",
-      "arrestSourceUrl": "https://www.sfgate.com/bayarea/article/mackayla-paige-kash-sister-killing-22474234.php",
-      "arrestSourceTitle": "Sister of reality TV star Kash charged in her Bay Area killing",
-      "arrestSourcePublisher": "SFGATE",
+      "arrestSourceId": "OAK-2026-S0334",
+      "arrestSourceUrl": "https://nextdoor.com/agency-post/ca/oakland/oakland-police-department/the-oakland-police-department-opd-arrested-vernika-dunbar-in-connection-with-the-518091020/",
+      "arrestSourceTitle": "OPD confirms October 11 Paige arrest and charges",
+      "arrestSourcePublisher": "Oakland Police Department",
       "arrestSourceDate": "2026-10-14",
       "allegedPerpetratorsPublic": "Vernika Dunbar",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
@@ -1352,6 +1357,36 @@
       "arrestSourceTitle": "Man fatally shot in Oakland\u2019s San Antonio district",
       "arrestSourcePublisher": "San Francisco Chronicle",
       "arrestSourceDate": "2026-10-21",
+      "allegedPerpetratorsPublic": "",
+      "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
+      "chargesFiled": "unknown",
+      "leadCharge": "",
+      "publicChargeSummary": "None reported",
+      "caseStatus": "under_investigation",
+      "clearanceStatus": "open_no_public_arrest",
+      "confidence": "high"
+    },
+    {
+      "victimId": "OAK-2026-0034-V01",
+      "incidentId": "OAK-2026-0034",
+      "name": "unknown",
+      "age": "42",
+      "gender": "male",
+      "raceEthnicity": "",
+      "incidentDate": "2026-10-31",
+      "incidentTime": "04:30",
+      "location": "600 block of West Grand Avenue",
+      "neighborhood": "West Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A 42-year-old man was fatally shot early October 31 in the 600 block of West Grand Avenue. Officers found him in a traffic lane, and he died at the scene despite lifesaving efforts. Police reported no arrests.",
+      "caseNumber": "",
+      "arrestMade": "no",
+      "arrestDate": "",
+      "arrestSourceId": "OAK-2026-S0320",
+      "arrestSourceUrl": "https://www.eastbaytimes.com/2026/10/31/man-shot-killed-in-west-oakland-early-saturday/",
+      "arrestSourceTitle": "El Sobrante man found fatally shot in West Oakland street",
+      "arrestSourcePublisher": "East Bay Times",
+      "arrestSourceDate": "2026-10-31",
       "allegedPerpetratorsPublic": "",
       "allegedPerpetratorLanguage": "Names are public allegations from cited sources and are not findings of guilt.",
       "chargesFiled": "unknown",
@@ -1746,6 +1781,18 @@
       "victimCount": "1",
       "caseNumber": "26-045001",
       "confidence": "high"
+    },
+    {
+      "incidentId": "OAK-2026-0034",
+      "date": "2026-10-31",
+      "time": "04:30",
+      "location": "600 block of West Grand Avenue",
+      "neighborhood": "West Oakland",
+      "method": "shooting",
+      "circumstancesSummary": "A 42-year-old man was fatally shot early October 31 in the 600 block of West Grand Avenue. Officers found him in a traffic lane, and he died at the scene despite lifesaving efforts. Police reported no arrests.",
+      "victimCount": "1",
+      "caseNumber": "",
+      "confidence": "high"
     }
   ],
   "countReports": [
@@ -2078,9 +2125,54 @@
       "unit": "incidents",
       "trackerVictimCount": 29,
       "discrepancy": "Official combined offense count 34 versus 29 tracker victims; scope and units differ. Not a confirmed missing-victim count."
+    },
+    {
+      "sourceDate": "2026-10-31",
+      "publisher": "East Bay Times",
+      "title": "El Sobrante man found fatally shot in West Oakland street",
+      "url": "https://www.eastbaytimes.com/2026/10/31/man-shot-killed-in-west-oakland-early-saturday/",
+      "periodEnd": "2026-10-31",
+      "reportedTotal": 43,
+      "unit": "unknown",
+      "trackerVictimCount": 37,
+      "discrepancy": "Reported 43 homicide investigations versus 37 tracked in-scope victims; units/categories not directly comparable."
     }
   ],
   "updateLog": [
+    {
+      "dateFound": "2026-11-02",
+      "type": "homicide_found",
+      "label": "Homicide added to tracker",
+      "victimId": "OAK-2026-0034-V01",
+      "incidentId": "OAK-2026-0034",
+      "incidentDate": "2026-10-31",
+      "victimName": "unknown",
+      "location": "600 block of West Grand Avenue",
+      "source": {
+        "sourceId": "OAK-2026-S0320",
+        "title": "El Sobrante man found fatally shot in West Oakland street",
+        "publisher": "East Bay Times",
+        "url": "https://www.eastbaytimes.com/2026/10/31/man-shot-killed-in-west-oakland-early-saturday/",
+        "sourceDate": "2026-10-31"
+      }
+    },
+    {
+      "dateFound": "2026-11-02",
+      "type": "arrest_found",
+      "label": "Arrest found",
+      "victimId": "OAK-2026-0032-V01",
+      "incidentId": "OAK-2026-0032",
+      "incidentDate": "2026-10-11",
+      "victimName": "Mackayla Paige",
+      "location": "200 block of 14th Street",
+      "source": {
+        "sourceId": "OAK-2026-S0334",
+        "title": "OPD confirms October 11 Paige arrest and charges",
+        "publisher": "Oakland Police Department",
+        "url": "https://nextdoor.com/agency-post/ca/oakland/oakland-police-department/the-oakland-police-department-opd-arrested-vernika-dunbar-in-connection-with-the-518091020/",
+        "sourceDate": "2026-10-14"
+      }
+    },
     {
       "dateFound": "2026-10-26",
       "type": "homicide_found",
@@ -2136,23 +2228,6 @@
       "dateFound": "2026-10-19",
       "type": "homicide_found",
       "label": "Homicide added to tracker",
-      "victimId": "OAK-2026-0032-V01",
-      "incidentId": "OAK-2026-0032",
-      "incidentDate": "2026-10-11",
-      "victimName": "Mackayla Paige",
-      "location": "200 block of 14th Street",
-      "source": {
-        "sourceId": "OAK-2026-S0239",
-        "title": "Sister of reality TV star Kash charged in her Bay Area killing",
-        "publisher": "SFGATE",
-        "url": "https://www.sfgate.com/bayarea/article/mackayla-paige-kash-sister-killing-22474234.php",
-        "sourceDate": "2026-10-14"
-      }
-    },
-    {
-      "dateFound": "2026-10-19",
-      "type": "arrest_found",
-      "label": "Arrest found",
       "victimId": "OAK-2026-0032-V01",
       "incidentId": "OAK-2026-0032",
       "incidentDate": "2026-10-11",
